@@ -1,0 +1,22 @@
+# 2 hour job. See https://batchdocs.web.cern.ch/local/submit.html
++JobFlavour = "longlunch"
+
+request_cpus = 4
+
+# 4GB RAM
+request_memory = 4096
+
+# 80 GB scratch disk
+request_disk = 8192000
+
+
+executable              = generate_its.sh
+arguments               = 1 1 20 $(ClusterId) $(ProcId) 
+#ClusterID = Job ID. ProcID: Subprocess ID, useful for scripting
+
+output                  = job.$(ClusterId).$(ProcId).out
+error                   = job.$(ClusterId).$(ProcId).err
+log                     = job.$(ClusterId).log
+
+#number of subjobs to submit
+queue 20
