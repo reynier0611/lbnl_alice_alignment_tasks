@@ -61,9 +61,10 @@ fi
 echo "Will generate: "$(($3))" events"
 # -------------
 # parameter 4&5
-echo "Moving to $((eos_dir))/$(($4))/$(($5))"
-mkdir -p eos_dir/$4/$5/
-cd eos_dir/$4/$5/
+echo "Moving to ${eos_dir}/${4}/${5}"
+mkdir -p $eos_dir/$4/$5/
+cd $eos_dir/$4/$5/
+pwd
 # ----------------------------------------------------------
 # 1. MC GENERATION RUN
 echo ""
