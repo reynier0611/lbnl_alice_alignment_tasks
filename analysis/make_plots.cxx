@@ -2,7 +2,10 @@
 #include "TFile.h"
 #include "TTree.h"
 #include "TH1.h"
+#include "TH2.h"
 #include "TCanvas.h"
+#include "TMath.h"
+#include "TStyle.h"
 
 #include <fstream>
 #include <cstdlib>
@@ -10,7 +13,12 @@
 #include <cmath>
 #include <iostream>
 
+const double pi = TMath::Pi();
+
 using namespace std;
+
+//Forward-declaring functions
+void prettyTH1( TH1F * h1 , int color );
 // ===============================================================================================================================
 int main(int argc, char ** argv) {
 
@@ -19,6 +27,10 @@ int main(int argc, char ** argv) {
 #else
 	TApplication *myapp = new TApplication("myapp",0,0);
 #endif
+
+	TH1::SetDefaultSumw2();
+	TH2::SetDefaultSumw2();
+	gStyle -> SetOptStat(0);
 
 	// ------------------------------------------------------------------------------
 	// Loading data
@@ -43,21 +55,55 @@ int main(int argc, char ** argv) {
 	int nEntries = T -> GetEntries();
 	// ------------------------------------------------------------------------------
 	// Creating histograms
-	TH1F * h1_mcZOut     = new TH1F("h1_mcZOut"     ,";h1_mcZOut"     ,100,-  2,  0);
-	TH1F * h1_recZOut    = new TH1F("h1_recZOut"    ,";h1_recZOut"    ,100,-100,100);
-	TH1F * h1_mcPhiOut   = new TH1F("h1_mcPhiOut"   ,";h1_mcPhiOut"   ,100,-  2,  0);
-	TH1F * h1_recPhiOut  = new TH1F("h1_recPhiOut"  ,";h1_recPhiOut"  ,100,-  1,  8);
-	TH1F * h1_mcThetaOut = new TH1F("h1_mcThetaOut" ,";h1_mcThetaOut" ,100,-  2,  0);
-	TH1F * h1_recThetaOut= new TH1F("h1_recThetaOut",";h1_recThetaOut",100,   0,  4);
-	TH1F * h1_mcPhi      = new TH1F("h1_mcPhi"      ,";h1_mcPhi"      ,100,-  6,  6);
-	TH1F * h1_recPhi     = new TH1F("h1_recPhi"     ,";h1_recPhi"     ,100,-  6,  6);
-	TH1F * h1_mcLam      = new TH1F("h1_mcLam"      ,";h1_mcLam"      ,100,-  2,  2);
-	TH1F * h1_recLam     = new TH1F("h1_recLam"     ,";h1_recLam"     ,100,-  2,  2);
-	TH1F * h1_mcPt       = new TH1F("h1_mcPt"       ,";h1_mcPt"       ,100,-  2,  6);
-	TH1F * h1_recPt      = new TH1F("h1_recPt"      ,";h1_recPt"      ,100,-  2,  6);
-	TH1F * h1_ipD        = new TH1F("h1_ipD"        ,";h1_ipD"        ,100,-  2,  2);
-	TH1F * h1_ipZ        = new TH1F("h1_ipZ"        ,";h1_ipZ"        , 50,- 20, 20);
-	TH1F * h1_label      = new TH1F("h1_label"      ,";h1_label"      ,100,- 10,2e5);
+	
+	TH1F * h1_mcZOut     = new TH1F("h1_mcZOut"     ,";h1_mcZOut"     ,70,-  2,  0);
+	TH1F * h1_recZOut    = new TH1F("h1_recZOut"    ,";h1_recZOut"    ,70,-100,100);
+	TH1F * h1_mcPhiOut   = new TH1F("h1_mcPhiOut"   ,";h1_mcPhiOut"   ,70,-  2,  0);
+	TH1F * h1_recPhiOut  = new TH1F("h1_recPhiOut"  ,";h1_recPhiOut"  ,70,-  1,  8);
+	TH1F * h1_mcThetaOut = new TH1F("h1_mcThetaOut" ,";h1_mcThetaOut" ,70,-  2,  0);
+	TH1F * h1_recThetaOut= new TH1F("h1_recThetaOut",";h1_recThetaOut",70,   0,  4);
+	TH1F * h1_mcPhi      = new TH1F("h1_mcPhi"      ,";h1_mcPhi"      ,70,- pi, pi); // generated phi
+	TH1F * h1_recPhi     = new TH1F("h1_recPhi"     ,";h1_recPhi"     ,70,- pi, pi); // reconstructed phi
+	TH1F * h1_mcLam      = new TH1F("h1_mcLam"      ,";h1_mcLam"      ,70,-1.3,1.3); // generated theta
+	TH1F * h1_recLam     = new TH1F("h1_recLam"     ,";h1_recLam"     ,70,-1.3,1.3); // reconstructed theta
+	TH1F * h1_mcPt       = new TH1F("h1_mcPt"       ,";h1_mcPt"       ,70,-  0,  8); // generated pT
+	TH1F * h1_recPt      = new TH1F("h1_recPt"      ,";h1_recPt"      ,70,-  0,  8); // reconstructed pT
+	TH1F * h1_ipD        = new TH1F("h1_ipD"        ,";h1_ipD"        ,70,-  2,  2);
+	TH1F * h1_ipZ        = new TH1F("h1_ipZ"        ,";h1_ipZ"        ,50,- 20, 20);
+	TH1F * h1_label      = new TH1F("h1_label"      ,";h1_label"      ,70,- 10,2e5);
+	// ---------------
+	double pTbins[] = {0,0.5,1,2,5};
+	int size_pTbins = sizeof(pTbins)/sizeof(*pTbins);
+	TH1F ** h1_mcPhi_pTbins       = new TH1F * [size_pTbins];
+	TH1F ** h1_recPhi_pTbins      = new TH1F * [size_pTbins];
+	TH1F ** h1_mcTheta_pTbins     = new TH1F * [size_pTbins];
+	TH1F ** h1_recTheta_pTbins    = new TH1F * [size_pTbins];
+	TH2F ** h2_mcThetaPhi_pTbins  = new TH2F * [size_pTbins];
+	TH2F ** h2_recThetaPhi_pTbins = new TH2F * [size_pTbins];
+	TH1F ** h1_mc_min_rec_Phi     = new TH1F * [size_pTbins];
+	TH1F ** h1_mc_min_rec_Theta   = new TH1F * [size_pTbins];
+	TH2F ** h2_mc_v_rec_Phi       = new TH2F * [size_pTbins];
+	TH2F ** h2_mc_v_rec_Theta     = new TH2F * [size_pTbins];
+	for(int pT = 0 ; pT < size_pTbins-1 ; pT++){
+		h1_mcPhi_pTbins      [pT] = new TH1F(Form("h1_mcPhi_pTbins_%i"      ,pT),Form("%.1f < p^{gen}_{T} < %.1f GeV/#it{c};#phi_{gen} [rad]"                     ,pTbins[pT],pTbins[pT+1]),50,-pi,pi);
+        	h1_recPhi_pTbins     [pT] = new TH1F(Form("h1_recPhi_pTbins_%i"     ,pT),Form("%.1f < p^{gen}_{T} < %.1f GeV/#it{c};#phi_{reco} [rad]"                    ,pTbins[pT],pTbins[pT+1]),50,-pi,pi);
+        	h1_mcTheta_pTbins    [pT] = new TH1F(Form("h1_mcTheta_pTbins_%i"    ,pT),Form("%.1f < p^{gen}_{T} < %.1f GeV/#it{c};#theta_{gen} [rad]"                   ,pTbins[pT],pTbins[pT+1]),50,-1.3,1.3);
+        	h1_recTheta_pTbins   [pT] = new TH1F(Form("h1_recTheta_pTbins_%i"   ,pT),Form("%.1f < p^{gen}_{T} < %.1f GeV/#it{c};#theta_{reco} [rad]"                  ,pTbins[pT],pTbins[pT+1]),50,-1.3,1.3);
+        	h2_mcThetaPhi_pTbins [pT] = new TH2F(Form("h2_mcThetaPhi_pTbins_%i" ,pT),Form("%.1f < p^{gen}_{T} < %.1f GeV/#it{c};#phi_{gen} [rad];#theta_{gen} [rad]"  ,pTbins[pT],pTbins[pT+1]),50,-pi,pi,50,-1.3,1.3);
+        	h2_recThetaPhi_pTbins[pT] = new TH2F(Form("h2_recThetaPhi_pTbins_%i",pT),Form("%.1f < p^{gen}_{T} < %.1f GeV/#it{c};#phi_{reco} [rad];#theta_{reco} [rad]",pTbins[pT],pTbins[pT+1]),50,-pi,pi,50,-1.3,1.3);
+		h1_mc_min_rec_Phi    [pT] = new TH1F(Form("h1_mc_min_rec_Phi_%i"    ,pT),Form("%.1f < p^{gen}_{T} < %.1f GeV/#it{c};#phi_{gen} - #phi_{rec} [rad]"        ,pTbins[pT],pTbins[pT+1]),80,-.02,.02);
+		h1_mc_min_rec_Theta  [pT] = new TH1F(Form("h1_mc_min_rec_Theta_%i"  ,pT),Form("%.1f < p^{gen}_{T} < %.1f GeV/#it{c};#theta_{gen} - #theta_{rec} [rad]"    ,pTbins[pT],pTbins[pT+1]),80,-.01,.01);
+		h2_mc_v_rec_Phi      [pT] = new TH2F(Form("h2_mc_v_rec_Phi_%i"      ,pT),Form("%.1f < p^{gen}_{T} < %.1f GeV/#it{c};#phi_{rec} [rad];#phi_{gen} [rad]"    ,pTbins[pT],pTbins[pT+1]),50,- pi, pi,50,- pi, pi);
+		h2_mc_v_rec_Theta    [pT] = new TH2F(Form("h2_mc_v_rec_Theta_%i"    ,pT),Form("%.1f < p^{gen}_{T} < %.1f GeV/#it{c};#theta_{rec} [rad];#theta_{gen} [rad]",pTbins[pT],pTbins[pT+1]),50,-1.3,1.3,50,-1.3,1.3);
+	
+		prettyTH1(h1_mcPhi_pTbins    [pT],1);	h1_mcPhi_pTbins    [pT] -> SetMinimum(0);
+		prettyTH1(h1_recPhi_pTbins   [pT],2);	h1_recPhi_pTbins   [pT] -> SetMinimum(0);
+		prettyTH1(h1_mcTheta_pTbins  [pT],1);	h1_mcTheta_pTbins  [pT] -> SetMinimum(0);
+		prettyTH1(h1_recTheta_pTbins [pT],2);	h1_recTheta_pTbins [pT] -> SetMinimum(0);
+		prettyTH1(h1_mc_min_rec_Phi  [pT],1);	h1_mc_min_rec_Phi  [pT] -> SetMinimum(0);
+		prettyTH1(h1_mc_min_rec_Theta[pT],1);	h1_mc_min_rec_Theta[pT] -> SetMinimum(0);
+	}
+
 	// ------------------------------------------------------------------------------
 	// Looping over data
 	for(int ev = 0 ; ev < nEntries ; ev++){
@@ -78,12 +124,27 @@ int main(int argc, char ** argv) {
 		h1_ipD        -> Fill(ipD        );
 		h1_ipZ        -> Fill(ipZ        );
 		h1_label      -> Fill(label      );
+
+		for(int pT = 0 ; pT < size_pTbins-1 ; pT++){
+			if(mcPt>pTbins[pT]&&mcPt<pTbins[pT+1]){
+				h1_mcPhi_pTbins      [pT] -> Fill( mcPhi  );
+                		h1_recPhi_pTbins     [pT] -> Fill( recPhi );
+                		h1_mcTheta_pTbins    [pT] -> Fill( mcLam  );
+                		h1_recTheta_pTbins   [pT] -> Fill( recLam );
+                		h2_mcThetaPhi_pTbins [pT] -> Fill( mcPhi  , mcLam  );
+        	        	h2_recThetaPhi_pTbins[pT] -> Fill( recPhi , recLam );
+				h1_mc_min_rec_Phi    [pT] -> Fill( mcPhi - recPhi );
+                		h1_mc_min_rec_Theta  [pT] -> Fill( mcLam - recLam );
+                		h2_mc_v_rec_Phi      [pT] -> Fill( recPhi , mcPhi );
+                		h2_mc_v_rec_Theta    [pT] -> Fill( recLam , mcLam );
+				break;
+			}
+		}
 	}
 	// ------------------------------------------------------------------------------
 	// Plotting results
 	TCanvas * c1 = new TCanvas("c1","c1",1300,900);
 	c1 -> Divide(5,3);
-
 	c1 -> cd( 1);	h1_mcZOut     -> Draw();
 	c1 -> cd( 2);   h1_recZOut    -> Draw();
 	c1 -> cd( 3);   h1_mcPhiOut   -> Draw();
@@ -99,11 +160,44 @@ int main(int argc, char ** argv) {
 	c1 -> cd(13);   h1_ipD        -> Draw();
 	c1 -> cd(14);   h1_ipZ        -> Draw();
 	c1 -> cd(15);   h1_label      -> Draw();
-
 	c1 -> Modified();
 	c1 -> Update();
+	// -------------------------------------------
+	TCanvas ** c2 = new TCanvas * [size_pTbins-1];
+	for(int pT = 0 ; pT < size_pTbins-1 ; pT++){
+		c2[pT] = new TCanvas(Form("c2_%i",pT),Form("c2_%i",pT),1300,900);
+		c2[pT] -> Divide(4,2);
+		c2[pT] -> cd(1);
+		h1_mcPhi_pTbins   [pT] -> Draw();
+		h1_recPhi_pTbins  [pT] -> Draw("same");
+		c2[pT] -> cd(2);
+		h1_mcTheta_pTbins [pT] -> Draw();
+		h1_recTheta_pTbins[pT] -> Draw("same");
+		c2[pT] -> cd(3);	h2_mcThetaPhi_pTbins [pT] -> Draw("COLZ");
+		c2[pT] -> cd(4);	h2_recThetaPhi_pTbins[pT] -> Draw("COLZ");
+		c2[pT] -> cd(5);	h1_mc_min_rec_Phi    [pT] -> Draw();
+		c2[pT] -> cd(6);	h1_mc_min_rec_Theta  [pT] -> Draw();
+		c2[pT] -> cd(7);	h2_mc_v_rec_Phi      [pT] -> Draw("COLZ");
+		c2[pT] -> cd(8);	h2_mc_v_rec_Theta    [pT] -> Draw("COLZ");
+		c2[pT] -> Modified();
+		c2[pT] -> Update();
+	}
+	// ------------------------------------------------------------------------------
+	// Saving canvases onto a pdf
+	TString pdf_name = "results.pdf";
+	c1 -> Print(pdf_name+"(");
+	for(int pT = 0 ; pT < size_pTbins-1 ; pT++){
+		if(pT==size_pTbins-2) c2[pT] -> Print(pdf_name+")");
+		else c2[pT] -> Print(pdf_name);
+	}
 	// ------------------------------------------------------------------------------
 	myapp -> Run();
 	return 0;
 } // End of main function
 // ===============================================================================================================================
+void prettyTH1( TH1F * h1 , int color ){
+	h1 -> GetXaxis() -> CenterTitle();
+	h1 -> GetYaxis() -> CenterTitle();
+	h1 -> SetLineColor(color);
+	h1 -> SetMarkerColor(color);
+}
