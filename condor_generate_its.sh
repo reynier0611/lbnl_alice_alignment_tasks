@@ -1,4 +1,5 @@
 #! /bin/bash
+/cvmfs/alice.cern.ch/bin/alienv enter O2/nightly-20210129-1
 eos_dir="/eos/user/f/ftorales/its_data/alignment/lbnl_alice_alignment_tasks"
 echo "==============================="
 echo "execute this script as follows:"
