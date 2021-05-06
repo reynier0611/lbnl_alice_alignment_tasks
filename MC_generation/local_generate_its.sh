@@ -43,11 +43,11 @@ else
 fi
 # --------------
 # parameter 2
-if [ $1 == "1" ]
+if [ $2 == "1" ]
 then
 	REGION="Diamond.width[2]=6.;SimCutParams.maxRTracking=70;SimCutParams.maxAbsZTracking=100"
 	echo "will transport events in the ITS only"
-elif [ $1 == "2" ]
+elif [ $2 == "2" ]
 then
 	REGION="Diamond.width[2]=6."
 	echo "will transport events in the whole detector"
@@ -63,7 +63,7 @@ echo "Will generate: "$(($3))" events"
 echo ""
 echo "=============================================================================================="
 echo "1. MC generation run"
-o2-sim -n $(($2)) -m PIPE ITS --configKeyValues $REGION -g $GENERATOR -j 6 | tee sim.log
+o2-sim -n $(($3)) -m PIPE ITS --configKeyValues $REGION -g $GENERATOR -j 6 | tee sim.log
 #see https://github.com/AliceO2Group/AliceO2/blob/dev/doc/DetectorSimulation.md for details
 # ----------------------------------------------------------
 # 2. HITS TO DIGITS CONVERSION

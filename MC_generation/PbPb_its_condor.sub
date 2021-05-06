@@ -10,8 +10,8 @@ request_memory = 4096
 request_disk = 8192000
 
 
-executable              = generate_its.sh
-arguments               = 2 1 20 $(ClusterId) $(ProcId) 
+executable              = eos_generate_its.sh
+arguments               = 2 1 100 $(ClusterId) $(ProcId) 
 #ClusterID = Job ID. ProcID: Subprocess ID, useful for scripting
 
 output                  = job.$(ClusterId).$(ProcId).out
