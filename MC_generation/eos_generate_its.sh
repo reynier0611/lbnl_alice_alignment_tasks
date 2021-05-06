@@ -1,4 +1,7 @@
 #! /bin/bash
+#/cvmfs/alice.cern.ch/bin/alienv enter O2/nightly-20210129-1
+eval "$(/cvmfs/alice.cern.ch/bin/alienv printenv O2::nightly-20210129-1)"
+eos_dir="/eos/user/f/ftorales/its_data/alignment/lbnl_alice_alignment_tasks"
 echo "==============================="
 echo "execute this script as follows:"
 echo "./generate_its.sh system region nevents"
@@ -58,6 +61,12 @@ fi
 # --------------
 # parameter 3
 echo "Will generate: "$(($3))" events"
+# -------------
+# parameter 4&5
+echo "Moving to ${eos_dir}/${4}/${5}"
+mkdir -p $eos_dir/$4/$5/
+cd $eos_dir/$4/$5/
+pwd
 # ----------------------------------------------------------
 # 1. MC GENERATION RUN
 echo ""
