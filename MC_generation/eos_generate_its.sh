@@ -1,6 +1,5 @@
 #! /bin/bash
 #/cvmfs/alice.cern.ch/bin/alienv enter O2/nightly-20210129-1
-eval "$(/cvmfs/alice.cern.ch/bin/alienv printenv O2::nightly-20210129-1)"
 eos_dir="/eos/user/f/ftorales/its_data/alignment/lbnl_alice_alignment_tasks"
 echo "==============================="
 echo "execute this script as follows:"
@@ -72,6 +71,7 @@ pwd
 echo ""
 echo "=============================================================================================="
 echo "1. MC generation run"
+eval "$(/cvmfs/alice.cern.ch/bin/alienv printenv O2::nightly-20210129-1)"
 o2-sim -n $(($3)) -m PIPE ITS --configKeyValues $REGION -g $GENERATOR -j 6 | tee sim.log
 #see https://github.com/AliceO2Group/AliceO2/blob/dev/doc/DetectorSimulation.md for details
 # ----------------------------------------------------------
@@ -79,10 +79,12 @@ o2-sim -n $(($3)) -m PIPE ITS --configKeyValues $REGION -g $GENERATOR -j 6 | tee
 echo ""
 echo "=============================================================================================="
 echo "2. Hits to digits conversion"
+eval "$(/cvmfs/alice.cern.ch/bin/alienv printenv O2::nightly-20210129-1)"
 o2-sim-digitizer-workflow --interactionRate=50000 --shm-segment-size 16000000000 --run | tee dig.log
 # ----------------------------------------------------------
 # 3. TRACKING
 echo ""
 echo "=============================================================================================="
 echo "3. Tracking"
+eval "$(/cvmfs/alice.cern.ch/bin/alienv printenv O2::nightly-20210129-1)"
 o2-its-reco-workflow --trackerCA --tracking-mode async --shm-segment-size 16000000000 --run | tee rec.log
