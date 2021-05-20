@@ -1,6 +1,9 @@
 # Submitting Condor Jobs
 
 Hello there! Ok, let's submit a pp job to Condor.
+
+## Getting ready to submit a job
+
 First of all, we will need to edit a line in ```eos_generate_its.sh```.
 Update:
 
@@ -45,7 +48,12 @@ Edit the job flavor to reflect the maximum runtime requested for each job:
 - testmatch    = 3 days
 - nextweek     = 1 week
 
+If you decrease (increase) the maximum runtime requested, make sure you decrease (increase)
+the number of generated events (third parameter in `arguments`, currently set to 80).
+
 More details can be found in [https://batchdocs.web.cern.ch/local/submit.html](https://batchdocs.web.cern.ch/local/submit.html).
+
+## Submitting a job and checking its status
 
 Now we are ready to submit the job. Execute:
 
