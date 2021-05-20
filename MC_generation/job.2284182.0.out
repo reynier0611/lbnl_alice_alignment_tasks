@@ -1,0 +1,2746 @@
+===============================
+execute this script as follows:
+./generate_its.sh system region nevents
+where:
+system = 1 -> pp
+       = 2 -> Pb-Pb
+region = 1 -> ITS only
+       = 2 -> whole detector
+===============================
+will generate pp events
+will transport events in the ITS only
+Will generate: 80 events
+Moving to /eos/user/f/ftorales/its_data/alignment/lbnl_alice_alignment_tasks/2284182/0
+/eos/user/f/ftorales/its_data/alignment/lbnl_alice_alignment_tasks/2284182/0
+
+==============================================================================================
+1. MC generation run
+[INFO] Running with 6 sim workers 
+[INFO] CREATING SIM SHARED MEM SEGMENT FOR 6 WORKERS
+Spawning particle server on PID 996; Redirect output to o2sim_serverlog
+Spawning sim worker 0 on PID 998; Redirect output to o2sim_workerlog0
+Spawning hit merger on PID 999; Redirect output to o2sim_mergerlog
+[INFO] DISTRIBUTING EVENT : 1
+[INFO] DISTRIBUTING EVENT : 2
+[INFO] DISTRIBUTING EVENT : 3
+[INFO] DISTRIBUTING EVENT : 4
+[INFO] DISTRIBUTING EVENT : 5
+[INFO] DISTRIBUTING EVENT : 6
+[INFO] DISTRIBUTING EVENT : 7
+[INFO] DISTRIBUTING EVENT : 8
+[INFO] DISTRIBUTING EVENT : 9
+[INFO] DISTRIBUTING EVENT : 10
+[INFO] DISTRIBUTING EVENT : 11
+[INFO] DISTRIBUTING EVENT : 12
+[INFO] EVENT FINISHED : 1
+[INFO] DISTRIBUTING EVENT : 13
+[INFO] DISTRIBUTING EVENT : 14
+[INFO] DISTRIBUTING EVENT : 15
+[INFO] DISTRIBUTING EVENT : 16
+[INFO] DISTRIBUTING EVENT : 17
+[INFO] EVENT FINISHED : 7
+[INFO] EVENT FINISHED : 11
+[INFO] EVENT FINISHED : 3
+[INFO] EVENT FINISHED : 2
+[INFO] DISTRIBUTING EVENT : 18
+[INFO] EVENT FINISHED : 5
+[INFO] EVENT FINISHED : 6
+[INFO] EVENT FINISHED : 4
+[INFO] DISTRIBUTING EVENT : 19
+[INFO] DISTRIBUTING EVENT : 20
+[INFO] EVENT FINISHED : 8
+[INFO] EVENT FINISHED : 9
+[INFO] EVENT FINISHED : 10
+[INFO] DISTRIBUTING EVENT : 21
+[INFO] DISTRIBUTING EVENT : 22
+[INFO] EVENT FINISHED : 13
+[INFO] DISTRIBUTING EVENT : 23
+[INFO] EVENT FINISHED : 12
+[INFO] DISTRIBUTING EVENT : 24
+[INFO] DISTRIBUTING EVENT : 25
+[INFO] EVENT FINISHED : 14
+[INFO] EVENT FINISHED : 17
+[INFO] EVENT FINISHED : 16
+[INFO] DISTRIBUTING EVENT : 26
+[INFO] DISTRIBUTING EVENT : 27
+[INFO] EVENT FINISHED : 19
+[INFO] DISTRIBUTING EVENT : 28
+[INFO] DISTRIBUTING EVENT : 29
+[INFO] DISTRIBUTING EVENT : 30
+[INFO] DISTRIBUTING EVENT : 31
+[INFO] DISTRIBUTING EVENT : 32
+[INFO] EVENT FINISHED : 24
+[INFO] DISTRIBUTING EVENT : 33
+[INFO] DISTRIBUTING EVENT : 34
+[INFO] EVENT FINISHED : 15
+[INFO] EVENT FINISHED : 22
+[INFO] EVENT FINISHED : 21
+[INFO] EVENT FINISHED : 18
+[INFO] DISTRIBUTING EVENT : 35
+[INFO] EVENT FINISHED : 23
+[INFO] DISTRIBUTING EVENT : 36
+[INFO] DISTRIBUTING EVENT : 37
+[INFO] EVENT FINISHED : 27
+[INFO] DISTRIBUTING EVENT : 38
+[INFO] EVENT FINISHED : 25
+[INFO] DISTRIBUTING EVENT : 39
+[INFO] DISTRIBUTING EVENT : 40
+[INFO] EVENT FINISHED : 28
+[INFO] DISTRIBUTING EVENT : 41
+[INFO] EVENT FINISHED : 31
+[INFO] DISTRIBUTING EVENT : 42
+[INFO] DISTRIBUTING EVENT : 43
+[INFO] DISTRIBUTING EVENT : 44
+[INFO] DISTRIBUTING EVENT : 45
+[INFO] EVENT FINISHED : 30
+[INFO] EVENT FINISHED : 20
+[INFO] DISTRIBUTING EVENT : 46
+[INFO] EVENT FINISHED : 26
+[INFO] DISTRIBUTING EVENT : 47
+[INFO] EVENT FINISHED : 29
+[INFO] DISTRIBUTING EVENT : 48
+[INFO] EVENT FINISHED : 34
+[INFO] EVENT FINISHED : 32
+[INFO] EVENT FINISHED : 33
+[INFO] DISTRIBUTING EVENT : 49
+[INFO] EVENT FINISHED : 35
+[INFO] EVENT FINISHED : 36
+[INFO] DISTRIBUTING EVENT : 50
+[INFO] EVENT FINISHED : 40
+[INFO] EVENT FINISHED : 41
+[INFO] EVENT FINISHED : 37
+[INFO] DISTRIBUTING EVENT : 51
+[INFO] EVENT FINISHED : 42
+[INFO] DISTRIBUTING EVENT : 52
+[INFO] EVENT FINISHED : 43
+[INFO] DISTRIBUTING EVENT : 53
+[INFO] EVENT FINISHED : 39
+[INFO] EVENT FINISHED : 38
+[INFO] EVENT FINISHED : 44
+[INFO] DISTRIBUTING EVENT : 54
+[INFO] DISTRIBUTING EVENT : 55
+[INFO] EVENT FINISHED : 45
+[INFO] DISTRIBUTING EVENT : 56
+[INFO] EVENT FINISHED : 47
+[INFO] DISTRIBUTING EVENT : 57
+[INFO] EVENT FINISHED : 48
+[INFO] EVENT FINISHED : 46
+[INFO] DISTRIBUTING EVENT : 58
+[INFO] DISTRIBUTING EVENT : 59
+[INFO] EVENT FINISHED : 49
+[INFO] EVENT FINISHED : 51
+[INFO] DISTRIBUTING EVENT : 60
+[INFO] EVENT FINISHED : 52
+[INFO] EVENT FINISHED : 54
+[INFO] DISTRIBUTING EVENT : 61
+[INFO] EVENT FINISHED : 50
+[INFO] EVENT FINISHED : 55
+[INFO] DISTRIBUTING EVENT : 62
+[INFO] EVENT FINISHED : 53
+[INFO] DISTRIBUTING EVENT : 63
+[INFO] DISTRIBUTING EVENT : 64
+[INFO] DISTRIBUTING EVENT : 65
+[INFO] EVENT FINISHED : 56
+[INFO] DISTRIBUTING EVENT : 66
+[INFO] DISTRIBUTING EVENT : 67
+[INFO] DISTRIBUTING EVENT : 68
+[INFO] EVENT FINISHED : 59
+[INFO] DISTRIBUTING EVENT : 69
+[INFO] DISTRIBUTING EVENT : 70
+[INFO] EVENT FINISHED : 57
+[INFO] DISTRIBUTING EVENT : 71
+[INFO] DISTRIBUTING EVENT : 72
+[INFO] DISTRIBUTING EVENT : 73
+[INFO] EVENT FINISHED : 58
+[INFO] DISTRIBUTING EVENT : 74
+[INFO] EVENT FINISHED : 63
+[INFO] EVENT FINISHED : 62
+[INFO] EVENT FINISHED : 60
+[INFO] DISTRIBUTING EVENT : 75
+[INFO] DISTRIBUTING EVENT : 76
+[INFO] EVENT FINISHED : 61
+[INFO] DISTRIBUTING EVENT : 77
+[INFO] DISTRIBUTING EVENT : 78
+[INFO] DISTRIBUTING EVENT : 79
+[INFO] EVENT FINISHED : 64
+[INFO] EVENT FINISHED : 65
+[INFO] EVENT FINISHED : 71
+[INFO] DISTRIBUTING EVENT : 80
+[INFO] EVENT FINISHED : 67
+[INFO] EVENT FINISHED : 73
+[INFO] EVENT FINISHED : 66
+[INFO] EVENT FINISHED : 69
+[INFO] EVENT FINISHED : 70
+[INFO] EVENT FINISHED : 72
+[INFO] EVENT FINISHED : 68
+[INFO] EVENT FINISHED : 75
+[INFO] EVENT FINISHED : 78
+[INFO] EVENT FINISHED : 74
+[INFO] EVENT FINISHED : 76
+[INFO] EVENT FINISHED : 80
+[INFO] EVENT FINISHED : 77
+[INFO] EVENT FINISHED : 79
+[INFO] Merger process 999 returned
+[INFO] Simulation process took 70.5148 s
+[INFO] SIMULATION RETURNED SUCCESFULLY
+
+==============================================================================================
+2. Hits to digits conversion
+Run: 1621488685
+Fill:      0
+Period: 
+LHC State: 
+Start: Thu May 20 07:31:28 2021
+End  : Thu May 20 07:31:28 2021
+Beam0: Z:A =   0:  0, Energy = 0.000
+Beam1: Z:A =   0:  0, Energy = 0.000
+sqrt[s]    = 0.000
+crossing angle (radian) = 0.000000e+00
+magnet currents (A) L3 = -30000.000, Dipole = -6000
+Detectors: Cont.RO Triggers
+      ITS:    -       -    
+[INFO] MC-TRUTH 1
+[INFO] TPC: GEM setup - initialization from scratch
+[INFO] TPC: GEM setup (polya) took 11.72
+[INFO] TPC is in grp? no; is skipped? no
+[INFO] ITS is in grp? yes; is skipped? no
+[INFO] MFT is in grp? no; is skipped? no
+[INFO] TOF is in grp? no; is skipped? no
+[INFO] FT0 is in grp? no; is skipped? no
+[INFO] FV0 is in grp? no; is skipped? no
+[INFO] EMC is in grp? no; is skipped? no
+[INFO] HMP is in grp? no; is skipped? no
+[INFO] ZDC is in grp? no; is skipped? no
+[INFO] TRD is in grp? no; is skipped? no
+[INFO] MCH is in grp? no; is skipped? no
+[INFO] MID is in grp? no; is skipped? no
+[INFO] FDD is in grp? no; is skipped? no
+[INFO] PHS is in grp? no; is skipped? no
+[INFO] CPV is in grp? no; is skipped? no
+[INFO] Initialising O2 Data Processing Layer
+[INFO] O2 Data Processing Layer initialised. We brake for nobody.
+[INFO] Optimised build. O2DEBUG / LOG(DEBUG) / LOGF(DEBUG) / assert statement will not be shown.
+[INFO] Redeployment of configuration asked.
+[INFO] Starting internal-dpl-clock on pid 2240
+[INFO] Starting SimReader on pid 2241
+[INFO] Starting ITSDigitizer on pid 2242
+[INFO] Starting GRPUpdater on pid 2243
+[INFO] Starting ITSDigitWriter on pid 2244
+[INFO] Redeployment of configuration done.
+[2240:internal-dpl-clock]: [INFO] MC-TRUTH 1
+[2244:ITSDigitWriter]: [INFO] MC-TRUTH 1
+[2240:internal-dpl-clock]: [INFO] Spawing new device internal-dpl-clock in process with pid 2240
+[2244:ITSDigitWriter]: [INFO] Spawing new device ITSDigitWriter in process with pid 2244
+[2241:SimReader]: [INFO] MC-TRUTH 1
+[2240:internal-dpl-clock]: [07:35:41][INFO] 
+[2240:internal-dpl-clock]:       ______      _    _______  _________ 
+[2240:internal-dpl-clock]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.29
+[2240:internal-dpl-clock]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[2240:internal-dpl-clock]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[2240:internal-dpl-clock]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2020 GSI
+[2240:internal-dpl-clock]: 
+[2244:ITSDigitWriter]: [07:35:41][INFO] 
+[2244:ITSDigitWriter]:       ______      _    _______  _________ 
+[2244:ITSDigitWriter]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.29
+[2244:ITSDigitWriter]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[2244:ITSDigitWriter]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[2244:ITSDigitWriter]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2020 GSI
+[2244:ITSDigitWriter]: 
+[2240:internal-dpl-clock]: [07:35:41][STATE] Starting FairMQ state machine --> IDLE
+[2244:ITSDigitWriter]: [07:35:41][STATE] Starting FairMQ state machine --> IDLE
+[2241:SimReader]: [INFO] Spawing new device SimReader in process with pid 2241
+[2244:ITSDigitWriter]: 2021-05-20 07:35:41	Monitoring	[0;49mStdOut backend initialized[0m
+[2240:internal-dpl-clock]: 2021-05-20 07:35:41	Monitoring	[0;49mStdOut backend initialized[0m
+[2240:internal-dpl-clock]: [07:35:41][STATE] IDLE ---> INITIALIZING DEVICE
+[2244:ITSDigitWriter]: [07:35:41][STATE] IDLE ---> INITIALIZING DEVICE
+[2240:internal-dpl-clock]: 2021-05-20 07:35:41	Monitoring	[0;49mBuffering enabled (100)[0m
+[2240:internal-dpl-clock]: [07:35:41][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[2240:internal-dpl-clock]: [07:35:41][STATE] INITIALIZED ---> BINDING
+[2240:internal-dpl-clock]: [07:35:41][STATE] BINDING ---> BOUND
+[2240:internal-dpl-clock]: [07:35:41][STATE] BOUND ---> CONNECTING
+[2240:internal-dpl-clock]: [07:35:41][STATE] CONNECTING ---> DEVICE READY
+[2240:internal-dpl-clock]: [07:35:41][STATE] DEVICE READY ---> INITIALIZING TASK
+[2240:internal-dpl-clock]: [07:35:41][STATE] INITIALIZING TASK ---> READY
+[2240:internal-dpl-clock]: [07:35:41][STATE] READY ---> RUNNING
+[2240:internal-dpl-clock]: [07:35:41][INFO] DEVICE: Running...
+[2241:SimReader]: [07:35:41][INFO] 
+[2241:SimReader]:       ______      _    _______  _________ 
+[2241:SimReader]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.29
+[2241:SimReader]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[2241:SimReader]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[2241:SimReader]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2020 GSI
+[2241:SimReader]: 
+[2241:SimReader]: [07:35:41][STATE] Starting FairMQ state machine --> IDLE
+[2241:SimReader]: 2021-05-20 07:35:41	Monitoring	[0;49mStdOut backend initialized[0m
+[2241:SimReader]: [07:35:41][STATE] IDLE ---> INITIALIZING DEVICE
+[2241:SimReader]: 2021-05-20 07:35:41	Monitoring	[0;49mBuffering enabled (100)[0m
+[2241:SimReader]: [07:35:41][INFO] adding o2sim
+[2241:SimReader]: 
+[2241:SimReader]: [07:35:41][INFO] INCONTEXTSTRING 
+[2241:SimReader]: [07:35:41][INFO] Imposing hadronic interaction rate 50000Hz
+[2241:SimReader]: [07:35:41][WARN] No bunch filling provided, impose default one
+[2241:SimReader]: [07:35:41][INFO] Deducing mu=0.00771915 per BC from IR=50000 with 576 BCs
+[2242:ITSDigitizer]: [INFO] MC-TRUTH 1
+[2243:GRPUpdater]: [INFO] MC-TRUTH 1
+[2241:SimReader]: [07:35:41][INFO] InteractionSampler with 576 colliding BCs, mu(BC)= 0.00771915 -> total IR= 50000
+[2241:SimReader]: [07:35:41][INFO] Current BCid:    0 Orbit:      1 |T in BC(ns): 0.000(0 coll left)
+[2241:SimReader]: [07:35:41][INFO] setting up 1 chains
+[2242:ITSDigitizer]: [INFO] Spawing new device ITSDigitizer in process with pid 2242
+[2242:ITSDigitizer]: [07:35:41][INFO] 
+[2242:ITSDigitizer]:       ______      _    _______  _________ 
+[2242:ITSDigitizer]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.29
+[2242:ITSDigitizer]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[2242:ITSDigitizer]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[2242:ITSDigitizer]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2020 GSI
+[2242:ITSDigitizer]: 
+[2242:ITSDigitizer]: [07:35:41][STATE] Starting FairMQ state machine --> IDLE
+[2243:GRPUpdater]: [INFO] Spawing new device GRPUpdater in process with pid 2243
+[2242:ITSDigitizer]: 2021-05-20 07:35:41	Monitoring	[0;49mStdOut backend initialized[0m
+[2242:ITSDigitizer]: [07:35:41][STATE] IDLE ---> INITIALIZING DEVICE
+[2242:ITSDigitizer]: 2021-05-20 07:35:41	Monitoring	[0;49mBuffering enabled (100)[0m
+[2242:ITSDigitizer]: [07:35:41][INFO] Initializing geometry service
+[2243:GRPUpdater]: [07:35:41][INFO] 
+[2243:GRPUpdater]:       ______      _    _______  _________ 
+[2243:GRPUpdater]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.29
+[2243:GRPUpdater]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[2243:GRPUpdater]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[2243:GRPUpdater]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2020 GSI
+[2243:GRPUpdater]: 
+[2243:GRPUpdater]: [07:35:41][STATE] Starting FairMQ state machine --> IDLE
+[2243:GRPUpdater]: 2021-05-20 07:35:41	Monitoring	[0;49mStdOut backend initialized[0m
+[2242:ITSDigitizer]: [07:35:41][INFO] Loading geometry FAIRGeom from o2sim_geometry.root
+[2243:GRPUpdater]: [07:35:41][STATE] IDLE ---> INITIALIZING DEVICE
+[2243:GRPUpdater]: 2021-05-20 07:35:41	Monitoring	[0;49mBuffering enabled (100)[0m
+[2243:GRPUpdater]: [07:35:41][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[2243:GRPUpdater]: [07:35:41][STATE] INITIALIZED ---> BINDING
+[2243:GRPUpdater]: [07:35:41][STATE] BINDING ---> BOUND
+[2243:GRPUpdater]: [07:35:41][STATE] BOUND ---> CONNECTING
+[2243:GRPUpdater]: [07:35:41][STATE] CONNECTING ---> DEVICE READY
+[2243:GRPUpdater]: [07:35:41][STATE] DEVICE READY ---> INITIALIZING TASK
+[2243:GRPUpdater]: [07:35:41][STATE] INITIALIZING TASK ---> READY
+[2243:GRPUpdater]: [07:35:41][STATE] READY ---> RUNNING
+[2243:GRPUpdater]: [07:35:41][INFO] DEVICE: Running...
+[2244:ITSDigitWriter]: 2021-05-20 07:35:41	Monitoring	[0;49mBuffering enabled (100)[0m
+[2244:ITSDigitWriter]: [07:35:41][INFO] 0: branch  ITSDigitMCTruth set up
+[2244:ITSDigitWriter]: [07:35:41][INFO] 1: branch  ITSDigitMC2ROF set up
+[2244:ITSDigitWriter]: [07:35:41][INFO] 2: branch  ITSDigit set up
+[2244:ITSDigitWriter]: [07:35:41][INFO] 3: branch  ITSDigitROF set up
+[2244:ITSDigitWriter]: [07:35:41][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[2244:ITSDigitWriter]: [07:35:41][STATE] INITIALIZED ---> BINDING
+[2244:ITSDigitWriter]: [07:35:41][STATE] BINDING ---> BOUND
+[2244:ITSDigitWriter]: [07:35:41][STATE] BOUND ---> CONNECTING
+[2244:ITSDigitWriter]: [07:35:41][STATE] CONNECTING ---> DEVICE READY
+[2244:ITSDigitWriter]: [07:35:41][STATE] DEVICE READY ---> INITIALIZING TASK
+[2244:ITSDigitWriter]: [07:35:41][STATE] INITIALIZING TASK ---> READY
+[2244:ITSDigitWriter]: [07:35:41][STATE] READY ---> RUNNING
+[2244:ITSDigitWriter]: [07:35:41][INFO] DEVICE: Running...
+[2242:ITSDigitizer]: Info in <TGeoManager::CloseGeometry>: Geometry loaded from file...
+[2242:ITSDigitizer]: Info in <TGeoManager::SetTopVolume>: Top volume is cave. Master volume is cave
+[2242:ITSDigitizer]: Info in <TGeoNavigator::BuildCache>: --- Maximum geometry depth set to 100
+[2242:ITSDigitizer]: Info in <TGeoManager::CloseGeometry>: Voxelization retrieved from file
+[2242:ITSDigitizer]: Info in <TGeoManager::CountLevels>: max level = 9, max placements = 126
+[2242:ITSDigitizer]: Info in <TGeoManager::CloseGeometry>: 179840 nodes/ 399 volume UID's in FAIR geometry
+[2242:ITSDigitizer]: Info in <TGeoManager::CloseGeometry>: ----------------modeler ready----------------
+[2242:ITSDigitizer]: [07:35:43][INFO] Initializing field service
+[2242:ITSDigitizer]: [07:35:43][INFO] MagneticField::Print: MagneticFieldMap:
+[2242:ITSDigitizer]: [07:35:43][INFO] MagneticField::Print: Solenoid (-1*)5 kG, Dipole ON (-1) 
+[2242:ITSDigitizer]: [07:35:43][INFO] MagneticField::Print: Machine B fields for p-p  beam (7000 GeV): QGrad: 22.0002 Dipole: 37.8781
+[2242:ITSDigitizer]: [07:35:43][INFO] MagneticField::Print: Uses Sol30_Dip6_Hole  of /cvmfs/alice.cern.ch/el7-x86_64/Packages/O2/nightly-20210129-1/share/Common/maps/mfchebKGI_sym.root
+[2242:ITSDigitizer]: Info in <TGeoGlobalMagField::SetField>: Global magnetic field set to <MagneticFieldMap>
+[2242:ITSDigitizer]: Info in <TGeoGlobalMagField::Lock>: Global magnetic field <MagneticFieldMap> is now locked
+[2242:ITSDigitizer]: [07:35:43][INFO] Set Alpide charge threshold to 150, single hit will be accounted from 15 electrons
+[2242:ITSDigitizer]: [07:35:43][INFO] ITS simulated in CONTINUOUS RO mode
+[2241:SimReader]: [07:35:44][INFO] Automatic deduction of number of collisions ... will just take number of background entries 80
+[2241:SimReader]: Summary of DigitizationContext --
+[2241:SimReader]: Parts per collision 1
+[2241:SimReader]: Collision parts taken from simulations specified by prefix:
+[2241:SimReader]: Number of Collisions 80
+[2241:SimReader]: Collision 0 TIME BCid:   38 Orbit:      1 |T in BC(ns): -0.026 (0 , 0)
+[2241:SimReader]: Collision 1 TIME BCid:   44 Orbit:      1 |T in BC(ns): -0.071 (0 , 1)
+[2241:SimReader]: Collision 2 TIME BCid:  784 Orbit:      1 |T in BC(ns): 0.197 (0 , 2)
+[2241:SimReader]: Collision 3 TIME BCid: 1400 Orbit:      1 |T in BC(ns): 0.152 (0 , 3)
+[2241:SimReader]: Collision 4 TIME BCid: 1958 Orbit:      1 |T in BC(ns): 0.435 (0 , 4)
+[2241:SimReader]: Collision 5 TIME BCid: 2006 Orbit:      1 |T in BC(ns): -0.147 (0 , 5)
+[2241:SimReader]: Collision 6 TIME BCid: 2154 Orbit:      1 |T in BC(ns): 0.050 (0 , 6)
+[2241:SimReader]: Collision 7 TIME BCid:    4 Orbit:      2 |T in BC(ns): 0.235 (0 , 7)
+[2241:SimReader]: Collision 8 TIME BCid:   22 Orbit:      2 |T in BC(ns): 0.023 (0 , 8)
+[2241:SimReader]: Collision 9 TIME BCid:  208 Orbit:      2 |T in BC(ns): 0.026 (0 , 9)
+[2241:SimReader]: Collision 10 TIME BCid:  274 Orbit:      2 |T in BC(ns): 0.107 (0 , 10)
+[2241:SimReader]: Collision 11 TIME BCid:  280 Orbit:      2 |T in BC(ns): 0.045 (0 , 11)
+[2241:SimReader]: Collision 12 TIME BCid:  432 Orbit:      2 |T in BC(ns): -0.009 (0 , 12)
+[2241:SimReader]: Collision 13 TIME BCid:  588 Orbit:      2 |T in BC(ns): 0.005 (0 , 13)
+[2241:SimReader]: Collision 14 TIME BCid:  668 Orbit:      2 |T in BC(ns): -0.141 (0 , 14)
+[2241:SimReader]: Collision 15 TIME BCid: 1170 Orbit:      2 |T in BC(ns): 0.048 (0 , 15)
+[2241:SimReader]: Collision 16 TIME BCid: 1210 Orbit:      2 |T in BC(ns): 0.430 (0 , 16)
+[2241:SimReader]: Collision 17 TIME BCid: 1410 Orbit:      2 |T in BC(ns): -0.201 (0 , 17)
+[2241:SimReader]: Collision 18 TIME BCid: 2168 Orbit:      2 |T in BC(ns): 0.093 (0 , 18)
+[2241:SimReader]: Collision 19 TIME BCid:  196 Orbit:      3 |T in BC(ns): 0.143 (0 , 19)
+[2241:SimReader]: Collision 20 TIME BCid: 1756 Orbit:      3 |T in BC(ns): 0.082 (0 , 20)
+[2241:SimReader]: Collision 21 TIME BCid:   86 Orbit:      4 |T in BC(ns): 0.077 (0 , 21)
+[2241:SimReader]: Collision 22 TIME BCid:  264 Orbit:      4 |T in BC(ns): 0.118 (0 , 22)
+[2241:SimReader]: Collision 23 TIME BCid:  618 Orbit:      4 |T in BC(ns): -0.456 (0 , 23)
+[2241:SimReader]: Collision 24 TIME BCid:  820 Orbit:      4 |T in BC(ns): -0.233 (0 , 24)
+[2241:SimReader]: Collision 25 TIME BCid:  998 Orbit:      4 |T in BC(ns): 0.137 (0 , 25)
+[2241:SimReader]: Collision 26 TIME BCid: 1038 Orbit:      4 |T in BC(ns): -0.068 (0 , 26)
+[2241:SimReader]: Collision 27 TIME BCid: 1998 Orbit:      4 |T in BC(ns): 0.058 (0 , 27)
+[2241:SimReader]: Collision 28 TIME BCid:  612 Orbit:      5 |T in BC(ns): 0.074 (0 , 28)
+[2241:SimReader]: Collision 29 TIME BCid: 1424 Orbit:      5 |T in BC(ns): -0.165 (0 , 29)
+[2241:SimReader]: Collision 30 TIME BCid: 2008 Orbit:      5 |T in BC(ns): 0.004 (0 , 30)
+[2241:SimReader]: Collision 31 TIME BCid: 2178 Orbit:      5 |T in BC(ns): -0.070 (0 , 31)
+[2241:SimReader]: Collision 32 TIME BCid:  438 Orbit:      6 |T in BC(ns): -0.054 (0 , 32)
+[2241:SimReader]: Collision 33 TIME BCid: 1154 Orbit:      6 |T in BC(ns): -0.074 (0 , 33)
+[2241:SimReader]: Collision 34 TIME BCid: 1536 Orbit:      6 |T in BC(ns): -0.176 (0 , 34)
+[2241:SimReader]: Collision 35 TIME BCid: 1554 Orbit:      6 |T in BC(ns): -0.123 (0 , 35)
+[2241:SimReader]: Collision 36 TIME BCid: 1734 Orbit:      6 |T in BC(ns): 0.220 (0 , 36)
+[2241:SimReader]: Collision 37 TIME BCid: 1740 Orbit:      6 |T in BC(ns): -0.046 (0 , 37)
+[2241:SimReader]: Collision 38 TIME BCid: 1758 Orbit:      6 |T in BC(ns): 0.156 (0 , 38)
+[2241:SimReader]: Collision 39 TIME BCid: 2190 Orbit:      6 |T in BC(ns): -0.070 (0 , 39)
+[2241:SimReader]: Collision 40 TIME BCid: 1994 Orbit:      7 |T in BC(ns): -0.268 (0 , 40)
+[2241:SimReader]: Collision 41 TIME BCid: 2122 Orbit:      7 |T in BC(ns): 0.030 (0 , 41)
+[2241:SimReader]: Collision 42 TIME BCid: 2130 Orbit:      7 |T in BC(ns): -0.037 (0 , 42)
+[2241:SimReader]: Collision 43 TIME BCid:   74 Orbit:      8 |T in BC(ns): 0.005 (0 , 43)
+[2241:SimReader]: Collision 44 TIME BCid:  254 Orbit:      8 |T in BC(ns): 0.035 (0 , 44)
+[2241:SimReader]: Collision 45 TIME BCid:  266 Orbit:      8 |T in BC(ns): -0.164 (0 , 45)
+[2241:SimReader]: Collision 46 TIME BCid:  438 Orbit:      8 |T in BC(ns): 0.009 (0 , 46)
+[2241:SimReader]: Collision 47 TIME BCid: 1974 Orbit:      8 |T in BC(ns): -0.305 (0 , 47)
+[2241:SimReader]: Collision 48 TIME BCid: 2146 Orbit:      8 |T in BC(ns): -0.119 (0 , 48)
+[2241:SimReader]: Collision 49 TIME BCid:  444 Orbit:      9 |T in BC(ns): 0.388 (0 , 49)
+[2241:SimReader]: Collision 50 TIME BCid:  612 Orbit:      9 |T in BC(ns): -0.317 (0 , 50)
+[2241:SimReader]: Collision 51 TIME BCid: 1756 Orbit:      9 |T in BC(ns): 0.102 (0 , 51)
+[2241:SimReader]: Collision 52 TIME BCid: 2132 Orbit:      9 |T in BC(ns): 0.019 (0 , 52)
+[2241:SimReader]: Collision 53 TIME BCid:  278 Orbit:     10 |T in BC(ns): 0.034 (0 , 53)
+[2241:SimReader]: Collision 54 TIME BCid:  786 Orbit:     10 |T in BC(ns): -0.062 (0 , 54)
+[2241:SimReader]: Collision 55 TIME BCid: 1172 Orbit:     10 |T in BC(ns): -0.042 (0 , 55)
+[2241:SimReader]: Collision 56 TIME BCid: 1200 Orbit:     10 |T in BC(ns): -0.006 (0 , 56)
+[2241:SimReader]: Collision 57 TIME BCid: 1386 Orbit:     10 |T in BC(ns): 0.133 (0 , 57)
+[2241:SimReader]: Collision 58 TIME BCid: 1578 Orbit:     10 |T in BC(ns): -0.008 (0 , 58)
+[2241:SimReader]: Collision 59 TIME BCid: 1630 Orbit:     10 |T in BC(ns): -0.247 (0 , 59)
+[2241:SimReader]: Collision 60 TIME BCid:  276 Orbit:     11 |T in BC(ns): -0.216 (0 , 60)
+[2241:SimReader]: Collision 61 TIME BCid:  804 Orbit:     11 |T in BC(ns): -0.011 (0 , 61)
+[2241:SimReader]: Collision 62 TIME BCid: 1162 Orbit:     11 |T in BC(ns): -0.292 (0 , 62)
+[2241:SimReader]: Collision 63 TIME BCid: 1388 Orbit:     11 |T in BC(ns): -0.445 (0 , 63)
+[2241:SimReader]: Collision 64 TIME BCid: 1590 Orbit:     11 |T in BC(ns): 0.039 (0 , 64)
+[2241:SimReader]: Collision 65 TIME BCid:   32 Orbit:     12 |T in BC(ns): -0.021 (0 , 65)
+[2241:SimReader]: Collision 66 TIME BCid: 1368 Orbit:     12 |T in BC(ns): 0.196 (0 , 66)
+[2241:SimReader]: Collision 67 TIME BCid: 1790 Orbit:     12 |T in BC(ns): 0.404 (0 , 67)
+[2241:SimReader]: Collision 68 TIME BCid: 2116 Orbit:     12 |T in BC(ns): 0.175 (0 , 68)
+[2241:SimReader]: Collision 69 TIME BCid:  446 Orbit:     13 |T in BC(ns): -0.145 (0 , 69)
+[2241:SimReader]: Collision 70 TIME BCid:   76 Orbit:     14 |T in BC(ns): 0.195 (0 , 70)
+[2241:SimReader]: Collision 71 TIME BCid:  424 Orbit:     14 |T in BC(ns): 0.056 (0 , 71)
+[2241:SimReader]: Collision 72 TIME BCid: 1770 Orbit:     14 |T in BC(ns): 0.037 (0 , 72)
+[2241:SimReader]: Collision 73 TIME BCid: 1932 Orbit:     14 |T in BC(ns): -0.132 (0 , 73)
+[2241:SimReader]: Collision 74 TIME BCid:  230 Orbit:     15 |T in BC(ns): -0.137 (0 , 74)
+[2241:SimReader]: Collision 75 TIME BCid:  448 Orbit:     15 |T in BC(ns): 0.174 (0 , 75)
+[2241:SimReader]: Collision 76 TIME BCid: 1190 Orbit:     15 |T in BC(ns): -0.135 (0 , 76)
+[2241:SimReader]: Collision 77 TIME BCid: 1192 Orbit:     15 |T in BC(ns): -0.150 (0 , 77)
+[2241:SimReader]: Collision 78 TIME BCid: 1344 Orbit:     15 |T in BC(ns): -0.175 (0 , 78)
+[2241:SimReader]: Collision 79 TIME BCid: 1536 Orbit:     15 |T in BC(ns): -0.153 (0 , 79)
+[2241:SimReader]: [07:35:44][INFO] Initializing Spec ... have 80 times 
+[2241:SimReader]: [07:35:44][INFO] Serializing Context for later reuse
+[2242:ITSDigitizer]: [07:35:44][INFO] Loading ITS L2G matrices from TGeo
+[2241:SimReader]: [07:35:44][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[2241:SimReader]: [07:35:44][STATE] INITIALIZED ---> BINDING
+[2241:SimReader]: [07:35:44][STATE] BINDING ---> BOUND
+[2241:SimReader]: [07:35:44][STATE] BOUND ---> CONNECTING
+[2241:SimReader]: [07:35:44][STATE] CONNECTING ---> DEVICE READY
+[2241:SimReader]: [07:35:44][STATE] DEVICE READY ---> INITIALIZING TASK
+[2241:SimReader]: [07:35:44][STATE] INITIALIZING TASK ---> READY
+[2241:SimReader]: [07:35:44][STATE] READY ---> RUNNING
+[2241:SimReader]: [07:35:44][INFO] DEVICE: Running...
+[2241:SimReader]: [07:35:44][INFO] SENDING SOMETHING TO OTHERS
+[2242:ITSDigitizer]: Alpide response object of 40500 matrices to map chagre in xyz to 5x5 pixels
+[2242:ITSDigitizer]: X(col) range: +0.000000e+00 : +1.462000e-03 | step: 5.000000e-05 | Nbins: 30
+[2242:ITSDigitizer]: Y(row) range: +0.000000e+00 : +1.344000e-03 | step: 5.000000e-05 | Nbins: 27
+[2242:ITSDigitizer]: Z(dpt) range: -2.000000e-03 : +2.500000e-03 | step: 8.999999e-05 | Nbins: 50
+[2242:ITSDigitizer]: Alpide digitization params:
+[2242:ITSDigitizer]: Continuous readout             : ON
+[2242:ITSDigitizer]: Readout Frame Length(ns)       : 9880.510742
+[2242:ITSDigitizer]: Strobe delay (ns)              : 99.803139
+[2242:ITSDigitizer]: Strobe length (ns)             : 9780.708008
+[2242:ITSDigitizer]: Threshold (N electrons)        : 150
+[2242:ITSDigitizer]: Min N electrons to accoint     : 15
+[2242:ITSDigitizer]: Number of charge sharing steps : 7
+[2242:ITSDigitizer]: ELoss to N electrons factor    : 2.777778e+08
+[2242:ITSDigitizer]: Noise level per pixel          : 1.000000e-07
+[2242:ITSDigitizer]: Charge time-response:
+[2242:ITSDigitizer]: o2::itsmft::AlpideSignalTrapezoid | Duration: 7500.0 MaxRiseTime: 1100.0 (RiseTime=0 at q=450.0) (ns)
+[2242:ITSDigitizer]: [07:35:46][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[2242:ITSDigitizer]: [07:35:46][STATE] INITIALIZED ---> BINDING
+[2242:ITSDigitizer]: [07:35:46][STATE] BINDING ---> BOUND
+[2242:ITSDigitizer]: [07:35:46][STATE] BOUND ---> CONNECTING
+[2242:ITSDigitizer]: [07:35:46][STATE] CONNECTING ---> DEVICE READY
+[2242:ITSDigitizer]: [07:35:46][STATE] DEVICE READY ---> INITIALIZING TASK
+[2242:ITSDigitizer]: [07:35:46][STATE] INITIALIZING TASK ---> READY
+[2242:ITSDigitizer]: [07:35:46][STATE] READY ---> RUNNING
+[2242:ITSDigitizer]: [07:35:46][INFO] DEVICE: Running...
+[2242:ITSDigitizer]: [07:35:46][INFO] GOT 80 COLLISSION TIMES
+[2242:ITSDigitizer]: [07:35:46][INFO] SIMCHAINS 1
+[2242:ITSDigitizer]: [07:35:46][INFO]  CALLING ITS DIGITIZATION 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 1 from source 0 at time BCid:   44 Orbit:      1 |T in BC(ns): -0.071 ROFrame= 9) cont.mode: 1 Min/Max ROFrames 0/8
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 0:8
+[2242:ITSDigitizer]: ROF: 0 | 1283 entries starting from 0
+[2242:ITSDigitizer]: BCid:    0 Orbit:      0
+[2242:ITSDigitizer]: ROF: 1 | 1267 entries starting from 1283
+[2242:ITSDigitizer]: BCid:  396 Orbit:      0
+[2242:ITSDigitizer]: ROF: 2 | 1323 entries starting from 2550
+[2242:ITSDigitizer]: BCid:  792 Orbit:      0
+[2242:ITSDigitizer]: ROF: 3 | 1229 entries starting from 3873
+[2242:ITSDigitizer]: BCid: 1188 Orbit:      0
+[2242:ITSDigitizer]: ROF: 4 | 1245 entries starting from 5102
+[2242:ITSDigitizer]: BCid: 1584 Orbit:      0
+[2242:ITSDigitizer]: ROF: 5 | 1248 entries starting from 6347
+[2242:ITSDigitizer]: BCid: 1980 Orbit:      0
+[2242:ITSDigitizer]: ROF: 6 | 1259 entries starting from 7595
+[2242:ITSDigitizer]: BCid: 2376 Orbit:      0
+[2242:ITSDigitizer]: ROF: 7 | 1258 entries starting from 8854
+[2242:ITSDigitizer]: BCid: 2772 Orbit:      0
+[2242:ITSDigitizer]: ROF: 8 | 1247 entries starting from 10112
+[2242:ITSDigitizer]: BCid: 3168 Orbit:      0
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 11359 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 2 from source 0 at time BCid:  784 Orbit:      1 |T in BC(ns): 0.197 ROFrame= 10) cont.mode: 1 Min/Max ROFrames 9/9
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 9:9
+[2242:ITSDigitizer]: ROF: 9 | 2031 entries starting from 11359
+[2242:ITSDigitizer]: BCid:    0 Orbit:      1
+[2242:ITSDigitizer]: MCEventID: 1 ROFs: 9-9 Entry in ROFRecords: 9
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 2031 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 3 from source 0 at time BCid: 1400 Orbit:      1 |T in BC(ns): 0.152 ROFrame= 12) cont.mode: 1 Min/Max ROFrames 10/11
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 10:11
+[2242:ITSDigitizer]: ROF: 10 | 1503 entries starting from 13390
+[2242:ITSDigitizer]: BCid:  396 Orbit:      1
+[2242:ITSDigitizer]: MCEventID: 2 ROFs: 10-11 Entry in ROFRecords: 10
+[2242:ITSDigitizer]: ROF: 11 | 1549 entries starting from 14893
+[2242:ITSDigitizer]: BCid:  792 Orbit:      1
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 3052 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 4 from source 0 at time BCid: 1958 Orbit:      1 |T in BC(ns): 0.435 ROFrame= 13) cont.mode: 1 Min/Max ROFrames 12/13
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 12:12
+[2242:ITSDigitizer]: ROF: 12 | 1366 entries starting from 16442
+[2242:ITSDigitizer]: BCid: 1188 Orbit:      1
+[2242:ITSDigitizer]: MCEventID: 3 ROFs: 12-13 Entry in ROFRecords: 12
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 1366 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 5 from source 0 at time BCid: 2006 Orbit:      1 |T in BC(ns): -0.147 ROFrame= 14) cont.mode: 1 Min/Max ROFrames 13/14
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 13:13
+[2242:ITSDigitizer]: ROF: 13 | 1454 entries starting from 17808
+[2242:ITSDigitizer]: BCid: 1584 Orbit:      1
+[2242:ITSDigitizer]: MCEventID: 4 ROFs: 13-14 Entry in ROFRecords: 13
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 1454 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 6 from source 0 at time BCid: 2154 Orbit:      1 |T in BC(ns): 0.050 ROFrame= 14) cont.mode: 1 Min/Max ROFrames 14/14
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 7 from source 0 at time BCid:    4 Orbit:      2 |T in BC(ns): 0.235 ROFrame= 18) cont.mode: 1 Min/Max ROFrames 14/17
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 14:17
+[2242:ITSDigitizer]: ROF: 14 | 1646 entries starting from 19262
+[2242:ITSDigitizer]: BCid: 1980 Orbit:      1
+[2242:ITSDigitizer]: MCEventID: 5 ROFs: 14-14 Entry in ROFRecords: 14
+[2242:ITSDigitizer]: MCEventID: 6 ROFs: 14-15 Entry in ROFRecords: 14
+[2242:ITSDigitizer]: ROF: 15 | 1251 entries starting from 20908
+[2242:ITSDigitizer]: BCid: 2376 Orbit:      1
+[2242:ITSDigitizer]: ROF: 16 | 1288 entries starting from 22159
+[2242:ITSDigitizer]: BCid: 2772 Orbit:      1
+[2242:ITSDigitizer]: ROF: 17 | 1273 entries starting from 23447
+[2242:ITSDigitizer]: BCid: 3168 Orbit:      1
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 5458 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 8 from source 0 at time BCid:   22 Orbit:      2 |T in BC(ns): 0.023 ROFrame= 18) cont.mode: 1 Min/Max ROFrames 18/18
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 9 from source 0 at time BCid:  208 Orbit:      2 |T in BC(ns): 0.026 ROFrame= 18) cont.mode: 1 Min/Max ROFrames 18/18
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 10 from source 0 at time BCid:  274 Orbit:      2 |T in BC(ns): 0.107 ROFrame= 18) cont.mode: 1 Min/Max ROFrames 18/19
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 11 from source 0 at time BCid:  280 Orbit:      2 |T in BC(ns): 0.045 ROFrame= 18) cont.mode: 1 Min/Max ROFrames 18/19
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 12 from source 0 at time BCid:  432 Orbit:      2 |T in BC(ns): -0.009 ROFrame= 19) cont.mode: 1 Min/Max ROFrames 18/19
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 18:18
+[2242:ITSDigitizer]: ROF: 18 | 8552 entries starting from 24720
+[2242:ITSDigitizer]: BCid:    0 Orbit:      2
+[2242:ITSDigitizer]: MCEventID: 7 ROFs: 18-18 Entry in ROFRecords: 18
+[2242:ITSDigitizer]: MCEventID: 8 ROFs: 18-18 Entry in ROFRecords: 18
+[2242:ITSDigitizer]: MCEventID: 9 ROFs: 18-19 Entry in ROFRecords: 18
+[2242:ITSDigitizer]: MCEventID: 10 ROFs: 18-19 Entry in ROFRecords: 18
+[2242:ITSDigitizer]: MCEventID: 11 ROFs: 18-19 Entry in ROFRecords: 18
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 8552 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 13 from source 0 at time BCid:  588 Orbit:      2 |T in BC(ns): 0.005 ROFrame= 19) cont.mode: 1 Min/Max ROFrames 19/19
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 15 from source 0 at time BCid: 1170 Orbit:      2 |T in BC(ns): 0.048 ROFrame= 20) cont.mode: 1 Min/Max ROFrames 19/20
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 19:19
+[2242:ITSDigitizer]: ROF: 19 | 9617 entries starting from 33272
+[2242:ITSDigitizer]: BCid:  396 Orbit:      2
+[2242:ITSDigitizer]: MCEventID: 12 ROFs: 19-19 Entry in ROFRecords: 19
+[2242:ITSDigitizer]: MCEventID: 13 ROFs: 19-20 Entry in ROFRecords: 19
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 9617 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 16 from source 0 at time BCid: 1210 Orbit:      2 |T in BC(ns): 0.430 ROFrame= 21) cont.mode: 1 Min/Max ROFrames 20/21
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 20:20
+[2242:ITSDigitizer]: ROF: 20 | 4517 entries starting from 42889
+[2242:ITSDigitizer]: BCid:  792 Orbit:      2
+[2242:ITSDigitizer]: MCEventID: 15 ROFs: 20-21 Entry in ROFRecords: 20
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 4517 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 17 from source 0 at time BCid: 1410 Orbit:      2 |T in BC(ns): -0.201 ROFrame= 21) cont.mode: 1 Min/Max ROFrames 21/21
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 18 from source 0 at time BCid: 2168 Orbit:      2 |T in BC(ns): 0.093 ROFrame= 23) cont.mode: 1 Min/Max ROFrames 21/22
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 21:22
+[2242:ITSDigitizer]: ROF: 21 | 3313 entries starting from 47406
+[2242:ITSDigitizer]: BCid: 1188 Orbit:      2
+[2242:ITSDigitizer]: MCEventID: 16 ROFs: 21-21 Entry in ROFRecords: 21
+[2242:ITSDigitizer]: MCEventID: 17 ROFs: 21-22 Entry in ROFRecords: 21
+[2242:ITSDigitizer]: ROF: 22 | 1647 entries starting from 50719
+[2242:ITSDigitizer]: BCid: 1584 Orbit:      2
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 4960 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 19 from source 0 at time BCid:  196 Orbit:      3 |T in BC(ns): 0.143 ROFrame= 27) cont.mode: 1 Min/Max ROFrames 23/26
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 23:26
+[2242:ITSDigitizer]: ROF: 23 | 1753 entries starting from 52366
+[2242:ITSDigitizer]: BCid: 1980 Orbit:      2
+[2242:ITSDigitizer]: MCEventID: 18 ROFs: 23-24 Entry in ROFRecords: 23
+[2242:ITSDigitizer]: ROF: 24 | 1712 entries starting from 54119
+[2242:ITSDigitizer]: BCid: 2376 Orbit:      2
+[2242:ITSDigitizer]: ROF: 25 | 1281 entries starting from 55831
+[2242:ITSDigitizer]: BCid: 2772 Orbit:      2
+[2242:ITSDigitizer]: ROF: 26 | 1269 entries starting from 57112
+[2242:ITSDigitizer]: BCid: 3168 Orbit:      2
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 6015 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 20 from source 0 at time BCid: 1756 Orbit:      3 |T in BC(ns): 0.082 ROFrame= 31) cont.mode: 1 Min/Max ROFrames 27/30
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 27:30
+[2242:ITSDigitizer]: ROF: 27 | 1447 entries starting from 58381
+[2242:ITSDigitizer]: BCid:    0 Orbit:      3
+[2242:ITSDigitizer]: MCEventID: 19 ROFs: 27-28 Entry in ROFRecords: 27
+[2242:ITSDigitizer]: ROF: 28 | 1486 entries starting from 59828
+[2242:ITSDigitizer]: BCid:  396 Orbit:      3
+[2242:ITSDigitizer]: ROF: 29 | 1238 entries starting from 61314
+[2242:ITSDigitizer]: BCid:  792 Orbit:      3
+[2242:ITSDigitizer]: ROF: 30 | 1254 entries starting from 62552
+[2242:ITSDigitizer]: BCid: 1188 Orbit:      3
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 5425 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 21 from source 0 at time BCid:   86 Orbit:      4 |T in BC(ns): 0.077 ROFrame= 36) cont.mode: 1 Min/Max ROFrames 31/35
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 31:35
+[2242:ITSDigitizer]: ROF: 31 | 1461 entries starting from 63806
+[2242:ITSDigitizer]: BCid: 1584 Orbit:      3
+[2242:ITSDigitizer]: MCEventID: 20 ROFs: 31-32 Entry in ROFRecords: 31
+[2242:ITSDigitizer]: ROF: 32 | 1425 entries starting from 65267
+[2242:ITSDigitizer]: BCid: 1980 Orbit:      3
+[2242:ITSDigitizer]: ROF: 33 | 1280 entries starting from 66692
+[2242:ITSDigitizer]: BCid: 2376 Orbit:      3
+[2242:ITSDigitizer]: ROF: 34 | 1264 entries starting from 67972
+[2242:ITSDigitizer]: BCid: 2772 Orbit:      3
+[2242:ITSDigitizer]: ROF: 35 | 1249 entries starting from 69236
+[2242:ITSDigitizer]: BCid: 3168 Orbit:      3
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 6679 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 22 from source 0 at time BCid:  264 Orbit:      4 |T in BC(ns): 0.118 ROFrame= 36) cont.mode: 1 Min/Max ROFrames 36/37
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 23 from source 0 at time BCid:  618 Orbit:      4 |T in BC(ns): -0.456 ROFrame= 37) cont.mode: 1 Min/Max ROFrames 36/37
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 36:36
+[2242:ITSDigitizer]: ROF: 36 | 3716 entries starting from 70485
+[2242:ITSDigitizer]: BCid:    0 Orbit:      4
+[2242:ITSDigitizer]: MCEventID: 21 ROFs: 36-37 Entry in ROFRecords: 36
+[2242:ITSDigitizer]: MCEventID: 22 ROFs: 36-37 Entry in ROFRecords: 36
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 3716 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 24 from source 0 at time BCid:  820 Orbit:      4 |T in BC(ns): -0.233 ROFrame= 38) cont.mode: 1 Min/Max ROFrames 37/38
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 37:37
+[2242:ITSDigitizer]: ROF: 37 | 2821 entries starting from 74201
+[2242:ITSDigitizer]: BCid:  396 Orbit:      4
+[2242:ITSDigitizer]: MCEventID: 23 ROFs: 37-38 Entry in ROFRecords: 37
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 2821 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 25 from source 0 at time BCid:  998 Orbit:      4 |T in BC(ns): 0.137 ROFrame= 38) cont.mode: 1 Min/Max ROFrames 38/39
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 26 from source 0 at time BCid: 1038 Orbit:      4 |T in BC(ns): -0.068 ROFrame= 38) cont.mode: 1 Min/Max ROFrames 38/39
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 27 from source 0 at time BCid: 1998 Orbit:      4 |T in BC(ns): 0.058 ROFrame= 41) cont.mode: 1 Min/Max ROFrames 38/40
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 38:40
+[2242:ITSDigitizer]: ROF: 38 | 6310 entries starting from 77022
+[2242:ITSDigitizer]: BCid:  792 Orbit:      4
+[2242:ITSDigitizer]: MCEventID: 24 ROFs: 38-39 Entry in ROFRecords: 38
+[2242:ITSDigitizer]: MCEventID: 25 ROFs: 38-39 Entry in ROFRecords: 38
+[2242:ITSDigitizer]: MCEventID: 26 ROFs: 38-39 Entry in ROFRecords: 38
+[2242:ITSDigitizer]: ROF: 39 | 2817 entries starting from 83332
+[2242:ITSDigitizer]: BCid: 1188 Orbit:      4
+[2242:ITSDigitizer]: ROF: 40 | 1240 entries starting from 86149
+[2242:ITSDigitizer]: BCid: 1584 Orbit:      4
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 10367 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 28 from source 0 at time BCid:  612 Orbit:      5 |T in BC(ns): 0.074 ROFrame= 46) cont.mode: 1 Min/Max ROFrames 41/45
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 41:45
+[2242:ITSDigitizer]: ROF: 41 | 1635 entries starting from 87389
+[2242:ITSDigitizer]: BCid: 1980 Orbit:      4
+[2242:ITSDigitizer]: MCEventID: 27 ROFs: 41-41 Entry in ROFRecords: 41
+[2242:ITSDigitizer]: ROF: 42 | 1282 entries starting from 89024
+[2242:ITSDigitizer]: BCid: 2376 Orbit:      4
+[2242:ITSDigitizer]: ROF: 43 | 1290 entries starting from 90306
+[2242:ITSDigitizer]: BCid: 2772 Orbit:      4
+[2242:ITSDigitizer]: ROF: 44 | 1284 entries starting from 91596
+[2242:ITSDigitizer]: BCid: 3168 Orbit:      4
+[2242:ITSDigitizer]: ROF: 45 | 1308 entries starting from 92880
+[2242:ITSDigitizer]: BCid:    0 Orbit:      5
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 6799 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 29 from source 0 at time BCid: 1424 Orbit:      5 |T in BC(ns): -0.165 ROFrame= 48) cont.mode: 1 Min/Max ROFrames 46/47
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 46:47
+[2242:ITSDigitizer]: ROF: 46 | 4202 entries starting from 94188
+[2242:ITSDigitizer]: BCid:  396 Orbit:      5
+[2242:ITSDigitizer]: MCEventID: 28 ROFs: 46-47 Entry in ROFRecords: 46
+[2242:ITSDigitizer]: ROF: 47 | 4268 entries starting from 98390
+[2242:ITSDigitizer]: BCid:  792 Orbit:      5
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 8470 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 30 from source 0 at time BCid: 2008 Orbit:      5 |T in BC(ns): 0.004 ROFrame= 50) cont.mode: 1 Min/Max ROFrames 48/49
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 48:49
+[2242:ITSDigitizer]: ROF: 48 | 1564 entries starting from 102658
+[2242:ITSDigitizer]: BCid: 1188 Orbit:      5
+[2242:ITSDigitizer]: MCEventID: 29 ROFs: 48-49 Entry in ROFRecords: 48
+[2242:ITSDigitizer]: ROF: 49 | 1659 entries starting from 104222
+[2242:ITSDigitizer]: BCid: 1584 Orbit:      5
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 3223 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 31 from source 0 at time BCid: 2178 Orbit:      5 |T in BC(ns): -0.070 ROFrame= 50) cont.mode: 1 Min/Max ROFrames 50/50
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 32 from source 0 at time BCid:  438 Orbit:      6 |T in BC(ns): -0.054 ROFrame= 55) cont.mode: 1 Min/Max ROFrames 50/54
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 50:54
+[2242:ITSDigitizer]: ROF: 50 | 1849 entries starting from 105881
+[2242:ITSDigitizer]: BCid: 1980 Orbit:      5
+[2242:ITSDigitizer]: MCEventID: 30 ROFs: 50-50 Entry in ROFRecords: 50
+[2242:ITSDigitizer]: MCEventID: 31 ROFs: 50-51 Entry in ROFRecords: 50
+[2242:ITSDigitizer]: ROF: 51 | 1668 entries starting from 107730
+[2242:ITSDigitizer]: BCid: 2376 Orbit:      5
+[2242:ITSDigitizer]: ROF: 52 | 1288 entries starting from 109398
+[2242:ITSDigitizer]: BCid: 2772 Orbit:      5
+[2242:ITSDigitizer]: ROF: 53 | 1231 entries starting from 110686
+[2242:ITSDigitizer]: BCid: 3168 Orbit:      5
+[2242:ITSDigitizer]: ROF: 54 | 1329 entries starting from 111917
+[2242:ITSDigitizer]: BCid:    0 Orbit:      6
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 7365 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 33 from source 0 at time BCid: 1154 Orbit:      6 |T in BC(ns): -0.074 ROFrame= 56) cont.mode: 1 Min/Max ROFrames 55/56
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 55:55
+[2242:ITSDigitizer]: ROF: 55 | 2791 entries starting from 113246
+[2242:ITSDigitizer]: BCid:  396 Orbit:      6
+[2242:ITSDigitizer]: MCEventID: 32 ROFs: 55-56 Entry in ROFRecords: 55
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 2791 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 34 from source 0 at time BCid: 1536 Orbit:      6 |T in BC(ns): -0.176 ROFrame= 57) cont.mode: 1 Min/Max ROFrames 56/57
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 56:56
+[2242:ITSDigitizer]: ROF: 56 | 1556 entries starting from 116037
+[2242:ITSDigitizer]: BCid:  792 Orbit:      6
+[2242:ITSDigitizer]: MCEventID: 33 ROFs: 56-57 Entry in ROFRecords: 56
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 1556 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 35 from source 0 at time BCid: 1554 Orbit:      6 |T in BC(ns): -0.123 ROFrame= 57) cont.mode: 1 Min/Max ROFrames 57/58
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 36 from source 0 at time BCid: 1734 Orbit:      6 |T in BC(ns): 0.220 ROFrame= 58) cont.mode: 1 Min/Max ROFrames 57/58
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 57:57
+[2242:ITSDigitizer]: ROF: 57 | 2675 entries starting from 117593
+[2242:ITSDigitizer]: BCid: 1188 Orbit:      6
+[2242:ITSDigitizer]: MCEventID: 34 ROFs: 57-58 Entry in ROFRecords: 57
+[2242:ITSDigitizer]: MCEventID: 35 ROFs: 57-58 Entry in ROFRecords: 57
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 2675 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 37 from source 0 at time BCid: 1740 Orbit:      6 |T in BC(ns): -0.046 ROFrame= 58) cont.mode: 1 Min/Max ROFrames 58/59
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 38 from source 0 at time BCid: 1758 Orbit:      6 |T in BC(ns): 0.156 ROFrame= 58) cont.mode: 1 Min/Max ROFrames 58/59
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 39 from source 0 at time BCid: 2190 Orbit:      6 |T in BC(ns): -0.070 ROFrame= 59) cont.mode: 1 Min/Max ROFrames 58/59
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 58:58
+[2242:ITSDigitizer]: ROF: 58 | 5347 entries starting from 120268
+[2242:ITSDigitizer]: BCid: 1584 Orbit:      6
+[2242:ITSDigitizer]: MCEventID: 36 ROFs: 58-59 Entry in ROFRecords: 58
+[2242:ITSDigitizer]: MCEventID: 37 ROFs: 58-59 Entry in ROFRecords: 58
+[2242:ITSDigitizer]: MCEventID: 38 ROFs: 58-59 Entry in ROFRecords: 58
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 5347 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 40 from source 0 at time BCid: 1994 Orbit:      7 |T in BC(ns): -0.268 ROFrame= 68) cont.mode: 1 Min/Max ROFrames 59/67
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 59:67
+[2242:ITSDigitizer]: ROF: 59 | 4563 entries starting from 125615
+[2242:ITSDigitizer]: BCid: 1980 Orbit:      6
+[2242:ITSDigitizer]: MCEventID: 39 ROFs: 59-60 Entry in ROFRecords: 59
+[2242:ITSDigitizer]: ROF: 60 | 1609 entries starting from 130178
+[2242:ITSDigitizer]: BCid: 2376 Orbit:      6
+[2242:ITSDigitizer]: ROF: 61 | 1229 entries starting from 131787
+[2242:ITSDigitizer]: BCid: 2772 Orbit:      6
+[2242:ITSDigitizer]: ROF: 62 | 1270 entries starting from 133016
+[2242:ITSDigitizer]: BCid: 3168 Orbit:      6
+[2242:ITSDigitizer]: ROF: 63 | 1299 entries starting from 134286
+[2242:ITSDigitizer]: BCid:    0 Orbit:      7
+[2242:ITSDigitizer]: ROF: 64 | 1248 entries starting from 135585
+[2242:ITSDigitizer]: BCid:  396 Orbit:      7
+[2242:ITSDigitizer]: ROF: 65 | 1330 entries starting from 136833
+[2242:ITSDigitizer]: BCid:  792 Orbit:      7
+[2242:ITSDigitizer]: ROF: 66 | 1312 entries starting from 138163
+[2242:ITSDigitizer]: BCid: 1188 Orbit:      7
+[2242:ITSDigitizer]: ROF: 67 | 1289 entries starting from 139475
+[2242:ITSDigitizer]: BCid: 1584 Orbit:      7
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 15149 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 41 from source 0 at time BCid: 2122 Orbit:      7 |T in BC(ns): 0.030 ROFrame= 68) cont.mode: 1 Min/Max ROFrames 68/68
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 42 from source 0 at time BCid: 2130 Orbit:      7 |T in BC(ns): -0.037 ROFrame= 68) cont.mode: 1 Min/Max ROFrames 68/69
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 43 from source 0 at time BCid:   74 Orbit:      8 |T in BC(ns): 0.005 ROFrame= 72) cont.mode: 1 Min/Max ROFrames 68/71
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 68:71
+[2242:ITSDigitizer]: ROF: 68 | 4178 entries starting from 140764
+[2242:ITSDigitizer]: BCid: 1980 Orbit:      7
+[2242:ITSDigitizer]: MCEventID: 40 ROFs: 68-68 Entry in ROFRecords: 68
+[2242:ITSDigitizer]: MCEventID: 41 ROFs: 68-69 Entry in ROFRecords: 68
+[2242:ITSDigitizer]: MCEventID: 42 ROFs: 68-69 Entry in ROFRecords: 68
+[2242:ITSDigitizer]: ROF: 69 | 3673 entries starting from 144942
+[2242:ITSDigitizer]: BCid: 2376 Orbit:      7
+[2242:ITSDigitizer]: ROF: 70 | 1245 entries starting from 148615
+[2242:ITSDigitizer]: BCid: 2772 Orbit:      7
+[2242:ITSDigitizer]: ROF: 71 | 1272 entries starting from 149860
+[2242:ITSDigitizer]: BCid: 3168 Orbit:      7
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 10368 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 45 from source 0 at time BCid:  266 Orbit:      8 |T in BC(ns): -0.164 ROFrame= 72) cont.mode: 1 Min/Max ROFrames 72/72
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 46 from source 0 at time BCid:  438 Orbit:      8 |T in BC(ns): 0.009 ROFrame= 73) cont.mode: 1 Min/Max ROFrames 72/73
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 72:72
+[2242:ITSDigitizer]: ROF: 72 | 3658 entries starting from 151132
+[2242:ITSDigitizer]: BCid:    0 Orbit:      8
+[2242:ITSDigitizer]: MCEventID: 43 ROFs: 72-72 Entry in ROFRecords: 72
+[2242:ITSDigitizer]: MCEventID: 45 ROFs: 72-73 Entry in ROFRecords: 72
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 3658 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 47 from source 0 at time BCid: 1974 Orbit:      8 |T in BC(ns): -0.305 ROFrame= 76) cont.mode: 1 Min/Max ROFrames 73/75
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 73:75
+[2242:ITSDigitizer]: ROF: 73 | 2660 entries starting from 154790
+[2242:ITSDigitizer]: BCid:  396 Orbit:      8
+[2242:ITSDigitizer]: MCEventID: 46 ROFs: 73-73 Entry in ROFRecords: 73
+[2242:ITSDigitizer]: ROF: 74 | 1281 entries starting from 157450
+[2242:ITSDigitizer]: BCid:  792 Orbit:      8
+[2242:ITSDigitizer]: ROF: 75 | 1268 entries starting from 158731
+[2242:ITSDigitizer]: BCid: 1188 Orbit:      8
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 5209 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 48 from source 0 at time BCid: 2146 Orbit:      8 |T in BC(ns): -0.119 ROFrame= 77) cont.mode: 1 Min/Max ROFrames 76/77
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 76:76
+[2242:ITSDigitizer]: ROF: 76 | 2054 entries starting from 159999
+[2242:ITSDigitizer]: BCid: 1584 Orbit:      8
+[2242:ITSDigitizer]: MCEventID: 47 ROFs: 76-77 Entry in ROFRecords: 76
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 2054 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 49 from source 0 at time BCid:  444 Orbit:      9 |T in BC(ns): 0.388 ROFrame= 82) cont.mode: 1 Min/Max ROFrames 77/81
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 77:81
+[2242:ITSDigitizer]: ROF: 77 | 3785 entries starting from 162053
+[2242:ITSDigitizer]: BCid: 1980 Orbit:      8
+[2242:ITSDigitizer]: MCEventID: 48 ROFs: 77-78 Entry in ROFRecords: 77
+[2242:ITSDigitizer]: ROF: 78 | 2845 entries starting from 165838
+[2242:ITSDigitizer]: BCid: 2376 Orbit:      8
+[2242:ITSDigitizer]: ROF: 79 | 1233 entries starting from 168683
+[2242:ITSDigitizer]: BCid: 2772 Orbit:      8
+[2242:ITSDigitizer]: ROF: 80 | 1192 entries starting from 169916
+[2242:ITSDigitizer]: BCid: 3168 Orbit:      8
+[2242:ITSDigitizer]: ROF: 81 | 1215 entries starting from 171108
+[2242:ITSDigitizer]: BCid:    0 Orbit:      9
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 10270 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 50 from source 0 at time BCid:  612 Orbit:      9 |T in BC(ns): -0.317 ROFrame= 82) cont.mode: 1 Min/Max ROFrames 82/82
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 51 from source 0 at time BCid: 1756 Orbit:      9 |T in BC(ns): 0.102 ROFrame= 85) cont.mode: 1 Min/Max ROFrames 82/84
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 82:84
+[2242:ITSDigitizer]: ROF: 82 | 1948 entries starting from 172323
+[2242:ITSDigitizer]: BCid:  396 Orbit:      9
+[2242:ITSDigitizer]: MCEventID: 49 ROFs: 82-82 Entry in ROFRecords: 82
+[2242:ITSDigitizer]: MCEventID: 50 ROFs: 82-83 Entry in ROFRecords: 82
+[2242:ITSDigitizer]: ROF: 83 | 1575 entries starting from 174271
+[2242:ITSDigitizer]: BCid:  792 Orbit:      9
+[2242:ITSDigitizer]: ROF: 84 | 1277 entries starting from 175846
+[2242:ITSDigitizer]: BCid: 1188 Orbit:      9
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 4800 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 52 from source 0 at time BCid: 2132 Orbit:      9 |T in BC(ns): 0.019 ROFrame= 86) cont.mode: 1 Min/Max ROFrames 85/86
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 85:85
+[2242:ITSDigitizer]: ROF: 85 | 1879 entries starting from 177123
+[2242:ITSDigitizer]: BCid: 1584 Orbit:      9
+[2242:ITSDigitizer]: MCEventID: 51 ROFs: 85-86 Entry in ROFRecords: 85
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 1879 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 53 from source 0 at time BCid:  278 Orbit:     10 |T in BC(ns): 0.034 ROFrame= 90) cont.mode: 1 Min/Max ROFrames 86/89
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 86:89
+[2242:ITSDigitizer]: ROF: 86 | 5931 entries starting from 179002
+[2242:ITSDigitizer]: BCid: 1980 Orbit:      9
+[2242:ITSDigitizer]: MCEventID: 52 ROFs: 86-87 Entry in ROFRecords: 86
+[2242:ITSDigitizer]: ROF: 87 | 5314 entries starting from 184933
+[2242:ITSDigitizer]: BCid: 2376 Orbit:      9
+[2242:ITSDigitizer]: ROF: 88 | 1291 entries starting from 190247
+[2242:ITSDigitizer]: BCid: 2772 Orbit:      9
+[2242:ITSDigitizer]: ROF: 89 | 1219 entries starting from 191538
+[2242:ITSDigitizer]: BCid: 3168 Orbit:      9
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 13755 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 54 from source 0 at time BCid:  786 Orbit:     10 |T in BC(ns): -0.062 ROFrame= 91) cont.mode: 1 Min/Max ROFrames 90/91
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 90:90
+[2242:ITSDigitizer]: ROF: 90 | 1851 entries starting from 192757
+[2242:ITSDigitizer]: BCid:    0 Orbit:     10
+[2242:ITSDigitizer]: MCEventID: 53 ROFs: 90-91 Entry in ROFRecords: 90
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 1851 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 55 from source 0 at time BCid: 1172 Orbit:     10 |T in BC(ns): -0.042 ROFrame= 92) cont.mode: 1 Min/Max ROFrames 91/92
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 91:91
+[2242:ITSDigitizer]: ROF: 91 | 4065 entries starting from 194608
+[2242:ITSDigitizer]: BCid:  396 Orbit:     10
+[2242:ITSDigitizer]: MCEventID: 54 ROFs: 91-92 Entry in ROFRecords: 91
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 4065 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 56 from source 0 at time BCid: 1200 Orbit:     10 |T in BC(ns): -0.006 ROFrame= 93) cont.mode: 1 Min/Max ROFrames 92/93
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 92:92
+[2242:ITSDigitizer]: ROF: 92 | 6985 entries starting from 198673
+[2242:ITSDigitizer]: BCid:  792 Orbit:     10
+[2242:ITSDigitizer]: MCEventID: 55 ROFs: 92-93 Entry in ROFRecords: 92
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 6985 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 57 from source 0 at time BCid: 1386 Orbit:     10 |T in BC(ns): 0.133 ROFrame= 93) cont.mode: 1 Min/Max ROFrames 93/93
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 58 from source 0 at time BCid: 1578 Orbit:     10 |T in BC(ns): -0.008 ROFrame= 93) cont.mode: 1 Min/Max ROFrames 93/94
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 60 from source 0 at time BCid:  276 Orbit:     11 |T in BC(ns): -0.216 ROFrame= 99) cont.mode: 1 Min/Max ROFrames 93/98
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 93:98
+[2242:ITSDigitizer]: ROF: 93 | 8588 entries starting from 205658
+[2242:ITSDigitizer]: BCid: 1188 Orbit:     10
+[2242:ITSDigitizer]: MCEventID: 56 ROFs: 93-93 Entry in ROFRecords: 93
+[2242:ITSDigitizer]: MCEventID: 57 ROFs: 93-94 Entry in ROFRecords: 93
+[2242:ITSDigitizer]: MCEventID: 58 ROFs: 93-94 Entry in ROFRecords: 93
+[2242:ITSDigitizer]: ROF: 94 | 4636 entries starting from 214246
+[2242:ITSDigitizer]: BCid: 1584 Orbit:     10
+[2242:ITSDigitizer]: ROF: 95 | 1240 entries starting from 218882
+[2242:ITSDigitizer]: BCid: 1980 Orbit:     10
+[2242:ITSDigitizer]: ROF: 96 | 1299 entries starting from 220122
+[2242:ITSDigitizer]: BCid: 2376 Orbit:     10
+[2242:ITSDigitizer]: ROF: 97 | 1262 entries starting from 221421
+[2242:ITSDigitizer]: BCid: 2772 Orbit:     10
+[2242:ITSDigitizer]: ROF: 98 | 1245 entries starting from 222683
+[2242:ITSDigitizer]: BCid: 3168 Orbit:     10
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 18270 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 61 from source 0 at time BCid:  804 Orbit:     11 |T in BC(ns): -0.011 ROFrame= 101) cont.mode: 1 Min/Max ROFrames 99/100
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 99:100
+[2242:ITSDigitizer]: ROF: 99 | 2231 entries starting from 223928
+[2242:ITSDigitizer]: BCid:    0 Orbit:     11
+[2242:ITSDigitizer]: MCEventID: 60 ROFs: 99-100 Entry in ROFRecords: 99
+[2242:ITSDigitizer]: ROF: 100 | 2316 entries starting from 226159
+[2242:ITSDigitizer]: BCid:  396 Orbit:     11
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 4547 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 62 from source 0 at time BCid: 1162 Orbit:     11 |T in BC(ns): -0.292 ROFrame= 101) cont.mode: 1 Min/Max ROFrames 101/101
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 63 from source 0 at time BCid: 1388 Orbit:     11 |T in BC(ns): -0.445 ROFrame= 102) cont.mode: 1 Min/Max ROFrames 101/102
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 101:101
+[2242:ITSDigitizer]: ROF: 101 | 4759 entries starting from 228475
+[2242:ITSDigitizer]: BCid:  792 Orbit:     11
+[2242:ITSDigitizer]: MCEventID: 61 ROFs: 101-101 Entry in ROFRecords: 101
+[2242:ITSDigitizer]: MCEventID: 62 ROFs: 101-102 Entry in ROFRecords: 101
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 4759 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 64 from source 0 at time BCid: 1590 Orbit:     11 |T in BC(ns): 0.039 ROFrame= 103) cont.mode: 1 Min/Max ROFrames 102/103
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 102:102
+[2242:ITSDigitizer]: ROF: 102 | 2097 entries starting from 233234
+[2242:ITSDigitizer]: BCid: 1188 Orbit:     11
+[2242:ITSDigitizer]: MCEventID: 63 ROFs: 102-103 Entry in ROFRecords: 102
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 2097 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 67 from source 0 at time BCid: 1790 Orbit:     12 |T in BC(ns): 0.404 ROFrame= 112) cont.mode: 1 Min/Max ROFrames 103/111
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 103:111
+[2242:ITSDigitizer]: ROF: 103 | 3020 entries starting from 235331
+[2242:ITSDigitizer]: BCid: 1584 Orbit:     11
+[2242:ITSDigitizer]: MCEventID: 64 ROFs: 103-103 Entry in ROFRecords: 103
+[2242:ITSDigitizer]: ROF: 104 | 1206 entries starting from 238351
+[2242:ITSDigitizer]: BCid: 1980 Orbit:     11
+[2242:ITSDigitizer]: ROF: 105 | 1196 entries starting from 239557
+[2242:ITSDigitizer]: BCid: 2376 Orbit:     11
+[2242:ITSDigitizer]: ROF: 106 | 1277 entries starting from 240753
+[2242:ITSDigitizer]: BCid: 2772 Orbit:     11
+[2242:ITSDigitizer]: ROF: 107 | 1262 entries starting from 242030
+[2242:ITSDigitizer]: BCid: 3168 Orbit:     11
+[2242:ITSDigitizer]: ROF: 108 | 1220 entries starting from 243292
+[2242:ITSDigitizer]: BCid:    0 Orbit:     12
+[2242:ITSDigitizer]: ROF: 109 | 1261 entries starting from 244512
+[2242:ITSDigitizer]: BCid:  396 Orbit:     12
+[2242:ITSDigitizer]: ROF: 110 | 1236 entries starting from 245773
+[2242:ITSDigitizer]: BCid:  792 Orbit:     12
+[2242:ITSDigitizer]: ROF: 111 | 1277 entries starting from 247009
+[2242:ITSDigitizer]: BCid: 1188 Orbit:     12
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 12955 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 68 from source 0 at time BCid: 2116 Orbit:     12 |T in BC(ns): 0.175 ROFrame= 113) cont.mode: 1 Min/Max ROFrames 112/113
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 112:112
+[2242:ITSDigitizer]: ROF: 112 | 2103 entries starting from 248286
+[2242:ITSDigitizer]: BCid: 1584 Orbit:     12
+[2242:ITSDigitizer]: MCEventID: 67 ROFs: 112-113 Entry in ROFRecords: 112
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 2103 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 70 from source 0 at time BCid:   76 Orbit:     14 |T in BC(ns): 0.195 ROFrame= 126) cont.mode: 1 Min/Max ROFrames 113/125
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 113:125
+[2242:ITSDigitizer]: ROF: 113 | 2468 entries starting from 250389
+[2242:ITSDigitizer]: BCid: 1980 Orbit:     12
+[2242:ITSDigitizer]: MCEventID: 68 ROFs: 113-114 Entry in ROFRecords: 113
+[2242:ITSDigitizer]: ROF: 114 | 1569 entries starting from 252857
+[2242:ITSDigitizer]: BCid: 2376 Orbit:     12
+[2242:ITSDigitizer]: ROF: 115 | 1269 entries starting from 254426
+[2242:ITSDigitizer]: BCid: 2772 Orbit:     12
+[2242:ITSDigitizer]: ROF: 116 | 1211 entries starting from 255695
+[2242:ITSDigitizer]: BCid: 3168 Orbit:     12
+[2242:ITSDigitizer]: ROF: 117 | 1251 entries starting from 256906
+[2242:ITSDigitizer]: BCid:    0 Orbit:     13
+[2242:ITSDigitizer]: ROF: 118 | 1260 entries starting from 258157
+[2242:ITSDigitizer]: BCid:  396 Orbit:     13
+[2242:ITSDigitizer]: ROF: 119 | 1277 entries starting from 259417
+[2242:ITSDigitizer]: BCid:  792 Orbit:     13
+[2242:ITSDigitizer]: ROF: 120 | 1302 entries starting from 260694
+[2242:ITSDigitizer]: BCid: 1188 Orbit:     13
+[2242:ITSDigitizer]: ROF: 121 | 1240 entries starting from 261996
+[2242:ITSDigitizer]: BCid: 1584 Orbit:     13
+[2242:ITSDigitizer]: ROF: 122 | 1228 entries starting from 263236
+[2242:ITSDigitizer]: BCid: 1980 Orbit:     13
+[2242:ITSDigitizer]: ROF: 123 | 1227 entries starting from 264464
+[2242:ITSDigitizer]: BCid: 2376 Orbit:     13
+[2242:ITSDigitizer]: ROF: 124 | 1303 entries starting from 265691
+[2242:ITSDigitizer]: BCid: 2772 Orbit:     13
+[2242:ITSDigitizer]: ROF: 125 | 1281 entries starting from 266994
+[2242:ITSDigitizer]: BCid: 3168 Orbit:     13
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 17886 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 72 from source 0 at time BCid: 1770 Orbit:     14 |T in BC(ns): 0.037 ROFrame= 130) cont.mode: 1 Min/Max ROFrames 126/129
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 126:129
+[2242:ITSDigitizer]: ROF: 126 | 1887 entries starting from 268275
+[2242:ITSDigitizer]: BCid:    0 Orbit:     14
+[2242:ITSDigitizer]: MCEventID: 70 ROFs: 126-126 Entry in ROFRecords: 126
+[2242:ITSDigitizer]: ROF: 127 | 1230 entries starting from 270162
+[2242:ITSDigitizer]: BCid:  396 Orbit:     14
+[2242:ITSDigitizer]: ROF: 128 | 1203 entries starting from 271392
+[2242:ITSDigitizer]: BCid:  792 Orbit:     14
+[2242:ITSDigitizer]: ROF: 129 | 1249 entries starting from 272595
+[2242:ITSDigitizer]: BCid: 1188 Orbit:     14
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 5569 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 74 from source 0 at time BCid:  230 Orbit:     15 |T in BC(ns): -0.137 ROFrame= 135) cont.mode: 1 Min/Max ROFrames 130/134
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 130:134
+[2242:ITSDigitizer]: ROF: 130 | 3807 entries starting from 273844
+[2242:ITSDigitizer]: BCid: 1584 Orbit:     14
+[2242:ITSDigitizer]: MCEventID: 72 ROFs: 130-131 Entry in ROFRecords: 130
+[2242:ITSDigitizer]: ROF: 131 | 3801 entries starting from 277651
+[2242:ITSDigitizer]: BCid: 1980 Orbit:     14
+[2242:ITSDigitizer]: ROF: 132 | 1241 entries starting from 281452
+[2242:ITSDigitizer]: BCid: 2376 Orbit:     14
+[2242:ITSDigitizer]: ROF: 133 | 1255 entries starting from 282693
+[2242:ITSDigitizer]: BCid: 2772 Orbit:     14
+[2242:ITSDigitizer]: ROF: 134 | 1324 entries starting from 283948
+[2242:ITSDigitizer]: BCid: 3168 Orbit:     14
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 11428 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 75 from source 0 at time BCid:  448 Orbit:     15 |T in BC(ns): 0.174 ROFrame= 136) cont.mode: 1 Min/Max ROFrames 135/136
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 135:135
+[2242:ITSDigitizer]: ROF: 135 | 1712 entries starting from 285272
+[2242:ITSDigitizer]: BCid:    0 Orbit:     15
+[2242:ITSDigitizer]: MCEventID: 74 ROFs: 135-136 Entry in ROFRecords: 135
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 1712 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 76 from source 0 at time BCid: 1190 Orbit:     15 |T in BC(ns): -0.135 ROFrame= 138) cont.mode: 1 Min/Max ROFrames 136/137
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 136:137
+[2242:ITSDigitizer]: ROF: 136 | 4466 entries starting from 286984
+[2242:ITSDigitizer]: BCid:  396 Orbit:     15
+[2242:ITSDigitizer]: MCEventID: 75 ROFs: 136-136 Entry in ROFRecords: 136
+[2242:ITSDigitizer]: ROF: 137 | 1234 entries starting from 291450
+[2242:ITSDigitizer]: BCid:  792 Orbit:     15
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 5700 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 77 from source 0 at time BCid: 1192 Orbit:     15 |T in BC(ns): -0.150 ROFrame= 138) cont.mode: 1 Min/Max ROFrames 138/138
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 78 from source 0 at time BCid: 1344 Orbit:     15 |T in BC(ns): -0.175 ROFrame= 138) cont.mode: 1 Min/Max ROFrames 138/138
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitizing ITS hits of entry 79 from source 0 at time BCid: 1536 Orbit:     15 |T in BC(ns): -0.153 ROFrame= 138) cont.mode: 1 Min/Max ROFrames 138/139
+[2242:ITSDigitizer]: [07:35:47][INFO] Filling ITS digits output for RO frames 138:139
+[2242:ITSDigitizer]: ROF: 138 | 5592 entries starting from 292684
+[2242:ITSDigitizer]: BCid: 1188 Orbit:     15
+[2242:ITSDigitizer]: MCEventID: 76 ROFs: 138-138 Entry in ROFRecords: 138
+[2242:ITSDigitizer]: MCEventID: 77 ROFs: 138-138 Entry in ROFRecords: 138
+[2242:ITSDigitizer]: MCEventID: 78 ROFs: 138-139 Entry in ROFRecords: 138
+[2242:ITSDigitizer]: MCEventID: 79 ROFs: 138-139 Entry in ROFRecords: 138
+[2242:ITSDigitizer]: ROF: 139 | 3648 entries starting from 298276
+[2242:ITSDigitizer]: BCid: 1584 Orbit:     15
+[2242:ITSDigitizer]: [07:35:47][INFO] Added 9240 digits 
+[2242:ITSDigitizer]: [07:35:47][INFO] ITS: Sending ROMode= 3 to GRPUpdater
+[2242:ITSDigitizer]: [07:35:47][INFO] Digitization took 0.74s
+[2244:ITSDigitWriter]: [07:35:47][INFO] WRITING 302592 LABELS 
+[2243:GRPUpdater]: [07:35:47][INFO] Updated GRP in o2sim_grp.root for detectors RO mode
+[2244:ITSDigitWriter]: [07:35:47][INFO] RECEIVED DIGITS SIZE 301924
+[2243:GRPUpdater]: Run: 1621488685
+[2243:GRPUpdater]: Fill:      0
+[2243:GRPUpdater]: Period: 
+[2243:GRPUpdater]: LHC State: 
+[2243:GRPUpdater]: Start: Thu May 20 07:31:28 2021
+[2243:GRPUpdater]: End  : Thu May 20 07:31:28 2021
+[2243:GRPUpdater]: Beam0: Z:A =   0:  0, Energy = 0.000
+[2243:GRPUpdater]: Beam1: Z:A =   0:  0, Energy = 0.000
+[2243:GRPUpdater]: sqrt[s]    = 0.000
+[2243:GRPUpdater]: crossing angle (radian) = 0.000000e+00
+[2243:GRPUpdater]: magnet currents (A) L3 = -30000.000, Dipole = -6000
+[2243:GRPUpdater]: Detectors: Cont.RO Triggers
+[2243:GRPUpdater]:       ITS:    +       -    
+[INFO] Quitting
+[INFO] QUIT_REQUESTED
+[2241:SimReader]: [07:35:47][INFO] Received device shutdown request (signal 15).
+[2241:SimReader]: [07:35:47][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[2241:SimReader]: [07:35:47][STATE] RUNNING ---> READY
+[2241:SimReader]: [07:35:47][STATE] READY ---> RESETTING TASK
+[2241:SimReader]: [07:35:47][STATE] RESETTING TASK ---> DEVICE READY
+[2241:SimReader]: [07:35:47][STATE] DEVICE READY ---> RESETTING DEVICE
+[2241:SimReader]: [07:35:47][STATE] RESETTING DEVICE ---> IDLE
+[2241:SimReader]: [07:35:47][STATE] IDLE ---> EXITING
+[2241:SimReader]: [07:35:47][STATE] Exiting FairMQ state machine
+[2240:internal-dpl-clock]: [07:35:47][INFO] Received device shutdown request (signal 15).
+[2240:internal-dpl-clock]: [07:35:47][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[2244:ITSDigitWriter]: [07:35:47][INFO] Received device shutdown request (signal 15).
+[2244:ITSDigitWriter]: [07:35:47][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[2242:ITSDigitizer]: [07:35:47][INFO] Received device shutdown request (signal 15).
+[2242:ITSDigitizer]: [07:35:47][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[2243:GRPUpdater]: [07:35:47][INFO] Received device shutdown request (signal 15).
+[2243:GRPUpdater]: [07:35:47][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[2243:GRPUpdater]: [07:35:48][STATE] RUNNING ---> READY
+[2242:ITSDigitizer]: [07:35:48][STATE] RUNNING ---> READY
+[2243:GRPUpdater]: [07:35:48][STATE] READY ---> RESETTING TASK
+[2243:GRPUpdater]: [07:35:48][STATE] RESETTING TASK ---> DEVICE READY
+[2243:GRPUpdater]: [07:35:48][STATE] DEVICE READY ---> RESETTING DEVICE
+[2240:internal-dpl-clock]: [07:35:48][STATE] RUNNING ---> READY
+[2242:ITSDigitizer]: [07:35:48][STATE] READY ---> RESETTING TASK
+[2242:ITSDigitizer]: [07:35:48][STATE] RESETTING TASK ---> DEVICE READY
+[2240:internal-dpl-clock]: [07:35:48][STATE] READY ---> RESETTING TASK
+[2240:internal-dpl-clock]: [07:35:48][STATE] RESETTING TASK ---> DEVICE READY
+[2240:internal-dpl-clock]: [07:35:48][STATE] DEVICE READY ---> RESETTING DEVICE
+[2242:ITSDigitizer]: [07:35:48][STATE] DEVICE READY ---> RESETTING DEVICE
+[2243:GRPUpdater]: [07:35:48][STATE] RESETTING DEVICE ---> IDLE
+[2243:GRPUpdater]: [07:35:48][STATE] IDLE ---> EXITING
+[2242:ITSDigitizer]: [07:35:48][STATE] RESETTING DEVICE ---> IDLE
+[2243:GRPUpdater]: [07:35:48][STATE] Exiting FairMQ state machine
+[2242:ITSDigitizer]: [07:35:48][STATE] IDLE ---> EXITING
+[2242:ITSDigitizer]: [07:35:48][STATE] Exiting FairMQ state machine
+[2240:internal-dpl-clock]: [07:35:48][STATE] RESETTING DEVICE ---> IDLE
+[2240:internal-dpl-clock]: [07:35:48][STATE] IDLE ---> EXITING
+[2240:internal-dpl-clock]: [07:35:48][STATE] Exiting FairMQ state machine
+[2244:ITSDigitWriter]: [07:35:50][STATE] RUNNING ---> READY
+[2244:ITSDigitWriter]: [07:35:50][STATE] READY ---> RESETTING TASK
+[2244:ITSDigitWriter]: [07:35:50][STATE] RESETTING TASK ---> DEVICE READY
+[2244:ITSDigitWriter]: [07:35:50][STATE] DEVICE READY ---> RESETTING DEVICE
+[2244:ITSDigitWriter]: Cleaning up for shared memory id 'a4d1063a'...
+[2244:ITSDigitWriter]: No region counter found. No regions to cleanup.
+[2244:ITSDigitWriter]: Successfully removed 'fmq_a4d1063a_m_0'.
+[2244:ITSDigitWriter]: Successfully removed 'fmq_a4d1063a_mng'.
+[2244:ITSDigitWriter]: Successfully removed 'fmq_a4d1063a_mtx'.
+[2244:ITSDigitWriter]: Successfully removed 'fmq_a4d1063a_cv'.
+[2244:ITSDigitWriter]: [07:35:50][STATE] RESETTING DEVICE ---> IDLE
+[2244:ITSDigitWriter]: [07:35:50][STATE] IDLE ---> EXITING
+[2244:ITSDigitWriter]: [07:35:50][STATE] Exiting FairMQ state machine
+[INFO] Dumping used configuration in dpl-config.json
+
+==============================================================================================
+3. Tracking
+[INFO] Initialising O2 Data Processing Layer
+[INFO] O2 Data Processing Layer initialised. We brake for nobody.
+[INFO] Optimised build. O2DEBUG / LOG(DEBUG) / LOGF(DEBUG) / assert statement will not be shown.
+[INFO] Redeployment of configuration asked.
+[INFO] Starting internal-dpl-clock on pid 3323
+[INFO] Starting its-digit-reader on pid 3324
+[INFO] Starting its-clusterer on pid 3325
+[INFO] Starting its-cluster-writer on pid 3326
+[INFO] Starting its-tracker on pid 3327
+[INFO] Starting its-track-writer on pid 3328
+[INFO] Redeployment of configuration done.
+[3326:its-cluster-writer]: [INFO] Spawing new device its-cluster-writer in process with pid 3326
+[3324:its-digit-reader]: [INFO] Spawing new device its-digit-reader in process with pid 3324
+[3325:its-clusterer]: [INFO] Spawing new device its-clusterer in process with pid 3325
+[3323:internal-dpl-clock]: [INFO] Spawing new device internal-dpl-clock in process with pid 3323
+[3325:its-clusterer]: [07:39:08][INFO] 
+[3325:its-clusterer]:       ______      _    _______  _________ 
+[3325:its-clusterer]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.29
+[3325:its-clusterer]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[3325:its-clusterer]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[3325:its-clusterer]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2020 GSI
+[3325:its-clusterer]: 
+[3324:its-digit-reader]: [07:39:08][INFO] 
+[3324:its-digit-reader]:       ______      _    _______  _________ 
+[3324:its-digit-reader]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.29
+[3324:its-digit-reader]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[3324:its-digit-reader]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[3324:its-digit-reader]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2020 GSI
+[3324:its-digit-reader]: 
+[3325:its-clusterer]: [07:39:08][STATE] Starting FairMQ state machine --> IDLE
+[3325:its-clusterer]: 2021-05-20 07:39:08	Monitoring	[0;49mStdOut backend initialized[0m
+[3328:its-track-writer]: [INFO] Spawing new device its-track-writer in process with pid 3328
+[3323:internal-dpl-clock]: [07:39:08][INFO] 
+[3323:internal-dpl-clock]:       ______      _    _______  _________ 
+[3323:internal-dpl-clock]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.29
+[3323:internal-dpl-clock]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[3323:internal-dpl-clock]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[3323:internal-dpl-clock]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2020 GSI
+[3323:internal-dpl-clock]: 
+[3323:internal-dpl-clock]: [07:39:08][STATE] Starting FairMQ state machine --> IDLE
+[3323:internal-dpl-clock]: 2021-05-20 07:39:08	Monitoring	[0;49mStdOut backend initialized[0m
+[3323:internal-dpl-clock]: [07:39:08][STATE] IDLE ---> INITIALIZING DEVICE
+[3323:internal-dpl-clock]: 2021-05-20 07:39:08	Monitoring	[0;49mBuffering enabled (100)[0m
+[3323:internal-dpl-clock]: [07:39:08][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[3324:its-digit-reader]: [07:39:08][STATE] Starting FairMQ state machine --> IDLE
+[3324:its-digit-reader]: 2021-05-20 07:39:08	Monitoring	[0;49mStdOut backend initialized[0m
+[3324:its-digit-reader]: [07:39:08][STATE] IDLE ---> INITIALIZING DEVICE
+[3325:its-clusterer]: [07:39:08][STATE] IDLE ---> INITIALIZING DEVICE
+[3326:its-cluster-writer]: [07:39:08][INFO] 
+[3326:its-cluster-writer]:       ______      _    _______  _________ 
+[3326:its-cluster-writer]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.29
+[3326:its-cluster-writer]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[3326:its-cluster-writer]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[3326:its-cluster-writer]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2020 GSI
+[3326:its-cluster-writer]: 
+[3326:its-cluster-writer]: [07:39:08][STATE] Starting FairMQ state machine --> IDLE
+[3326:its-cluster-writer]: 2021-05-20 07:39:08	Monitoring	[0;49mStdOut backend initialized[0m
+[3326:its-cluster-writer]: [07:39:08][STATE] IDLE ---> INITIALIZING DEVICE
+[3327:its-tracker]: [INFO] Spawing new device its-tracker in process with pid 3327
+[3327:its-tracker]: [07:39:08][INFO] 
+[3327:its-tracker]:       ______      _    _______  _________ 
+[3327:its-tracker]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.29
+[3327:its-tracker]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[3327:its-tracker]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[3327:its-tracker]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2020 GSI
+[3327:its-tracker]: 
+[3327:its-tracker]: [07:39:08][STATE] Starting FairMQ state machine --> IDLE
+[3328:its-track-writer]: [07:39:08][INFO] 
+[3328:its-track-writer]:       ______      _    _______  _________ 
+[3328:its-track-writer]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.29
+[3328:its-track-writer]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[3328:its-track-writer]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[3328:its-track-writer]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2020 GSI
+[3328:its-track-writer]: 
+[3328:its-track-writer]: [07:39:08][STATE] Starting FairMQ state machine --> IDLE
+[3328:its-track-writer]: 2021-05-20 07:39:08	Monitoring	[0;49mStdOut backend initialized[0m
+[3328:its-track-writer]: [07:39:08][STATE] IDLE ---> INITIALIZING DEVICE
+[3323:internal-dpl-clock]: [07:39:08][STATE] INITIALIZED ---> BINDING
+[3323:internal-dpl-clock]: [07:39:08][STATE] BINDING ---> BOUND
+[3323:internal-dpl-clock]: [07:39:08][STATE] BOUND ---> CONNECTING
+[3323:internal-dpl-clock]: [07:39:08][STATE] CONNECTING ---> DEVICE READY
+[3323:internal-dpl-clock]: [07:39:08][STATE] DEVICE READY ---> INITIALIZING TASK
+[3323:internal-dpl-clock]: [07:39:08][STATE] INITIALIZING TASK ---> READY
+[3323:internal-dpl-clock]: [07:39:08][STATE] READY ---> RUNNING
+[3323:internal-dpl-clock]: [07:39:08][INFO] DEVICE: Running...
+[3324:its-digit-reader]: 2021-05-20 07:39:08	Monitoring	[0;49mBuffering enabled (100)[0m
+[3325:its-clusterer]: 2021-05-20 07:39:08	Monitoring	[0;49mBuffering enabled (100)[0m
+[3325:its-clusterer]: [07:39:08][INFO] Dictionary ITSdictionary.bin is absent, ITSClusterer expects cluster patterns
+[3325:its-clusterer]: [07:39:08][INFO] Clusterizer masks overflow pixels separated by < 406 BC and <= 0 in row/col
+[3325:its-clusterer]: [07:39:08][INFO] Inclusive clusterization timing (w/o disk IO): Cpu: 0 Real: 0 s in 1 slots
+[3325:its-clusterer]: [07:39:08][INFO] Threads output merging timing                : Cpu: 0 Real: 0 s in 1 slots
+[3325:its-clusterer]: [07:39:08][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[3325:its-clusterer]: [07:39:08][STATE] INITIALIZED ---> BINDING
+[3325:its-clusterer]: [07:39:08][STATE] BINDING ---> BOUND
+[3325:its-clusterer]: [07:39:08][STATE] BOUND ---> CONNECTING
+[3325:its-clusterer]: [07:39:08][STATE] CONNECTING ---> DEVICE READY
+[3325:its-clusterer]: [07:39:08][STATE] DEVICE READY ---> INITIALIZING TASK
+[3325:its-clusterer]: [07:39:08][STATE] INITIALIZING TASK ---> READY
+[3325:its-clusterer]: [07:39:08][STATE] READY ---> RUNNING
+[3325:its-clusterer]: [07:39:08][INFO] DEVICE: Running...
+[3327:its-tracker]: 2021-05-20 07:39:08	Monitoring	[0;49mStdOut backend initialized[0m
+[3327:its-tracker]: [07:39:08][STATE] IDLE ---> INITIALIZING DEVICE
+[3327:its-tracker]: 2021-05-20 07:39:08	Monitoring	[0;49mBuffering enabled (100)[0m
+[3327:its-tracker]: [07:39:08][INFO] Created GPUReconstruction instance for device type CPU (1) 
+[3324:its-digit-reader]: [07:39:08][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[3324:its-digit-reader]: [07:39:08][STATE] INITIALIZED ---> BINDING
+[3324:its-digit-reader]: [07:39:08][STATE] BINDING ---> BOUND
+[3324:its-digit-reader]: [07:39:08][STATE] BOUND ---> CONNECTING
+[3324:its-digit-reader]: [07:39:08][STATE] CONNECTING ---> DEVICE READY
+[3324:its-digit-reader]: [07:39:08][STATE] DEVICE READY ---> INITIALIZING TASK
+[3324:its-digit-reader]: [07:39:08][STATE] INITIALIZING TASK ---> READY
+[3324:its-digit-reader]: [07:39:08][STATE] READY ---> RUNNING
+[3324:its-digit-reader]: [07:39:08][INFO] DEVICE: Running...
+[3326:its-cluster-writer]: 2021-05-20 07:39:08	Monitoring	[0;49mBuffering enabled (100)[0m
+[3326:its-cluster-writer]: [07:39:08][INFO] 0: branch  ITSClusterComp set up
+[3326:its-cluster-writer]: [07:39:08][INFO] 1: branch  ITSClusterPatt set up
+[3326:its-cluster-writer]: [07:39:08][INFO] 2: branch  ITSClustersROF set up
+[3326:its-cluster-writer]: [07:39:08][INFO] 3: branch  ITSClusterMCTruth set up
+[3326:its-cluster-writer]: [07:39:08][INFO] 4: branch  ITSClustersMC2ROF set up
+[3326:its-cluster-writer]: [07:39:08][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[3326:its-cluster-writer]: [07:39:08][STATE] INITIALIZED ---> BINDING
+[3326:its-cluster-writer]: [07:39:08][STATE] BINDING ---> BOUND
+[3326:its-cluster-writer]: [07:39:08][STATE] BOUND ---> CONNECTING
+[3326:its-cluster-writer]: [07:39:08][STATE] CONNECTING ---> DEVICE READY
+[3326:its-cluster-writer]: [07:39:08][STATE] DEVICE READY ---> INITIALIZING TASK
+[3326:its-cluster-writer]: [07:39:08][STATE] INITIALIZING TASK ---> READY
+[3326:its-cluster-writer]: [07:39:08][STATE] READY ---> RUNNING
+[3326:its-cluster-writer]: [07:39:08][INFO] DEVICE: Running...
+[3327:its-tracker]: [07:39:08][INFO] MagneticField::Print: MagneticFieldMap:
+[3327:its-tracker]: [07:39:08][INFO] MagneticField::Print: Solenoid (-1*)5 kG, Dipole ON (-1) 
+[3327:its-tracker]: [07:39:08][INFO] MagneticField::Print: Machine B fields for p-p  beam (7000 GeV): QGrad: 22.0002 Dipole: 37.8781
+[3327:its-tracker]: [07:39:08][INFO] MagneticField::Print: Uses Sol30_Dip6_Hole  of /cvmfs/alice.cern.ch/el7-x86_64/Packages/O2/nightly-20210129-1/share/Common/maps/mfchebKGI_sym.root
+[3327:its-tracker]: Info in <TGeoGlobalMagField::SetField>: Global magnetic field set to <MagneticFieldMap>
+[3327:its-tracker]: Info in <TGeoGlobalMagField::Lock>: Global magnetic field <MagneticFieldMap> is now locked
+[3327:its-tracker]: [07:39:08][INFO] Loading geometry FAIRGeom from o2sim_geometry.root
+[3328:its-track-writer]: 2021-05-20 07:39:08	Monitoring	[0;49mBuffering enabled (100)[0m
+[3328:its-track-writer]: [07:39:09][INFO] 0: branch  ITSTrack set up
+[3328:its-track-writer]: [07:39:09][INFO] 1: branch  ITSTrackClusIdx set up
+[3328:its-track-writer]: [07:39:09][INFO] 2: branch  Vertices set up
+[3328:its-track-writer]: [07:39:09][INFO] 3: branch  VerticesROF set up
+[3328:its-track-writer]: [07:39:09][INFO] 4: branch  ITSTracksROF set up
+[3328:its-track-writer]: [07:39:09][INFO] 5: branch  ITSTrackMCTruth set up
+[3328:its-track-writer]: [07:39:09][INFO] 6: branch  ITSTracksMC2ROF set up
+[3328:its-track-writer]: [07:39:09][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[3328:its-track-writer]: [07:39:09][STATE] INITIALIZED ---> BINDING
+[3328:its-track-writer]: [07:39:09][STATE] BINDING ---> BOUND
+[3328:its-track-writer]: [07:39:09][STATE] BOUND ---> CONNECTING
+[3328:its-track-writer]: [07:39:09][STATE] CONNECTING ---> DEVICE READY
+[3328:its-track-writer]: [07:39:09][STATE] DEVICE READY ---> INITIALIZING TASK
+[3328:its-track-writer]: [07:39:09][STATE] INITIALIZING TASK ---> READY
+[3328:its-track-writer]: [07:39:09][STATE] READY ---> RUNNING
+[3328:its-track-writer]: [07:39:09][INFO] DEVICE: Running...
+[3327:its-tracker]: Info in <TGeoManager::CloseGeometry>: Geometry loaded from file...
+[3327:its-tracker]: Info in <TGeoManager::SetTopVolume>: Top volume is cave. Master volume is cave
+[3327:its-tracker]: Info in <TGeoNavigator::BuildCache>: --- Maximum geometry depth set to 100
+[3327:its-tracker]: Info in <TGeoManager::CloseGeometry>: Voxelization retrieved from file
+[3327:its-tracker]: Info in <TGeoManager::CountLevels>: max level = 9, max placements = 126
+[3327:its-tracker]: Info in <TGeoManager::CloseGeometry>: 179840 nodes/ 399 volume UID's in FAIR geometry
+[3327:its-tracker]: Info in <TGeoManager::CloseGeometry>: ----------------modeler ready----------------
+[3324:its-digit-reader]: [07:39:10][INFO] ITSDigitReader pushed 301924 digits, in 140 RO frames
+[3325:its-clusterer]: [07:39:10][INFO] ITSClusterer pulled 301924 digits, in 140 RO frames
+[3325:its-clusterer]: [07:39:10][INFO] ITSClusterer pulled 302592 labels 
+[3325:its-clusterer]: [07:39:10][INFO] ITSClusterer pushed 194316 clusters, in 140 RO frames
+[3327:its-tracker]: [07:39:10][INFO] Loading ITS T2L matrices from TGeo
+[3326:its-cluster-writer]: [07:39:10][INFO] ITSClusterWriter pulled 194316 clusters, in 140 RO frames
+[3327:its-tracker]: [07:39:10][WARN] It is faster to use 2D rotation for T2G instead of full Transform3D matrices
+[3327:its-tracker]: [07:39:10][INFO] Loading ITS T2G matrices from TGeo
+[3327:its-tracker]: [07:39:11][INFO] Loading ITS T2G rotation 2D matrices
+[3327:its-tracker]: [07:39:11][INFO] Initializing tracker in sync. phase reconstruction with 1 passes
+[3327:its-tracker]: [07:39:11][INFO] Not using lookup table for material budget approximation
+[3327:its-tracker]: [07:39:11][INFO] Dictionary ITSdictionary.bin is absent, Tracker expects cluster patterns
+[3327:its-tracker]: [07:39:11][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[3327:its-tracker]: [07:39:11][STATE] INITIALIZED ---> BINDING
+[3327:its-tracker]: [07:39:11][STATE] BINDING ---> BOUND
+[3327:its-tracker]: [07:39:11][STATE] BOUND ---> CONNECTING
+[3327:its-tracker]: [07:39:11][STATE] CONNECTING ---> DEVICE READY
+[3327:its-tracker]: [07:39:11][STATE] DEVICE READY ---> INITIALIZING TASK
+[3327:its-tracker]: [07:39:11][STATE] INITIALIZING TASK ---> READY
+[3327:its-tracker]: [07:39:11][STATE] READY ---> RUNNING
+[3327:its-tracker]: [07:39:11][INFO] DEVICE: Running...
+[3327:its-tracker]: [07:39:11][INFO] ITSTracker pulled 194316 clusters, 140 RO frames
+[3327:its-tracker]: [07:39:11][INFO] 194316 MC label objects , in 80 MC events
+[3327:its-tracker]: [07:39:11][INFO] ITSTracker RO: continuous=1
+[3327:its-tracker]: [07:39:11][INFO] Loading ITS L2G matrices from TGeo
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 0, clusters loaded : 1283
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.279266 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.009772 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.007125 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.009591 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 1, clusters loaded : 1267
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.265255 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.031639 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000541 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000612 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 2, clusters loaded : 1323
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.25867 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.00183 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000436 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000523 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 3, clusters loaded : 1229
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.271204 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001511 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000384 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000492 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 4, clusters loaded : 1245
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.332356 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001691 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000451 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000538 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 5, clusters loaded : 1248
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.276916 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001561 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000333 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000438 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 6, clusters loaded : 1259
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.267007 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.0023 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000478 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000534 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 7, clusters loaded : 1258
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.236339 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002135 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000471 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000714 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 8, clusters loaded : 1247
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.200571 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.005193 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000475 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000528 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 9, clusters loaded : 1442
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.252659 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.016155 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.004484 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.041217 ms
+[3327:its-tracker]: 		Found vertex with:     12 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 2.57226 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.220242 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.012141 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.012286 ms
+[3327:its-tracker]:  - Road finding completed in: 0.021507 ms
+[3327:its-tracker]:  - Track finding completed in: 1.47204 ms
+[3327:its-tracker]:  - Vertex processing completed in: 4.31048ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.006912 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.210648 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.006317 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.003832 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000358 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000358 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.228425ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 9
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 10, clusters loaded : 1325
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.211578 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.006565 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.001441 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.002711 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 11, clusters loaded : 1285
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.235418 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.00469 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000792 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000514 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 12, clusters loaded : 1268
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.22564 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.003448 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000558 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000509 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 13, clusters loaded : 1172
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.251939 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.005137 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000947 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.005852 ms
+[3327:its-tracker]: 		Found vertex with:      2 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.60709 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.136864 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.005903 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.005039 ms
+[3327:its-tracker]:  - Road finding completed in: 0.002849 ms
+[3327:its-tracker]:  - Track finding completed in: 0.081909 ms
+[3327:its-tracker]:  - Vertex processing completed in: 1.83966ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.004662 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.126365 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.002403 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.001343 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000209 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000273 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.135255ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 4
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 14, clusters loaded : 1363
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.23303 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.003379 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000952 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.003935 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 15, clusters loaded : 1210
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.240219 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002863 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000454 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000513 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 16, clusters loaded : 1288
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.209206 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.0018 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000391 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.00049 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 17, clusters loaded : 1273
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.206575 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.004188 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.00054 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000509 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 18, clusters loaded : 2764
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.277823 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.06928 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.015676 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.038941 ms
+[3327:its-tracker]: 		Found vertex with:     26 contributors
+[3327:its-tracker]: 		Found vertex with:     19 contributors
+[3327:its-tracker]: 		Found vertex with:     17 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.75456 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.442033 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.038015 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.101052 ms
+[3327:its-tracker]:  - Road finding completed in: 0.01122 ms
+[3327:its-tracker]:  - Track finding completed in: 0.340489 ms
+[3327:its-tracker]:  - Vertex processing completed in: 2.68736ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.01124 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.381289 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.013802 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.008344 ms
+[3327:its-tracker]:  - Road finding completed in: 0.002927 ms
+[3327:its-tracker]:  - Track finding completed in: 0.208162 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.625764ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.006866 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.409838 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.029564 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.021714 ms
+[3327:its-tracker]:  - Road finding completed in: 0.004007 ms
+[3327:its-tracker]:  - Track finding completed in: 0.195151 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.66714ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.009467 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.385184 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.019503 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.006069 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000268 ms
+[3327:its-tracker]:  - Track finding completed in: 0.00031 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.420801ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.006598 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.350766 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.008257 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.001859 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000224 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000308 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.368012ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.005417 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.374914 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.020151 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.0079 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000219 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000326 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.408927ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 42
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 19, clusters loaded : 1887
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.234267 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.026202 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.005351 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.014338 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 20, clusters loaded : 1589
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.217213 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.017022 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.002481 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.005504 ms
+[3327:its-tracker]: 		Found vertex with:     12 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.56364 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.288184 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.017146 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.009925 ms
+[3327:its-tracker]:  - Road finding completed in: 0.003546 ms
+[3327:its-tracker]:  - Track finding completed in: 0.140346 ms
+[3327:its-tracker]:  - Vertex processing completed in: 2.02279ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.00637 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.292139 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.009913 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.004658 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000273 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000296 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.313649ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 9
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 21, clusters loaded : 1549
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.239196 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.01363 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.002192 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.005484 ms
+[3327:its-tracker]: 		Found vertex with:      4 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.42059 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.188717 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.008542 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.00824 ms
+[3327:its-tracker]:  - Road finding completed in: 0.002379 ms
+[3327:its-tracker]:  - Track finding completed in: 0.098966 ms
+[3327:its-tracker]:  - Vertex processing completed in: 1.72743ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.005453 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.187385 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.004511 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.002074 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000269 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000281 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.199973ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 5
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 22, clusters loaded : 1342
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.224843 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001967 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000539 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.0006 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 23, clusters loaded : 1378
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.225597 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.006207 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.001053 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.001646 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 24, clusters loaded : 1258
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.251553 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.003469 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000441 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000568 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 25, clusters loaded : 1281
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.234949 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001621 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000425 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000538 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 26, clusters loaded : 1269
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.239588 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002285 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000472 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000451 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 27, clusters loaded : 1277
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.24185 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.004317 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000869 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.006254 ms
+[3327:its-tracker]: 		Found vertex with:      2 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.58676 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.170882 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.005626 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.005995 ms
+[3327:its-tracker]:  - Road finding completed in: 0.002328 ms
+[3327:its-tracker]:  - Track finding completed in: 0.038799 ms
+[3327:its-tracker]:  - Vertex processing completed in: 1.81039ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.019157 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.143612 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.003392 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.002641 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000265 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000283 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.16935ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 2
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 28, clusters loaded : 1271
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.24194 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.00234 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000781 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000615 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 29, clusters loaded : 1238
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.207546 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002619 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000438 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000494 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 30, clusters loaded : 1254
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.240626 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.00244 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.00046 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000496 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 31, clusters loaded : 1336
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.227362 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.004025 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000529 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000596 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 32, clusters loaded : 1262
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.237764 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002388 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000449 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000528 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 33, clusters loaded : 1280
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.268414 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001858 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000504 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000502 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 34, clusters loaded : 1264
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.21931 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002307 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000545 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000496 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 35, clusters loaded : 1249
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.224454 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002503 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000459 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000474 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 36, clusters loaded : 1745
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.231738 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.036998 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.035225 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.013346 ms
+[3327:its-tracker]: 		Found vertex with:     16 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.51422 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.252698 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.020398 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.017463 ms
+[3327:its-tracker]:  - Road finding completed in: 0.005345 ms
+[3327:its-tracker]:  - Track finding completed in: 0.198089 ms
+[3327:its-tracker]:  - Vertex processing completed in: 2.00821ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.008141 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.238358 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.010366 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.004516 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000421 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000286 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.262088ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 13
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 37, clusters loaded : 1436
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.260367 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.012762 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.003077 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.008921 ms
+[3327:its-tracker]: 		Found vertex with:     11 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.4657 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.252085 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.017311 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.016282 ms
+[3327:its-tracker]:  - Road finding completed in: 0.004127 ms
+[3327:its-tracker]:  - Track finding completed in: 0.172459 ms
+[3327:its-tracker]:  - Vertex processing completed in: 1.92796ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.007039 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.170346 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.009111 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.005208 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000368 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000256 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.192328ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 11
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 38, clusters loaded : 2216
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.307499 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.042456 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.00959 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.021228 ms
+[3327:its-tracker]: 		Found vertex with:     45 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.53678 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.400845 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.048899 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.043452 ms
+[3327:its-tracker]:  - Road finding completed in: 0.013742 ms
+[3327:its-tracker]:  - Track finding completed in: 0.687443 ms
+[3327:its-tracker]:  - Vertex processing completed in: 2.73116ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.014428 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.294932 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.020563 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.009913 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000368 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000334 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.340538ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 41
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 39, clusters loaded : 1248
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.244655 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002432 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000753 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.001122 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 40, clusters loaded : 1240
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.202518 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002051 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000424 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000597 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 41, clusters loaded : 1376
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.217971 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.005971 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.001068 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.005891 ms
+[3327:its-tracker]: 		Found vertex with:      2 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.50109 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.18477 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.009063 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.004235 ms
+[3327:its-tracker]:  - Road finding completed in: 0.001557 ms
+[3327:its-tracker]:  - Track finding completed in: 0.019711 ms
+[3327:its-tracker]:  - Vertex processing completed in: 1.72043ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.00475 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.185643 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.007158 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.002661 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000225 ms
+[3327:its-tracker]:  - Track finding completed in: 0.00027 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.200707ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 1
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 42, clusters loaded : 1282
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.247001 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001894 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000564 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000474 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 43, clusters loaded : 1290
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.249662 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001889 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000437 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000416 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 44, clusters loaded : 1284
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.270714 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002877 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000677 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000394 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 45, clusters loaded : 1308
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.239306 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002357 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000478 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000759 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 46, clusters loaded : 1798
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.28635 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.023935 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.004157 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.009657 ms
+[3327:its-tracker]: 		Found vertex with:     20 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.56371 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.320503 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.030085 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.023719 ms
+[3327:its-tracker]:  - Road finding completed in: 0.006706 ms
+[3327:its-tracker]:  - Track finding completed in: 0.245072 ms
+[3327:its-tracker]:  - Vertex processing completed in: 2.18979ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.021513 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.264527 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.016094 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.023986 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000392 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000324 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.326836ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 16
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 47, clusters loaded : 1317
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.237365 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002456 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000681 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.00063 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 48, clusters loaded : 1287
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.247183 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.005942 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.001474 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.005769 ms
+[3327:its-tracker]: 		Found vertex with:      3 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.5656 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.168732 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.007645 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.006184 ms
+[3327:its-tracker]:  - Road finding completed in: 0.002613 ms
+[3327:its-tracker]:  - Track finding completed in: 0.080663 ms
+[3327:its-tracker]:  - Vertex processing completed in: 1.83144ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.004626 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.195986 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.005252 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.002298 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000258 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000307 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.208727ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 3
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 49, clusters loaded : 1301
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.188833 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002117 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000584 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000606 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 50, clusters loaded : 1378
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.208501 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.008429 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.001445 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.00542 ms
+[3327:its-tracker]: 		Found vertex with:      3 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.57053 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.183504 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.005364 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.004936 ms
+[3327:its-tracker]:  - Road finding completed in: 0.002086 ms
+[3327:its-tracker]:  - Track finding completed in: 0.036716 ms
+[3327:its-tracker]:  - Vertex processing completed in: 1.80313ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.005678 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.18075 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.003328 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.001758 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000192 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000308 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.192014ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 2
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 51, clusters loaded : 1240
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.221974 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002104 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000674 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000548 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 52, clusters loaded : 1288
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.210732 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002002 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000386 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000472 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 53, clusters loaded : 1231
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.227448 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001883 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000483 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000677 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 54, clusters loaded : 1329
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.21698 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.003291 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000473 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000646 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 55, clusters loaded : 1690
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.265668 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.014743 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.003024 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.009473 ms
+[3327:its-tracker]: 		Found vertex with:     17 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.49615 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.253494 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.02515 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.018963 ms
+[3327:its-tracker]:  - Road finding completed in: 0.017754 ms
+[3327:its-tracker]:  - Track finding completed in: 0.225377 ms
+[3327:its-tracker]:  - Vertex processing completed in: 2.03688ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.008823 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.218035 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.012758 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.00545 ms
+[3327:its-tracker]:  - Road finding completed in: 0.00024 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000246 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.245552ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 17
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 56, clusters loaded : 1314
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.236015 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.004849 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.001022 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000582 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 57, clusters loaded : 1495
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.379799 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.014862 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.003358 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.009647 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 58, clusters loaded : 1935
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.235972 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.028261 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.004841 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.011867 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 59, clusters loaded : 1369
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.211029 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.006966 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.001009 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.004287 ms
+[3327:its-tracker]: 		Found vertex with:      3 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.45406 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.208003 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.00761 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.004697 ms
+[3327:its-tracker]:  - Road finding completed in: 0.001979 ms
+[3327:its-tracker]:  - Track finding completed in: 0.039601 ms
+[3327:its-tracker]:  - Vertex processing completed in: 1.71595ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.004902 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.157082 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.005412 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.002283 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000372 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000281 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.170332ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 2
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 60, clusters loaded : 1207
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.230774 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002562 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.001037 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000795 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 61, clusters loaded : 1229
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.233374 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001945 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000496 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000559 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 62, clusters loaded : 1270
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.211225 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001626 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000471 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000493 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 63, clusters loaded : 1299
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.253307 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002874 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000473 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000501 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 64, clusters loaded : 1248
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.222987 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002466 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000514 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000508 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 65, clusters loaded : 1330
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.202932 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001361 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000366 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000554 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 66, clusters loaded : 1312
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.235039 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002777 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000461 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000493 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 67, clusters loaded : 1289
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.257624 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002277 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000393 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000462 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 68, clusters loaded : 1932
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.29941 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.031472 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.005585 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.013677 ms
+[3327:its-tracker]: 		Found vertex with:     31 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.47703 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.301932 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.033445 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.028083 ms
+[3327:its-tracker]:  - Road finding completed in: 0.00842 ms
+[3327:its-tracker]:  - Track finding completed in: 0.382802 ms
+[3327:its-tracker]:  - Vertex processing completed in: 2.23171ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.010542 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.257082 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.015737 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.005558 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000459 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000386 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.289764ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 24
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 69, clusters loaded : 1234
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.239621 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002327 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000601 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000636 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 70, clusters loaded : 1245
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.252208 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002832 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000537 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000427 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 71, clusters loaded : 1272
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.208666 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.00167 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000467 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000474 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 72, clusters loaded : 1811
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.234071 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.023136 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.004576 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.013975 ms
+[3327:its-tracker]: 		Found vertex with:     16 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.47918 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.277103 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.029854 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.022721 ms
+[3327:its-tracker]:  - Road finding completed in: 0.009083 ms
+[3327:its-tracker]:  - Track finding completed in: 0.337611 ms
+[3327:its-tracker]:  - Vertex processing completed in: 2.15556ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.010419 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.391729 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.012479 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.005207 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000311 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000433 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.420578ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 21
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 73, clusters loaded : 1292
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.211328 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.004944 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.001022 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000933 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 74, clusters loaded : 1281
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.233708 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002764 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000459 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000399 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 75, clusters loaded : 1268
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.228221 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002842 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000576 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000466 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 76, clusters loaded : 1481
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.21603 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.008611 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.001406 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.006823 ms
+[3327:its-tracker]: 		Found vertex with:      4 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.47082 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.198605 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.011895 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.007506 ms
+[3327:its-tracker]:  - Road finding completed in: 0.002997 ms
+[3327:its-tracker]:  - Track finding completed in: 0.073898 ms
+[3327:its-tracker]:  - Vertex processing completed in: 1.76572ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.005741 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.170817 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.007517 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.021154 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000294 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000321 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.205844ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 5
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 77, clusters loaded : 1701
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.244353 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.020101 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.003924 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.00868 ms
+[3327:its-tracker]: 		Found vertex with:     14 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.40025 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.235616 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.01794 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.013762 ms
+[3327:its-tracker]:  - Road finding completed in: 0.004037 ms
+[3327:its-tracker]:  - Track finding completed in: 0.20142 ms
+[3327:its-tracker]:  - Vertex processing completed in: 1.87302ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.007485 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.199225 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.009823 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.004446 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000318 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000278 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.221575ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 11
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 78, clusters loaded : 1296
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.235646 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001747 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000523 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000679 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 79, clusters loaded : 1233
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.235741 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001609 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.00033 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000506 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 80, clusters loaded : 1192
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.220069 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001452 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000337 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000485 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 81, clusters loaded : 1215
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.209602 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002135 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000374 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000439 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 82, clusters loaded : 1422
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.21291 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.01096 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.002443 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.009734 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 83, clusters loaded : 1312
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.229288 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002696 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000461 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.00057 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 84, clusters loaded : 1277
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.278516 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001742 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000431 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000547 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 85, clusters loaded : 1409
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.228892 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.007946 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.001537 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.006613 ms
+[3327:its-tracker]: 		Found vertex with:      4 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.46837 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.178905 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.012262 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.009575 ms
+[3327:its-tracker]:  - Road finding completed in: 0.003751 ms
+[3327:its-tracker]:  - Track finding completed in: 0.101099 ms
+[3327:its-tracker]:  - Vertex processing completed in: 1.77396ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.005863 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.163911 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.005914 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.003003 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000309 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000303 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.179303ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 6
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 86, clusters loaded : 2227
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.236182 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.033407 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.00692 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.01293 ms
+[3327:its-tracker]: 		Found vertex with:     49 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.49901 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.349944 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.05061 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.043771 ms
+[3327:its-tracker]:  - Road finding completed in: 0.012709 ms
+[3327:its-tracker]:  - Track finding completed in: 0.622534 ms
+[3327:its-tracker]:  - Vertex processing completed in: 2.57857ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.014505 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.285322 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.024632 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.008705 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000551 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000387 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.334102ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 41
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 87, clusters loaded : 1285
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.222724 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.0025 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000791 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000689 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 88, clusters loaded : 1291
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.21718 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001564 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.00042 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000543 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 89, clusters loaded : 1219
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.290136 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001686 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000411 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000529 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 90, clusters loaded : 1403
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.201167 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.008049 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.002026 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.007742 ms
+[3327:its-tracker]: 		Found vertex with:      8 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.44077 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.199755 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.012562 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.007778 ms
+[3327:its-tracker]:  - Road finding completed in: 0.003841 ms
+[3327:its-tracker]:  - Track finding completed in: 0.113777 ms
+[3327:its-tracker]:  - Vertex processing completed in: 1.77848ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.006018 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.161494 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.006094 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.002814 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000392 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000297 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.177109ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 9
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 91, clusters loaded : 1864
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.245085 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.031474 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.0066 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.012554 ms
+[3327:its-tracker]: 		Found vertex with:     41 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.48797 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.299535 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.041671 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.047932 ms
+[3327:its-tracker]:  - Road finding completed in: 0.012429 ms
+[3327:its-tracker]:  - Track finding completed in: 0.51977 ms
+[3327:its-tracker]:  - Vertex processing completed in: 2.40931ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.013277 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.237803 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.018641 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.008407 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000431 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000268 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.278827ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 34
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 92, clusters loaded : 2487
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.282311 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.061374 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.010373 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.015238 ms
+[3327:its-tracker]: 		Found vertex with:     39 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.52861 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.415691 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.044358 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.032971 ms
+[3327:its-tracker]:  - Road finding completed in: 0.011289 ms
+[3327:its-tracker]:  - Track finding completed in: 0.522255 ms
+[3327:its-tracker]:  - Vertex processing completed in: 2.55518ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.013215 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.372059 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.023466 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.009303 ms
+[3327:its-tracker]:  - Road finding completed in: 0.00046 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000304 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.418807ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 31
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 93, clusters loaded : 2348
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.285624 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.053835 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.008993 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.01562 ms
+[3327:its-tracker]: 		Found vertex with:     17 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.57246 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.350177 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.021357 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.00909 ms
+[3327:its-tracker]:  - Road finding completed in: 0.003253 ms
+[3327:its-tracker]:  - Track finding completed in: 0.087831 ms
+[3327:its-tracker]:  - Vertex processing completed in: 2.04417ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.007358 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.469388 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.016995 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.006666 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000368 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000307 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.501082ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 7
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 94, clusters loaded : 1365
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.223397 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.007585 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.00134 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000571 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 95, clusters loaded : 1240
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.127484 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001165 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000359 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000446 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 96, clusters loaded : 1299
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.137604 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.000588 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000221 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000149 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 97, clusters loaded : 1262
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.098765 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.000779 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000283 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.00013 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 98, clusters loaded : 1245
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.133963 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.000826 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000179 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000137 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 99, clusters loaded : 1469
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.168203 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.010795 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.002042 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.006963 ms
+[3327:its-tracker]: 		Found vertex with:     17 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.2295 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.207126 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.015019 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.009669 ms
+[3327:its-tracker]:  - Road finding completed in: 0.003387 ms
+[3327:its-tracker]:  - Track finding completed in: 0.11202 ms
+[3327:its-tracker]:  - Vertex processing completed in: 1.57672ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.004338 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.127883 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.004934 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.001752 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000156 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000166 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.139229ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 15
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 100, clusters loaded : 1310
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.189074 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001431 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000461 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.00044 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 101, clusters loaded : 1928
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.140354 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.019731 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.00407 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.008883 ms
+[3327:its-tracker]: 		Found vertex with:     32 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.06716 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.188808 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.022241 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.015076 ms
+[3327:its-tracker]:  - Road finding completed in: 0.005065 ms
+[3327:its-tracker]:  - Track finding completed in: 0.207607 ms
+[3327:its-tracker]:  - Vertex processing completed in: 1.50595ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.006367 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.159659 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.01221 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.003393 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000143 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000158 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.18193ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 26
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 102, clusters loaded : 1361
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.128562 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.005309 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.001294 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.003593 ms
+[3327:its-tracker]: 		Found vertex with:      9 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.18069 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.110492 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.005617 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.003831 ms
+[3327:its-tracker]:  - Road finding completed in: 0.001514 ms
+[3327:its-tracker]:  - Track finding completed in: 0.049331 ms
+[3327:its-tracker]:  - Vertex processing completed in: 1.35148ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.002854 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.09946 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.002995 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.000834 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000126 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000206 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.106475ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 5
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 103, clusters loaded : 1563
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.145582 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.008988 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.001829 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.003932 ms
+[3327:its-tracker]: 		Found vertex with:      9 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.36814 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.250243 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.016492 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.013559 ms
+[3327:its-tracker]:  - Road finding completed in: 0.003316 ms
+[3327:its-tracker]:  - Track finding completed in: 0.138868 ms
+[3327:its-tracker]:  - Vertex processing completed in: 1.79062ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.007562 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.196988 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.010517 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.005174 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000275 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000283 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.220799ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 8
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 104, clusters loaded : 1206
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.236092 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.003047 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000617 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000523 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 105, clusters loaded : 1196
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.208942 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.0022 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000413 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000577 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 106, clusters loaded : 1277
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.233801 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001482 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000442 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000537 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 107, clusters loaded : 1262
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.244591 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001844 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000455 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000586 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 108, clusters loaded : 1220
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.232256 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002002 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000436 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000549 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 109, clusters loaded : 1261
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.240187 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001763 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000391 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000521 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 110, clusters loaded : 1236
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.288554 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001761 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000506 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000546 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 111, clusters loaded : 1277
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.289467 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001737 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000512 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000584 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 112, clusters loaded : 1481
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.259214 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.011532 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.00237 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.009399 ms
+[3327:its-tracker]: 		Found vertex with:     10 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.51814 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.209577 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.049131 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.00893 ms
+[3327:its-tracker]:  - Road finding completed in: 0.003114 ms
+[3327:its-tracker]:  - Track finding completed in: 0.101621 ms
+[3327:its-tracker]:  - Vertex processing completed in: 1.89051ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.005934 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.188291 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.005825 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.003397 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000183 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000294 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.203924ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 8
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 113, clusters loaded : 1434
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.223529 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.005869 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.001319 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.005485 ms
+[3327:its-tracker]: 		Found vertex with:      8 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.38404 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 1.02745 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.008033 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.00856 ms
+[3327:its-tracker]:  - Road finding completed in: 0.003221 ms
+[3327:its-tracker]:  - Track finding completed in: 0.093263 ms
+[3327:its-tracker]:  - Vertex processing completed in: 2.52457ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.005586 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.181972 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.002816 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.001323 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000218 ms
+[3327:its-tracker]:  - Track finding completed in: 0.00026 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.192175ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 7
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 114, clusters loaded : 1258
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.50989 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002693 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000627 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000521 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 115, clusters loaded : 1269
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.248988 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001242 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000426 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000489 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 116, clusters loaded : 1211
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.312883 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.00299 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000453 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000634 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 117, clusters loaded : 1251
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.223744 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001942 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000435 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000551 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 118, clusters loaded : 1260
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.223812 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001789 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000413 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000617 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 119, clusters loaded : 1277
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.237262 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.003287 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000519 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000532 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 120, clusters loaded : 1302
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.224165 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.0022 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.00049 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000516 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 121, clusters loaded : 1240
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.21281 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002223 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000636 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000644 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 122, clusters loaded : 1228
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.286513 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001436 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000421 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000481 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 123, clusters loaded : 1227
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.233624 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.00115 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000415 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000509 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 124, clusters loaded : 1303
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.236059 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001794 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000351 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000398 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 125, clusters loaded : 1281
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.217836 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001463 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000432 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000739 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 126, clusters loaded : 1427
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.264873 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.008021 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.00183 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.008767 ms
+[3327:its-tracker]: 		Found vertex with:      8 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.46116 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.270405 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.009341 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.009089 ms
+[3327:its-tracker]:  - Road finding completed in: 0.002862 ms
+[3327:its-tracker]:  - Track finding completed in: 0.07867 ms
+[3327:its-tracker]:  - Vertex processing completed in: 1.83153ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.005959 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.189147 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.004655 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.002177 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000175 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000273 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.202386ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 6
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 127, clusters loaded : 1230
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.216189 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002745 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000785 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000544 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 128, clusters loaded : 1203
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.178776 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001912 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000478 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000752 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 129, clusters loaded : 1249
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.283066 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002583 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000506 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000516 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 130, clusters loaded : 1795
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.168992 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.042673 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.004463 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.009681 ms
+[3327:its-tracker]: 		Found vertex with:     25 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.27813 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.231456 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.030273 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.035096 ms
+[3327:its-tracker]:  - Road finding completed in: 0.007054 ms
+[3327:its-tracker]:  - Track finding completed in: 0.261457 ms
+[3327:its-tracker]:  - Vertex processing completed in: 1.84347ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.009435 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.310958 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.015356 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.006443 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000454 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000325 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.342971ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 21
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 131, clusters loaded : 1222
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.243906 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001669 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000438 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.00052 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 132, clusters loaded : 1241
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.203316 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001929 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000428 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000501 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 133, clusters loaded : 1255
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.214375 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001209 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000438 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000433 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 134, clusters loaded : 1324
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.238928 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002577 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000587 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000528 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 135, clusters loaded : 1349
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.20352 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.006082 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.001237 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.006835 ms
+[3327:its-tracker]: 		Found vertex with:      3 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.32646 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.159341 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.007909 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.006011 ms
+[3327:its-tracker]:  - Road finding completed in: 0.002957 ms
+[3327:its-tracker]:  - Track finding completed in: 0.098433 ms
+[3327:its-tracker]:  - Vertex processing completed in: 1.60112ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.007603 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.149373 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.004112 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.002453 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000288 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000298 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.164127ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 4
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 136, clusters loaded : 1902
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.191109 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.028114 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.006339 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.013707 ms
+[3327:its-tracker]: 		Found vertex with:     44 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.38027 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.31832 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.045417 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.039312 ms
+[3327:its-tracker]:  - Road finding completed in: 0.013372 ms
+[3327:its-tracker]:  - Track finding completed in: 0.529612 ms
+[3327:its-tracker]:  - Vertex processing completed in: 2.3263ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.012049 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.262461 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.018002 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.011286 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000311 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000311 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.30442ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 33
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 137, clusters loaded : 1234
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.23457 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.002811 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.00081 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.00071 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 138, clusters loaded : 2276
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.308024 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.039711 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.008364 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.019477 ms
+[3327:its-tracker]: 		Found vertex with:     27 contributors
+[3327:its-tracker]: 		Found vertex with:     17 contributors
+[3327:its-tracker]:  - Context initialisation completed in: 1.55833 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.393251 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.029912 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.02361 ms
+[3327:its-tracker]:  - Road finding completed in: 0.007035 ms
+[3327:its-tracker]:  - Track finding completed in: 0.404068 ms
+[3327:its-tracker]:  - Vertex processing completed in: 2.41621ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.010296 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.322518 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.023424 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.011612 ms
+[3327:its-tracker]:  - Road finding completed in: 0.003398 ms
+[3327:its-tracker]:  - Track finding completed in: 0.190196 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.561444ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.00831 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.309965 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.014935 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.006958 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000333 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000299 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.3408ms
+[3327:its-tracker]:  - Context initialisation completed in: 0.006073 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.28857 ms
+[3327:its-tracker]:  - Cell finding completed in: 0.014134 ms
+[3327:its-tracker]:  - Neighbour finding completed in: 0.00492 ms
+[3327:its-tracker]:  - Road finding completed in: 0.000248 ms
+[3327:its-tracker]:  - Track finding completed in: 0.000332 ms
+[3327:its-tracker]:  - Vertex processing completed in: 0.314277ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 33
+[3327:its-tracker]: [07:39:11][INFO] ROframe: 139, clusters loaded : 1299
+[3327:its-tracker]:  - Vertexer initialisation completed in: 0.226353 ms
+[3327:its-tracker]:  - Tracklet finding completed in: 0.001727 ms
+[3327:its-tracker]:  - Adjacent tracklets validation completed in: 0.000576 ms
+[3327:its-tracker]:  - Vertex finding completed in: 0.000647 ms
+[3327:its-tracker]: [07:39:11][INFO] Found tracks: 0
+[3327:its-tracker]: [07:39:11][INFO] ITSTracker pushed 532 tracks
+[3327:its-tracker]: [07:39:11][INFO] ITS CA-Tracker total timing: Cpu: 3.900e-01 Real: 4.221e-01 s in 1 slots
+[3328:its-track-writer]: [07:39:11][INFO] ITSTrackWriter pulled 532 tracks, in 140 RO frames
+[INFO] Quitting
+[INFO] QUIT_REQUESTED
+[3327:its-tracker]: [07:39:11][INFO] Received device shutdown request (signal 15).
+[3327:its-tracker]: [07:39:11][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[3326:its-cluster-writer]: [07:39:11][INFO] Received device shutdown request (signal 15).
+[3326:its-cluster-writer]: [07:39:11][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[3323:internal-dpl-clock]: [07:39:11][INFO] Received device shutdown request (signal 15).
+[3323:internal-dpl-clock]: [07:39:11][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[3324:its-digit-reader]: [07:39:11][INFO] Received device shutdown request (signal 15).
+[3324:its-digit-reader]: [07:39:11][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[3328:its-track-writer]: [07:39:11][INFO] Received device shutdown request (signal 15).
+[3328:its-track-writer]: [07:39:11][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[3325:its-clusterer]: [07:39:11][INFO] Received device shutdown request (signal 15).
+[3325:its-clusterer]: [07:39:11][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[3324:its-digit-reader]: [07:39:11][STATE] RUNNING ---> READY
+[3324:its-digit-reader]: [07:39:11][STATE] READY ---> RESETTING TASK
+[3324:its-digit-reader]: [07:39:11][STATE] RESETTING TASK ---> DEVICE READY
+[3324:its-digit-reader]: [07:39:11][STATE] DEVICE READY ---> RESETTING DEVICE
+[3324:its-digit-reader]: [07:39:11][STATE] RESETTING DEVICE ---> IDLE
+[3324:its-digit-reader]: [07:39:11][STATE] IDLE ---> EXITING
+[3324:its-digit-reader]: [07:39:11][STATE] Exiting FairMQ state machine
+[3325:its-clusterer]: [07:39:12][STATE] RUNNING ---> READY
+[3323:internal-dpl-clock]: [07:39:12][STATE] RUNNING ---> READY
+[3323:internal-dpl-clock]: [07:39:12][STATE] READY ---> RESETTING TASK
+[3323:internal-dpl-clock]: [07:39:12][STATE] RESETTING TASK ---> DEVICE READY
+[3323:internal-dpl-clock]: [07:39:12][STATE] DEVICE READY ---> RESETTING DEVICE
+[3325:its-clusterer]: [07:39:12][STATE] READY ---> RESETTING TASK
+[3325:its-clusterer]: [07:39:12][STATE] RESETTING TASK ---> DEVICE READY
+[3325:its-clusterer]: [07:39:12][STATE] DEVICE READY ---> RESETTING DEVICE
+[3327:its-tracker]: [07:39:12][STATE] RUNNING ---> READY
+[3327:its-tracker]: [07:39:12][STATE] READY ---> RESETTING TASK
+[3327:its-tracker]: [07:39:12][STATE] RESETTING TASK ---> DEVICE READY
+[3327:its-tracker]: [07:39:12][STATE] DEVICE READY ---> RESETTING DEVICE
+[3323:internal-dpl-clock]: [07:39:12][STATE] RESETTING DEVICE ---> IDLE
+[3325:its-clusterer]: [07:39:12][STATE] RESETTING DEVICE ---> IDLE
+[3325:its-clusterer]: [07:39:12][STATE] IDLE ---> EXITING
+[3325:its-clusterer]: [07:39:12][STATE] Exiting FairMQ state machine
+[3323:internal-dpl-clock]: [07:39:12][STATE] IDLE ---> EXITING
+[3323:internal-dpl-clock]: [07:39:12][STATE] Exiting FairMQ state machine
+[3327:its-tracker]: [07:39:12][STATE] RESETTING DEVICE ---> IDLE
+[3327:its-tracker]: [07:39:12][STATE] IDLE ---> EXITING
+[3327:its-tracker]: [07:39:12][STATE] Exiting FairMQ state machine
+[3326:its-cluster-writer]: [07:39:13][STATE] RUNNING ---> READY
+[3326:its-cluster-writer]: [07:39:13][STATE] READY ---> RESETTING TASK
+[3326:its-cluster-writer]: [07:39:13][STATE] RESETTING TASK ---> DEVICE READY
+[3326:its-cluster-writer]: [07:39:13][STATE] DEVICE READY ---> RESETTING DEVICE
+[3326:its-cluster-writer]: [07:39:13][STATE] RESETTING DEVICE ---> IDLE
+[3326:its-cluster-writer]: [07:39:13][STATE] IDLE ---> EXITING
+[3326:its-cluster-writer]: [07:39:13][STATE] Exiting FairMQ state machine
+[3328:its-track-writer]: [07:39:13][STATE] RUNNING ---> READY
+[3328:its-track-writer]: [07:39:13][STATE] READY ---> RESETTING TASK
+[3328:its-track-writer]: [07:39:13][STATE] RESETTING TASK ---> DEVICE READY
+[3328:its-track-writer]: [07:39:13][STATE] DEVICE READY ---> RESETTING DEVICE
+[3328:its-track-writer]: Cleaning up for shared memory id 'f6009fea'...
+[3328:its-track-writer]: No region counter found. No regions to cleanup.
+[3328:its-track-writer]: Successfully removed 'fmq_f6009fea_m_0'.
+[3328:its-track-writer]: Successfully removed 'fmq_f6009fea_mng'.
+[3328:its-track-writer]: Successfully removed 'fmq_f6009fea_mtx'.
+[3328:its-track-writer]: Successfully removed 'fmq_f6009fea_cv'.
+[3328:its-track-writer]: [07:39:13][STATE] RESETTING DEVICE ---> IDLE
+[3328:its-track-writer]: [07:39:13][STATE] IDLE ---> EXITING
+[3328:its-track-writer]: [07:39:13][STATE] Exiting FairMQ state machine
+[INFO] Dumping used configuration in dpl-config.json

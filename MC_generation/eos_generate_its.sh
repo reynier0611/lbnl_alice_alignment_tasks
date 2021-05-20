@@ -1,6 +1,7 @@
 #! /bin/bash
 #/cvmfs/alice.cern.ch/bin/alienv enter O2/nightly-20210129-1
-eos_dir="/eos/user/f/ftorales/its_data/alignment/lbnl_alice_alignment_tasks"
+eos_dir="/eos/user/f/ftorales/its_data/alignment/lbnl_alice_alignment_tasks/MC_generation"
+macros_dir="/afs/cern.ch/user/f/ftorales/lbnl_alice_alignment_tasks/macros"
 echo "==============================="
 echo "execute this script as follows:"
 echo "./generate_its.sh system region nevents"
@@ -61,10 +62,12 @@ fi
 # parameter 3
 echo "Will generate: "$(($3))" events"
 # -------------
-# parameter 4&5
-echo "Moving to ${eos_dir}/${4}/${5}"
-mkdir -p $eos_dir/$4/$5/
-cd $eos_dir/$4/$5/
+# parameter 4&5 -> out_dir
+out_dir="${eos_dir}/$4/$5/"
+mkdir -p $out_dir
+cp ${macros_dir}/CheckTracks.C $out_dir
+echo "Moving to ${out_dir}"
+cd $out_dir
 pwd
 # ----------------------------------------------------------
 # 1. MC GENERATION RUN
@@ -88,3 +91,6 @@ echo "==========================================================================
 echo "3. Tracking"
 eval "$(/cvmfs/alice.cern.ch/bin/alienv printenv O2::nightly-20210129-1)"
 o2-its-reco-workflow --trackerCA --tracking-mode async --shm-segment-size 16000000000 --run | tee rec.log
+# ----------------------------------------------------------
+# 4. Output to CheckTracks.root (auto scans for geometry root file)
+root -b CheckTracks.C

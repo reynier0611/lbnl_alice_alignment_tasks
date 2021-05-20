@@ -1,0 +1,879 @@
+===============================
+execute this script as follows:
+./generate_its.sh system region nevents
+where:
+system = 1 -> pp
+       = 2 -> Pb-Pb
+region = 1 -> ITS only
+       = 2 -> whole detector
+===============================
+will generate Pb-Pb events
+will transport events in the ITS only
+Will generate: 10 events
+Moving to /eos/user/f/ftorales/its_data/alignment/lbnl_alice_alignment_tasks/2287089/4
+/eos/user/f/ftorales/its_data/alignment/lbnl_alice_alignment_tasks/2287089/4
+
+==============================================================================================
+1. MC generation run
+[INFO] Running with 6 sim workers 
+[INFO] CREATING SIM SHARED MEM SEGMENT FOR 6 WORKERS
+Spawning particle server on PID 996; Redirect output to o2sim_serverlog
+Spawning sim worker 0 on PID 998; Redirect output to o2sim_workerlog0
+Spawning hit merger on PID 999; Redirect output to o2sim_mergerlog
+[INFO] DISTRIBUTING EVENT : 1
+[INFO] DISTRIBUTING EVENT : 2
+[INFO] EVENT FINISHED : 1
+[INFO] EVENT FINISHED : 2
+[INFO] DISTRIBUTING EVENT : 3
+[INFO] EVENT FINISHED : 3
+[INFO] DISTRIBUTING EVENT : 4
+[INFO] EVENT FINISHED : 4
+[INFO] DISTRIBUTING EVENT : 5
+[INFO] EVENT FINISHED : 5
+[INFO] DISTRIBUTING EVENT : 6
+[INFO] EVENT FINISHED : 6
+[INFO] DISTRIBUTING EVENT : 7
+[INFO] DISTRIBUTING EVENT : 8
+[INFO] EVENT FINISHED : 7
+[INFO] EVENT FINISHED : 8
+[INFO] DISTRIBUTING EVENT : 9
+[INFO] EVENT FINISHED : 9
+[INFO] DISTRIBUTING EVENT : 10
+[INFO] EVENT FINISHED : 10
+[INFO] Merger process 999 returned
+[INFO] Simulation process took 89.9538 s
+[INFO] SIMULATION RETURNED SUCCESFULLY
+
+==============================================================================================
+2. Hits to digits conversion
+Run: 1621528545
+Fill:      0
+Period: 
+LHC State: 
+Start: Thu May 20 18:35:47 2021
+End  : Thu May 20 18:35:47 2021
+Beam0: Z:A =   0:  0, Energy = 0.000
+Beam1: Z:A =   0:  0, Energy = 0.000
+sqrt[s]    = 0.000
+crossing angle (radian) = 0.000000e+00
+magnet currents (A) L3 = -30000.000, Dipole = -6000
+Detectors: Cont.RO Triggers
+      ITS:    -       -    
+[INFO] MC-TRUTH 1
+[INFO] TPC: GEM setup - initialization from scratch
+[INFO] TPC: GEM setup (polya) took 8.07
+[INFO] TPC is in grp? no; is skipped? no
+[INFO] ITS is in grp? yes; is skipped? no
+[INFO] MFT is in grp? no; is skipped? no
+[INFO] TOF is in grp? no; is skipped? no
+[INFO] FT0 is in grp? no; is skipped? no
+[INFO] FV0 is in grp? no; is skipped? no
+[INFO] EMC is in grp? no; is skipped? no
+[INFO] HMP is in grp? no; is skipped? no
+[INFO] ZDC is in grp? no; is skipped? no
+[INFO] TRD is in grp? no; is skipped? no
+[INFO] MCH is in grp? no; is skipped? no
+[INFO] MID is in grp? no; is skipped? no
+[INFO] FDD is in grp? no; is skipped? no
+[INFO] PHS is in grp? no; is skipped? no
+[INFO] CPV is in grp? no; is skipped? no
+[INFO] Initialising O2 Data Processing Layer
+[INFO] O2 Data Processing Layer initialised. We brake for nobody.
+[INFO] Optimised build. O2DEBUG / LOG(DEBUG) / LOGF(DEBUG) / assert statement will not be shown.
+[INFO] Redeployment of configuration asked.
+[INFO] Starting internal-dpl-clock on pid 2100
+[INFO] Starting SimReader on pid 2101
+[INFO] Starting ITSDigitizer on pid 2102
+[INFO] Starting GRPUpdater on pid 2103
+[INFO] Starting ITSDigitWriter on pid 2104
+[INFO] Redeployment of configuration done.
+[2102:ITSDigitizer]: [INFO] MC-TRUTH 1
+[2103:GRPUpdater]: [INFO] MC-TRUTH 1
+[2104:ITSDigitWriter]: [INFO] MC-TRUTH 1
+[2101:SimReader]: [INFO] MC-TRUTH 1
+[2100:internal-dpl-clock]: [INFO] MC-TRUTH 1
+[2104:ITSDigitWriter]: [INFO] Spawing new device ITSDigitWriter in process with pid 2104
+[2102:ITSDigitizer]: [INFO] Spawing new device ITSDigitizer in process with pid 2102
+[2103:GRPUpdater]: [INFO] Spawing new device GRPUpdater in process with pid 2103
+[2101:SimReader]: [INFO] Spawing new device SimReader in process with pid 2101
+[2100:internal-dpl-clock]: [INFO] Spawing new device internal-dpl-clock in process with pid 2100
+[2102:ITSDigitizer]: [18:39:21][INFO] 
+[2102:ITSDigitizer]:       ______      _    _______  _________ 
+[2102:ITSDigitizer]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.29
+[2102:ITSDigitizer]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[2102:ITSDigitizer]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[2102:ITSDigitizer]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2020 GSI
+[2102:ITSDigitizer]: 
+[2101:SimReader]: [18:39:21][INFO] 
+[2101:SimReader]:       ______      _    _______  _________ 
+[2101:SimReader]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.29
+[2101:SimReader]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[2101:SimReader]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[2101:SimReader]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2020 GSI
+[2101:SimReader]: 
+[2103:GRPUpdater]: [18:39:21][INFO] 
+[2103:GRPUpdater]:       ______      _    _______  _________ 
+[2103:GRPUpdater]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.29
+[2103:GRPUpdater]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[2103:GRPUpdater]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[2103:GRPUpdater]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2020 GSI
+[2103:GRPUpdater]: 
+[2104:ITSDigitWriter]: [18:39:21][INFO] 
+[2104:ITSDigitWriter]:       ______      _    _______  _________ 
+[2104:ITSDigitWriter]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.29
+[2104:ITSDigitWriter]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[2104:ITSDigitWriter]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[2104:ITSDigitWriter]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2020 GSI
+[2104:ITSDigitWriter]: 
+[2102:ITSDigitizer]: [18:39:21][STATE] Starting FairMQ state machine --> IDLE
+[2101:SimReader]: [18:39:21][STATE] Starting FairMQ state machine --> IDLE
+[2103:GRPUpdater]: [18:39:21][STATE] Starting FairMQ state machine --> IDLE
+[2104:ITSDigitWriter]: [18:39:21][STATE] Starting FairMQ state machine --> IDLE
+[2101:SimReader]: 2021-05-20 18:39:21	Monitoring	[0;49mStdOut backend initialized[0m
+[2103:GRPUpdater]: 2021-05-20 18:39:21	Monitoring	[0;49mStdOut backend initialized[0m
+[2104:ITSDigitWriter]: 2021-05-20 18:39:21	Monitoring	[0;49mStdOut backend initialized[0m
+[2100:internal-dpl-clock]: [18:39:21][INFO] 
+[2100:internal-dpl-clock]:       ______      _    _______  _________ 
+[2100:internal-dpl-clock]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.29
+[2100:internal-dpl-clock]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[2100:internal-dpl-clock]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[2100:internal-dpl-clock]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2020 GSI
+[2100:internal-dpl-clock]: 
+[2100:internal-dpl-clock]: [18:39:21][STATE] Starting FairMQ state machine --> IDLE
+[2101:SimReader]: [18:39:21][STATE] IDLE ---> INITIALIZING DEVICE
+[2102:ITSDigitizer]: 2021-05-20 18:39:21	Monitoring	[0;49mStdOut backend initialized[0m
+[2102:ITSDigitizer]: [18:39:21][STATE] IDLE ---> INITIALIZING DEVICE
+[2103:GRPUpdater]: [18:39:21][STATE] IDLE ---> INITIALIZING DEVICE
+[2104:ITSDigitWriter]: [18:39:21][STATE] IDLE ---> INITIALIZING DEVICE
+[2100:internal-dpl-clock]: 2021-05-20 18:39:21	Monitoring	[0;49mStdOut backend initialized[0m
+[2100:internal-dpl-clock]: [18:39:21][STATE] IDLE ---> INITIALIZING DEVICE
+[2100:internal-dpl-clock]: 2021-05-20 18:39:21	Monitoring	[0;49mBuffering enabled (100)[0m
+[2100:internal-dpl-clock]: [18:39:21][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[2100:internal-dpl-clock]: [18:39:21][STATE] INITIALIZED ---> BINDING
+[2100:internal-dpl-clock]: [18:39:21][STATE] BINDING ---> BOUND
+[2100:internal-dpl-clock]: [18:39:21][STATE] BOUND ---> CONNECTING
+[2100:internal-dpl-clock]: [18:39:21][STATE] CONNECTING ---> DEVICE READY
+[2100:internal-dpl-clock]: [18:39:21][STATE] DEVICE READY ---> INITIALIZING TASK
+[2100:internal-dpl-clock]: [18:39:21][STATE] INITIALIZING TASK ---> READY
+[2100:internal-dpl-clock]: [18:39:21][STATE] READY ---> RUNNING
+[2100:internal-dpl-clock]: [18:39:21][INFO] DEVICE: Running...
+[2101:SimReader]: 2021-05-20 18:39:21	Monitoring	[0;49mBuffering enabled (100)[0m
+[2101:SimReader]: [18:39:21][INFO] adding o2sim
+[2101:SimReader]: 
+[2101:SimReader]: [18:39:21][INFO] INCONTEXTSTRING 
+[2101:SimReader]: [18:39:21][INFO] Imposing hadronic interaction rate 50000Hz
+[2101:SimReader]: [18:39:21][WARN] No bunch filling provided, impose default one
+[2101:SimReader]: [18:39:21][INFO] Deducing mu=0.00771915 per BC from IR=50000 with 576 BCs
+[2101:SimReader]: [18:39:21][INFO] InteractionSampler with 576 colliding BCs, mu(BC)= 0.00771915 -> total IR= 50000
+[2101:SimReader]: [18:39:21][INFO] Current BCid:    0 Orbit:      1 |T in BC(ns): 0.000(0 coll left)
+[2101:SimReader]: [18:39:21][INFO] setting up 1 chains
+[2102:ITSDigitizer]: 2021-05-20 18:39:21	Monitoring	[0;49mBuffering enabled (100)[0m
+[2102:ITSDigitizer]: [18:39:21][INFO] Initializing geometry service
+[2102:ITSDigitizer]: [18:39:21][INFO] Loading geometry FAIRGeom from o2sim_geometry.root
+[2103:GRPUpdater]: 2021-05-20 18:39:21	Monitoring	[0;49mBuffering enabled (100)[0m
+[2103:GRPUpdater]: [18:39:21][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[2103:GRPUpdater]: [18:39:21][STATE] INITIALIZED ---> BINDING
+[2103:GRPUpdater]: [18:39:21][STATE] BINDING ---> BOUND
+[2103:GRPUpdater]: [18:39:21][STATE] BOUND ---> CONNECTING
+[2103:GRPUpdater]: [18:39:21][STATE] CONNECTING ---> DEVICE READY
+[2103:GRPUpdater]: [18:39:21][STATE] DEVICE READY ---> INITIALIZING TASK
+[2103:GRPUpdater]: [18:39:21][STATE] INITIALIZING TASK ---> READY
+[2103:GRPUpdater]: [18:39:21][STATE] READY ---> RUNNING
+[2103:GRPUpdater]: [18:39:21][INFO] DEVICE: Running...
+[2104:ITSDigitWriter]: 2021-05-20 18:39:21	Monitoring	[0;49mBuffering enabled (100)[0m
+[2104:ITSDigitWriter]: [18:39:21][INFO] 0: branch  ITSDigitMCTruth set up
+[2104:ITSDigitWriter]: [18:39:21][INFO] 1: branch  ITSDigitMC2ROF set up
+[2104:ITSDigitWriter]: [18:39:21][INFO] 2: branch  ITSDigit set up
+[2104:ITSDigitWriter]: [18:39:21][INFO] 3: branch  ITSDigitROF set up
+[2104:ITSDigitWriter]: [18:39:21][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[2104:ITSDigitWriter]: [18:39:21][STATE] INITIALIZED ---> BINDING
+[2104:ITSDigitWriter]: [18:39:21][STATE] BINDING ---> BOUND
+[2104:ITSDigitWriter]: [18:39:21][STATE] BOUND ---> CONNECTING
+[2104:ITSDigitWriter]: [18:39:21][STATE] CONNECTING ---> DEVICE READY
+[2104:ITSDigitWriter]: [18:39:21][STATE] DEVICE READY ---> INITIALIZING TASK
+[2104:ITSDigitWriter]: [18:39:21][STATE] INITIALIZING TASK ---> READY
+[2104:ITSDigitWriter]: [18:39:21][STATE] READY ---> RUNNING
+[2104:ITSDigitWriter]: [18:39:21][INFO] DEVICE: Running...
+[2102:ITSDigitizer]: Info in <TGeoManager::CloseGeometry>: Geometry loaded from file...
+[2102:ITSDigitizer]: Info in <TGeoManager::SetTopVolume>: Top volume is cave. Master volume is cave
+[2102:ITSDigitizer]: Info in <TGeoNavigator::BuildCache>: --- Maximum geometry depth set to 100
+[2102:ITSDigitizer]: Info in <TGeoManager::CloseGeometry>: Voxelization retrieved from file
+[2102:ITSDigitizer]: Info in <TGeoManager::CountLevels>: max level = 9, max placements = 126
+[2102:ITSDigitizer]: Info in <TGeoManager::CloseGeometry>: 179840 nodes/ 399 volume UID's in FAIR geometry
+[2102:ITSDigitizer]: Info in <TGeoManager::CloseGeometry>: ----------------modeler ready----------------
+[2102:ITSDigitizer]: [18:39:22][INFO] Initializing field service
+[2102:ITSDigitizer]: [18:39:22][INFO] MagneticField::Print: MagneticFieldMap:
+[2102:ITSDigitizer]: [18:39:22][INFO] MagneticField::Print: Solenoid (-1*)5 kG, Dipole ON (-1) 
+[2102:ITSDigitizer]: [18:39:22][INFO] MagneticField::Print: Machine B fields for p-p  beam (7000 GeV): QGrad: 22.0002 Dipole: 37.8781
+[2102:ITSDigitizer]: [18:39:22][INFO] MagneticField::Print: Uses Sol30_Dip6_Hole  of /cvmfs/alice.cern.ch/el7-x86_64/Packages/O2/nightly-20210129-1/share/Common/maps/mfchebKGI_sym.root
+[2102:ITSDigitizer]: Info in <TGeoGlobalMagField::SetField>: Global magnetic field set to <MagneticFieldMap>
+[2102:ITSDigitizer]: Info in <TGeoGlobalMagField::Lock>: Global magnetic field <MagneticFieldMap> is now locked
+[2102:ITSDigitizer]: [18:39:22][INFO] Set Alpide charge threshold to 150, single hit will be accounted from 15 electrons
+[2102:ITSDigitizer]: [18:39:22][INFO] ITS simulated in CONTINUOUS RO mode
+[2101:SimReader]: [18:39:22][INFO] Automatic deduction of number of collisions ... will just take number of background entries 10
+[2101:SimReader]: Summary of DigitizationContext --
+[2101:SimReader]: Parts per collision 1
+[2101:SimReader]: Collision parts taken from simulations specified by prefix:
+[2101:SimReader]: Number of Collisions 10
+[2101:SimReader]: Collision 0 TIME BCid:  452 Orbit:      1 |T in BC(ns): 0.205 (0 , 0)
+[2101:SimReader]: Collision 1 TIME BCid:  458 Orbit:      1 |T in BC(ns): 0.175 (0 , 1)
+[2101:SimReader]: Collision 2 TIME BCid:  576 Orbit:      1 |T in BC(ns): -0.249 (0 , 2)
+[2101:SimReader]: Collision 3 TIME BCid:  984 Orbit:      1 |T in BC(ns): 0.079 (0 , 3)
+[2101:SimReader]: Collision 4 TIME BCid: 1160 Orbit:      1 |T in BC(ns): 0.283 (0 , 4)
+[2101:SimReader]: Collision 5 TIME BCid: 1200 Orbit:      1 |T in BC(ns): -0.199 (0 , 5)
+[2101:SimReader]: Collision 6 TIME BCid: 1218 Orbit:      1 |T in BC(ns): 0.269 (0 , 6)
+[2101:SimReader]: Collision 7 TIME BCid: 1232 Orbit:      1 |T in BC(ns): 0.032 (0 , 7)
+[2101:SimReader]: Collision 8 TIME BCid: 1602 Orbit:      1 |T in BC(ns): -0.182 (0 , 8)
+[2101:SimReader]: Collision 9 TIME BCid: 1602 Orbit:      1 |T in BC(ns): 0.250 (0 , 9)
+[2101:SimReader]: [18:39:22][INFO] Initializing Spec ... have 10 times 
+[2101:SimReader]: [18:39:22][INFO] Serializing Context for later reuse
+[2102:ITSDigitizer]: [18:39:22][INFO] Loading ITS L2G matrices from TGeo
+[2101:SimReader]: [18:39:22][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[2101:SimReader]: [18:39:22][STATE] INITIALIZED ---> BINDING
+[2101:SimReader]: [18:39:22][STATE] BINDING ---> BOUND
+[2101:SimReader]: [18:39:22][STATE] BOUND ---> CONNECTING
+[2101:SimReader]: [18:39:22][STATE] CONNECTING ---> DEVICE READY
+[2101:SimReader]: [18:39:22][STATE] DEVICE READY ---> INITIALIZING TASK
+[2101:SimReader]: [18:39:22][STATE] INITIALIZING TASK ---> READY
+[2101:SimReader]: [18:39:22][STATE] READY ---> RUNNING
+[2101:SimReader]: [18:39:22][INFO] DEVICE: Running...
+[2101:SimReader]: [18:39:22][INFO] SENDING SOMETHING TO OTHERS
+[2102:ITSDigitizer]: Alpide response object of 40500 matrices to map chagre in xyz to 5x5 pixels
+[2102:ITSDigitizer]: X(col) range: +0.000000e+00 : +1.462000e-03 | step: 5.000000e-05 | Nbins: 30
+[2102:ITSDigitizer]: Y(row) range: +0.000000e+00 : +1.344000e-03 | step: 5.000000e-05 | Nbins: 27
+[2102:ITSDigitizer]: Z(dpt) range: -2.000000e-03 : +2.500000e-03 | step: 8.999999e-05 | Nbins: 50
+[2102:ITSDigitizer]: Alpide digitization params:
+[2102:ITSDigitizer]: Continuous readout             : ON
+[2102:ITSDigitizer]: Readout Frame Length(ns)       : 9880.510742
+[2102:ITSDigitizer]: Strobe delay (ns)              : 99.803139
+[2102:ITSDigitizer]: Strobe length (ns)             : 9780.708008
+[2102:ITSDigitizer]: Threshold (N electrons)        : 150
+[2102:ITSDigitizer]: Min N electrons to accoint     : 15
+[2102:ITSDigitizer]: Number of charge sharing steps : 7
+[2102:ITSDigitizer]: ELoss to N electrons factor    : 2.777778e+08
+[2102:ITSDigitizer]: Noise level per pixel          : 1.000000e-07
+[2102:ITSDigitizer]: Charge time-response:
+[2102:ITSDigitizer]: o2::itsmft::AlpideSignalTrapezoid | Duration: 7500.0 MaxRiseTime: 1100.0 (RiseTime=0 at q=450.0) (ns)
+[2102:ITSDigitizer]: [18:39:23][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[2102:ITSDigitizer]: [18:39:23][STATE] INITIALIZED ---> BINDING
+[2102:ITSDigitizer]: [18:39:23][STATE] BINDING ---> BOUND
+[2102:ITSDigitizer]: [18:39:23][STATE] BOUND ---> CONNECTING
+[2102:ITSDigitizer]: [18:39:23][STATE] CONNECTING ---> DEVICE READY
+[2102:ITSDigitizer]: [18:39:23][STATE] DEVICE READY ---> INITIALIZING TASK
+[2102:ITSDigitizer]: [18:39:23][STATE] INITIALIZING TASK ---> READY
+[2102:ITSDigitizer]: [18:39:23][STATE] READY ---> RUNNING
+[2102:ITSDigitizer]: [18:39:23][INFO] DEVICE: Running...
+[2102:ITSDigitizer]: [18:39:23][INFO] GOT 10 COLLISSION TIMES
+[2102:ITSDigitizer]: [18:39:23][INFO] SIMCHAINS 1
+[2102:ITSDigitizer]: [18:39:23][INFO]  CALLING ITS DIGITIZATION 
+[2102:ITSDigitizer]: [18:39:23][INFO] Digitizing ITS hits of entry 0 from source 0 at time BCid:  452 Orbit:      1 |T in BC(ns): 0.205 ROFrame= 10) cont.mode: 1 Min/Max ROFrames 0/9
+[2102:ITSDigitizer]: [18:39:23][INFO] Filling ITS digits output for RO frames 0:9
+[2102:ITSDigitizer]: ROF: 0 | 1283 entries starting from 0
+[2102:ITSDigitizer]: BCid:    0 Orbit:      0
+[2102:ITSDigitizer]: ROF: 1 | 1267 entries starting from 1283
+[2102:ITSDigitizer]: BCid:  396 Orbit:      0
+[2102:ITSDigitizer]: ROF: 2 | 1323 entries starting from 2550
+[2102:ITSDigitizer]: BCid:  792 Orbit:      0
+[2102:ITSDigitizer]: ROF: 3 | 1229 entries starting from 3873
+[2102:ITSDigitizer]: BCid: 1188 Orbit:      0
+[2102:ITSDigitizer]: ROF: 4 | 1245 entries starting from 5102
+[2102:ITSDigitizer]: BCid: 1584 Orbit:      0
+[2102:ITSDigitizer]: ROF: 5 | 1248 entries starting from 6347
+[2102:ITSDigitizer]: BCid: 1980 Orbit:      0
+[2102:ITSDigitizer]: ROF: 6 | 1259 entries starting from 7595
+[2102:ITSDigitizer]: BCid: 2376 Orbit:      0
+[2102:ITSDigitizer]: ROF: 7 | 1258 entries starting from 8854
+[2102:ITSDigitizer]: BCid: 2772 Orbit:      0
+[2102:ITSDigitizer]: ROF: 8 | 1247 entries starting from 10112
+[2102:ITSDigitizer]: BCid: 3168 Orbit:      0
+[2102:ITSDigitizer]: ROF: 9 | 1249 entries starting from 11359
+[2102:ITSDigitizer]: BCid:    0 Orbit:      1
+[2102:ITSDigitizer]: [18:39:23][INFO] Added 12608 digits 
+[2102:ITSDigitizer]: [18:39:23][INFO] Digitizing ITS hits of entry 1 from source 0 at time BCid:  458 Orbit:      1 |T in BC(ns): 0.175 ROFrame= 10) cont.mode: 1 Min/Max ROFrames 10/11
+[2102:ITSDigitizer]: [18:39:23][INFO] Digitizing ITS hits of entry 2 from source 0 at time BCid:  576 Orbit:      1 |T in BC(ns): -0.249 ROFrame= 10) cont.mode: 1 Min/Max ROFrames 10/11
+[2102:ITSDigitizer]: [18:39:24][INFO] Digitizing ITS hits of entry 3 from source 0 at time BCid:  984 Orbit:      1 |T in BC(ns): 0.079 ROFrame= 11) cont.mode: 1 Min/Max ROFrames 10/11
+[2102:ITSDigitizer]: [18:39:24][INFO] Filling ITS digits output for RO frames 10:10
+[2102:ITSDigitizer]: ROF: 10 | 238510 entries starting from 12608
+[2102:ITSDigitizer]: BCid:  396 Orbit:      1
+[2102:ITSDigitizer]: MCEventID: 0 ROFs: 10-11 Entry in ROFRecords: 10
+[2102:ITSDigitizer]: MCEventID: 1 ROFs: 10-10 Entry in ROFRecords: 10
+[2102:ITSDigitizer]: MCEventID: 2 ROFs: 10-11 Entry in ROFRecords: 10
+[2102:ITSDigitizer]: [18:39:24][INFO] Added 238510 digits 
+[2102:ITSDigitizer]: [18:39:24][INFO] Digitizing ITS hits of entry 4 from source 0 at time BCid: 1160 Orbit:      1 |T in BC(ns): 0.283 ROFrame= 11) cont.mode: 1 Min/Max ROFrames 11/13
+[2102:ITSDigitizer]: [18:39:25][INFO] Digitizing ITS hits of entry 5 from source 0 at time BCid: 1200 Orbit:      1 |T in BC(ns): -0.199 ROFrame= 12) cont.mode: 1 Min/Max ROFrames 11/13
+[2102:ITSDigitizer]: [18:39:25][INFO] Filling ITS digits output for RO frames 11:11
+[2102:ITSDigitizer]: ROF: 11 | 345853 entries starting from 251118
+[2102:ITSDigitizer]: BCid:  792 Orbit:      1
+[2102:ITSDigitizer]: MCEventID: 3 ROFs: 11-13 Entry in ROFRecords: 11
+[2102:ITSDigitizer]: MCEventID: 4 ROFs: 11-13 Entry in ROFRecords: 11
+[2102:ITSDigitizer]: [18:39:25][INFO] Added 345853 digits 
+[2102:ITSDigitizer]: [18:39:25][INFO] Digitizing ITS hits of entry 6 from source 0 at time BCid: 1218 Orbit:      1 |T in BC(ns): 0.269 ROFrame= 12) cont.mode: 1 Min/Max ROFrames 12/13
+[2102:ITSDigitizer]: [18:39:25][INFO] Digitizing ITS hits of entry 7 from source 0 at time BCid: 1232 Orbit:      1 |T in BC(ns): 0.032 ROFrame= 12) cont.mode: 1 Min/Max ROFrames 12/13
+[2102:ITSDigitizer]: [18:39:25][INFO] Digitizing ITS hits of entry 8 from source 0 at time BCid: 1602 Orbit:      1 |T in BC(ns): -0.182 ROFrame= 13) cont.mode: 1 Min/Max ROFrames 12/13
+[2102:ITSDigitizer]: [18:39:25][INFO] Filling ITS digits output for RO frames 12:12
+[2102:ITSDigitizer]: ROF: 12 | 291191 entries starting from 596971
+[2102:ITSDigitizer]: BCid: 1188 Orbit:      1
+[2102:ITSDigitizer]: MCEventID: 5 ROFs: 12-12 Entry in ROFRecords: 12
+[2102:ITSDigitizer]: MCEventID: 6 ROFs: 12-13 Entry in ROFRecords: 12
+[2102:ITSDigitizer]: MCEventID: 7 ROFs: 12-13 Entry in ROFRecords: 12
+[2102:ITSDigitizer]: [18:39:25][INFO] Added 291191 digits 
+[2102:ITSDigitizer]: [18:39:25][INFO] Digitizing ITS hits of entry 9 from source 0 at time BCid: 1602 Orbit:      1 |T in BC(ns): 0.250 ROFrame= 13) cont.mode: 1 Min/Max ROFrames 13/14
+[2102:ITSDigitizer]: [18:39:26][INFO] Filling ITS digits output for RO frames 13:14
+[2102:ITSDigitizer]: ROF: 13 | 244799 entries starting from 888162
+[2102:ITSDigitizer]: BCid: 1584 Orbit:      1
+[2102:ITSDigitizer]: MCEventID: 8 ROFs: 13-14 Entry in ROFRecords: 13
+[2102:ITSDigitizer]: MCEventID: 9 ROFs: 13-14 Entry in ROFRecords: 13
+[2102:ITSDigitizer]: ROF: 14 | 2244 entries starting from 1132961
+[2102:ITSDigitizer]: BCid: 1980 Orbit:      1
+[2102:ITSDigitizer]: [18:39:26][INFO] Added 247043 digits 
+[2102:ITSDigitizer]: [18:39:26][INFO] ITS: Sending ROMode= 3 to GRPUpdater
+[2102:ITSDigitizer]: [18:39:26][INFO] Digitization took 2.98s
+[2104:ITSDigitWriter]: [18:39:26][INFO] WRITING 1142186 LABELS 
+[2103:GRPUpdater]: [18:39:26][INFO] Updated GRP in o2sim_grp.root for detectors RO mode
+[2104:ITSDigitWriter]: [18:39:26][INFO] RECEIVED DIGITS SIZE 1135205
+[2103:GRPUpdater]: Run: 1621528545
+[2103:GRPUpdater]: Fill:      0
+[2103:GRPUpdater]: Period: 
+[2103:GRPUpdater]: LHC State: 
+[2103:GRPUpdater]: Start: Thu May 20 18:35:47 2021
+[2103:GRPUpdater]: End  : Thu May 20 18:35:47 2021
+[2103:GRPUpdater]: Beam0: Z:A =   0:  0, Energy = 0.000
+[2103:GRPUpdater]: Beam1: Z:A =   0:  0, Energy = 0.000
+[2103:GRPUpdater]: sqrt[s]    = 0.000
+[2103:GRPUpdater]: crossing angle (radian) = 0.000000e+00
+[2103:GRPUpdater]: magnet currents (A) L3 = -30000.000, Dipole = -6000
+[2103:GRPUpdater]: Detectors: Cont.RO Triggers
+[2103:GRPUpdater]:       ITS:    +       -    
+[INFO] Quitting
+[INFO] QUIT_REQUESTED
+[2101:SimReader]: [18:39:27][INFO] Received device shutdown request (signal 15).
+[2101:SimReader]: [18:39:27][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[2104:ITSDigitWriter]: [18:39:27][INFO] Received device shutdown request (signal 15).
+[2104:ITSDigitWriter]: [18:39:27][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[2102:ITSDigitizer]: [18:39:27][INFO] Received device shutdown request (signal 15).
+[2102:ITSDigitizer]: [18:39:27][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[2103:GRPUpdater]: [18:39:27][INFO] Received device shutdown request (signal 15).
+[2103:GRPUpdater]: [18:39:27][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[2100:internal-dpl-clock]: [18:39:27][INFO] Received device shutdown request (signal 15).
+[2100:internal-dpl-clock]: [18:39:27][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[2101:SimReader]: [18:39:27][STATE] RUNNING ---> READY
+[2101:SimReader]: [18:39:27][STATE] READY ---> RESETTING TASK
+[2101:SimReader]: [18:39:27][STATE] RESETTING TASK ---> DEVICE READY
+[2101:SimReader]: [18:39:27][STATE] DEVICE READY ---> RESETTING DEVICE
+[2101:SimReader]: [18:39:27][STATE] RESETTING DEVICE ---> IDLE
+[2101:SimReader]: [18:39:27][STATE] IDLE ---> EXITING
+[2101:SimReader]: [18:39:27][STATE] Exiting FairMQ state machine
+[2102:ITSDigitizer]: [18:39:27][STATE] RUNNING ---> READY
+[2100:internal-dpl-clock]: [18:39:27][STATE] RUNNING ---> READY
+[2102:ITSDigitizer]: [18:39:27][STATE] READY ---> RESETTING TASK
+[2102:ITSDigitizer]: [18:39:27][STATE] RESETTING TASK ---> DEVICE READY
+[2102:ITSDigitizer]: [18:39:27][STATE] DEVICE READY ---> RESETTING DEVICE
+[2103:GRPUpdater]: [18:39:27][STATE] RUNNING ---> READY
+[2103:GRPUpdater]: [18:39:27][STATE] READY ---> RESETTING TASK
+[2100:internal-dpl-clock]: [18:39:27][STATE] READY ---> RESETTING TASK
+[2103:GRPUpdater]: [18:39:27][STATE] RESETTING TASK ---> DEVICE READY
+[2103:GRPUpdater]: [18:39:27][STATE] DEVICE READY ---> RESETTING DEVICE
+[2103:GRPUpdater]: [18:39:27][STATE] RESETTING DEVICE ---> IDLE
+[2103:GRPUpdater]: [18:39:27][STATE] IDLE ---> EXITING
+[2102:ITSDigitizer]: [18:39:27][STATE] RESETTING DEVICE ---> IDLE
+[2103:GRPUpdater]: [18:39:27][STATE] Exiting FairMQ state machine
+[2102:ITSDigitizer]: [18:39:27][STATE] IDLE ---> EXITING
+[2100:internal-dpl-clock]: [18:39:27][STATE] RESETTING TASK ---> DEVICE READY
+[2100:internal-dpl-clock]: [18:39:27][STATE] DEVICE READY ---> RESETTING DEVICE
+[2102:ITSDigitizer]: [18:39:27][STATE] Exiting FairMQ state machine
+[2100:internal-dpl-clock]: [18:39:27][STATE] RESETTING DEVICE ---> IDLE
+[2100:internal-dpl-clock]: [18:39:27][STATE] IDLE ---> EXITING
+[2100:internal-dpl-clock]: [18:39:27][STATE] Exiting FairMQ state machine
+[2104:ITSDigitWriter]: [18:39:28][STATE] RUNNING ---> READY
+[2104:ITSDigitWriter]: [18:39:28][STATE] READY ---> RESETTING TASK
+[2104:ITSDigitWriter]: [18:39:28][STATE] RESETTING TASK ---> DEVICE READY
+[2104:ITSDigitWriter]: [18:39:28][STATE] DEVICE READY ---> RESETTING DEVICE
+[2104:ITSDigitWriter]: Cleaning up for shared memory id 'ca2969e8'...
+[2104:ITSDigitWriter]: No region counter found. No regions to cleanup.
+[2104:ITSDigitWriter]: Successfully removed 'fmq_ca2969e8_m_0'.
+[2104:ITSDigitWriter]: Successfully removed 'fmq_ca2969e8_mng'.
+[2104:ITSDigitWriter]: Successfully removed 'fmq_ca2969e8_mtx'.
+[2104:ITSDigitWriter]: Successfully removed 'fmq_ca2969e8_cv'.
+[2104:ITSDigitWriter]: [18:39:28][STATE] RESETTING DEVICE ---> IDLE
+[2104:ITSDigitWriter]: [18:39:28][STATE] IDLE ---> EXITING
+[2104:ITSDigitWriter]: [18:39:28][STATE] Exiting FairMQ state machine
+[INFO] Dumping used configuration in dpl-config.json
+
+==============================================================================================
+3. Tracking
+[INFO] Initialising O2 Data Processing Layer
+[INFO] O2 Data Processing Layer initialised. We brake for nobody.
+[INFO] Optimised build. O2DEBUG / LOG(DEBUG) / LOGF(DEBUG) / assert statement will not be shown.
+[INFO] Redeployment of configuration asked.
+[INFO] Starting internal-dpl-clock on pid 3183
+[INFO] Starting its-digit-reader on pid 3184
+[INFO] Starting its-clusterer on pid 3185
+[INFO] Starting its-cluster-writer on pid 3186
+[INFO] Starting its-tracker on pid 3187
+[INFO] Starting its-track-writer on pid 3188
+[INFO] Redeployment of configuration done.
+[3187:its-tracker]: [INFO] Spawing new device its-tracker in process with pid 3187
+[3187:its-tracker]: [18:41:45][INFO] 
+[3187:its-tracker]:       ______      _    _______  _________ 
+[3187:its-tracker]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.29
+[3187:its-tracker]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[3187:its-tracker]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[3187:its-tracker]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2020 GSI
+[3187:its-tracker]: 
+[3187:its-tracker]: [18:41:45][STATE] Starting FairMQ state machine --> IDLE
+[3187:its-tracker]: 2021-05-20 18:41:45	Monitoring	[0;49mStdOut backend initialized[0m
+[3187:its-tracker]: [18:41:45][STATE] IDLE ---> INITIALIZING DEVICE
+[3186:its-cluster-writer]: [INFO] Spawing new device its-cluster-writer in process with pid 3186
+[3187:its-tracker]: 2021-05-20 18:41:45	Monitoring	[0;49mBuffering enabled (100)[0m
+[3187:its-tracker]: [18:41:45][INFO] Created GPUReconstruction instance for device type CPU (1) 
+[3186:its-cluster-writer]: [18:41:45][INFO] 
+[3186:its-cluster-writer]:       ______      _    _______  _________ 
+[3186:its-cluster-writer]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.29
+[3186:its-cluster-writer]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[3186:its-cluster-writer]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[3186:its-cluster-writer]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2020 GSI
+[3186:its-cluster-writer]: 
+[3186:its-cluster-writer]: [18:41:45][STATE] Starting FairMQ state machine --> IDLE
+[3186:its-cluster-writer]: 2021-05-20 18:41:45	Monitoring	[0;49mStdOut backend initialized[0m
+[3186:its-cluster-writer]: [18:41:45][STATE] IDLE ---> INITIALIZING DEVICE
+[3188:its-track-writer]: [INFO] Spawing new device its-track-writer in process with pid 3188
+[3188:its-track-writer]: [18:41:45][INFO] 
+[3188:its-track-writer]:       ______      _    _______  _________ 
+[3188:its-track-writer]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.29
+[3188:its-track-writer]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[3188:its-track-writer]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[3188:its-track-writer]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2020 GSI
+[3188:its-track-writer]: 
+[3188:its-track-writer]: [18:41:45][STATE] Starting FairMQ state machine --> IDLE
+[3188:its-track-writer]: 2021-05-20 18:41:45	Monitoring	[0;49mStdOut backend initialized[0m
+[3188:its-track-writer]: [18:41:45][STATE] IDLE ---> INITIALIZING DEVICE
+[3186:its-cluster-writer]: 2021-05-20 18:41:45	Monitoring	[0;49mBuffering enabled (100)[0m
+[3186:its-cluster-writer]: [18:41:45][INFO] 0: branch  ITSClusterComp set up
+[3186:its-cluster-writer]: [18:41:45][INFO] 1: branch  ITSClusterPatt set up
+[3186:its-cluster-writer]: [18:41:45][INFO] 2: branch  ITSClustersROF set up
+[3186:its-cluster-writer]: [18:41:45][INFO] 3: branch  ITSClusterMCTruth set up
+[3186:its-cluster-writer]: [18:41:45][INFO] 4: branch  ITSClustersMC2ROF set up
+[3186:its-cluster-writer]: [18:41:45][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[3186:its-cluster-writer]: [18:41:45][STATE] INITIALIZED ---> BINDING
+[3186:its-cluster-writer]: [18:41:45][STATE] BINDING ---> BOUND
+[3186:its-cluster-writer]: [18:41:45][STATE] BOUND ---> CONNECTING
+[3186:its-cluster-writer]: [18:41:45][STATE] CONNECTING ---> DEVICE READY
+[3186:its-cluster-writer]: [18:41:45][STATE] DEVICE READY ---> INITIALIZING TASK
+[3186:its-cluster-writer]: [18:41:45][STATE] INITIALIZING TASK ---> READY
+[3186:its-cluster-writer]: [18:41:45][STATE] READY ---> RUNNING
+[3186:its-cluster-writer]: [18:41:45][INFO] DEVICE: Running...
+[3184:its-digit-reader]: [INFO] Spawing new device its-digit-reader in process with pid 3184
+[3185:its-clusterer]: [INFO] Spawing new device its-clusterer in process with pid 3185
+[3184:its-digit-reader]: [18:41:45][INFO] 
+[3184:its-digit-reader]:       ______      _    _______  _________ 
+[3184:its-digit-reader]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.29
+[3184:its-digit-reader]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[3184:its-digit-reader]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[3184:its-digit-reader]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2020 GSI
+[3184:its-digit-reader]: 
+[3184:its-digit-reader]: [18:41:45][STATE] Starting FairMQ state machine --> IDLE
+[3185:its-clusterer]: [18:41:45][INFO] 
+[3185:its-clusterer]:       ______      _    _______  _________ 
+[3185:its-clusterer]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.29
+[3185:its-clusterer]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[3185:its-clusterer]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[3185:its-clusterer]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2020 GSI
+[3185:its-clusterer]: 
+[3185:its-clusterer]: [18:41:45][STATE] Starting FairMQ state machine --> IDLE
+[3184:its-digit-reader]: 2021-05-20 18:41:45	Monitoring	[0;49mStdOut backend initialized[0m
+[3185:its-clusterer]: 2021-05-20 18:41:45	Monitoring	[0;49mStdOut backend initialized[0m
+[3184:its-digit-reader]: [18:41:45][STATE] IDLE ---> INITIALIZING DEVICE
+[3183:internal-dpl-clock]: [INFO] Spawing new device internal-dpl-clock in process with pid 3183
+[3184:its-digit-reader]: 2021-05-20 18:41:45	Monitoring	[0;49mBuffering enabled (100)[0m
+[3185:its-clusterer]: [18:41:45][STATE] IDLE ---> INITIALIZING DEVICE
+[3188:its-track-writer]: 2021-05-20 18:41:45	Monitoring	[0;49mBuffering enabled (100)[0m
+[3188:its-track-writer]: [18:41:45][INFO] 0: branch  ITSTrack set up
+[3183:internal-dpl-clock]: [18:41:45][INFO] 
+[3183:internal-dpl-clock]:       ______      _    _______  _________ 
+[3183:internal-dpl-clock]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.4.29
+[3183:internal-dpl-clock]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[3183:internal-dpl-clock]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[3183:internal-dpl-clock]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2020 GSI
+[3183:internal-dpl-clock]: 
+[3183:internal-dpl-clock]: [18:41:45][STATE] Starting FairMQ state machine --> IDLE
+[3185:its-clusterer]: 2021-05-20 18:41:45	Monitoring	[0;49mBuffering enabled (100)[0m
+[3183:internal-dpl-clock]: 2021-05-20 18:41:45	Monitoring	[0;49mStdOut backend initialized[0m
+[3188:its-track-writer]: [18:41:45][INFO] 1: branch  ITSTrackClusIdx set up
+[3183:internal-dpl-clock]: [18:41:45][STATE] IDLE ---> INITIALIZING DEVICE
+[3183:internal-dpl-clock]: 2021-05-20 18:41:45	Monitoring	[0;49mBuffering enabled (100)[0m
+[3183:internal-dpl-clock]: [18:41:45][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[3183:internal-dpl-clock]: [18:41:45][STATE] INITIALIZED ---> BINDING
+[3183:internal-dpl-clock]: [18:41:45][STATE] BINDING ---> BOUND
+[3183:internal-dpl-clock]: [18:41:45][STATE] BOUND ---> CONNECTING
+[3183:internal-dpl-clock]: [18:41:45][STATE] CONNECTING ---> DEVICE READY
+[3183:internal-dpl-clock]: [18:41:45][STATE] DEVICE READY ---> INITIALIZING TASK
+[3183:internal-dpl-clock]: [18:41:45][STATE] INITIALIZING TASK ---> READY
+[3183:internal-dpl-clock]: [18:41:45][STATE] READY ---> RUNNING
+[3183:internal-dpl-clock]: [18:41:45][INFO] DEVICE: Running...
+[3188:its-track-writer]: [18:41:45][INFO] 2: branch  Vertices set up
+[3188:its-track-writer]: [18:41:45][INFO] 3: branch  VerticesROF set up
+[3188:its-track-writer]: [18:41:45][INFO] 4: branch  ITSTracksROF set up
+[3188:its-track-writer]: [18:41:45][INFO] 5: branch  ITSTrackMCTruth set up
+[3188:its-track-writer]: [18:41:45][INFO] 6: branch  ITSTracksMC2ROF set up
+[3188:its-track-writer]: [18:41:45][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[3188:its-track-writer]: [18:41:45][STATE] INITIALIZED ---> BINDING
+[3188:its-track-writer]: [18:41:45][STATE] BINDING ---> BOUND
+[3188:its-track-writer]: [18:41:45][STATE] BOUND ---> CONNECTING
+[3185:its-clusterer]: [18:41:45][INFO] Dictionary ITSdictionary.bin is absent, ITSClusterer expects cluster patterns
+[3185:its-clusterer]: [18:41:45][INFO] Clusterizer masks overflow pixels separated by < 406 BC and <= 0 in row/col
+[3185:its-clusterer]: [18:41:45][INFO] Inclusive clusterization timing (w/o disk IO): Cpu: 0 Real: 0 s in 1 slots
+[3185:its-clusterer]: [18:41:45][INFO] Threads output merging timing                : Cpu: 0 Real: 0 s in 1 slots
+[3188:its-track-writer]: [18:41:45][STATE] CONNECTING ---> DEVICE READY
+[3185:its-clusterer]: [18:41:45][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[3188:its-track-writer]: [18:41:45][STATE] DEVICE READY ---> INITIALIZING TASK
+[3188:its-track-writer]: [18:41:45][STATE] INITIALIZING TASK ---> READY
+[3188:its-track-writer]: [18:41:45][STATE] READY ---> RUNNING
+[3188:its-track-writer]: [18:41:45][INFO] DEVICE: Running...
+[3185:its-clusterer]: [18:41:45][STATE] INITIALIZED ---> BINDING
+[3185:its-clusterer]: [18:41:45][STATE] BINDING ---> BOUND
+[3185:its-clusterer]: [18:41:45][STATE] BOUND ---> CONNECTING
+[3185:its-clusterer]: [18:41:45][STATE] CONNECTING ---> DEVICE READY
+[3185:its-clusterer]: [18:41:45][STATE] DEVICE READY ---> INITIALIZING TASK
+[3185:its-clusterer]: [18:41:45][STATE] INITIALIZING TASK ---> READY
+[3185:its-clusterer]: [18:41:45][STATE] READY ---> RUNNING
+[3185:its-clusterer]: [18:41:45][INFO] DEVICE: Running...
+[3184:its-digit-reader]: [18:41:45][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[3184:its-digit-reader]: [18:41:45][STATE] INITIALIZED ---> BINDING
+[3184:its-digit-reader]: [18:41:45][STATE] BINDING ---> BOUND
+[3184:its-digit-reader]: [18:41:45][STATE] BOUND ---> CONNECTING
+[3184:its-digit-reader]: [18:41:45][STATE] CONNECTING ---> DEVICE READY
+[3184:its-digit-reader]: [18:41:45][STATE] DEVICE READY ---> INITIALIZING TASK
+[3184:its-digit-reader]: [18:41:45][STATE] INITIALIZING TASK ---> READY
+[3184:its-digit-reader]: [18:41:45][STATE] READY ---> RUNNING
+[3184:its-digit-reader]: [18:41:45][INFO] DEVICE: Running...
+[3187:its-tracker]: [18:41:45][INFO] MagneticField::Print: MagneticFieldMap:
+[3187:its-tracker]: [18:41:45][INFO] MagneticField::Print: Solenoid (-1*)5 kG, Dipole ON (-1) 
+[3187:its-tracker]: [18:41:45][INFO] MagneticField::Print: Machine B fields for p-p  beam (7000 GeV): QGrad: 22.0002 Dipole: 37.8781
+[3187:its-tracker]: [18:41:45][INFO] MagneticField::Print: Uses Sol30_Dip6_Hole  of /cvmfs/alice.cern.ch/el7-x86_64/Packages/O2/nightly-20210129-1/share/Common/maps/mfchebKGI_sym.root
+[3187:its-tracker]: Info in <TGeoGlobalMagField::SetField>: Global magnetic field set to <MagneticFieldMap>
+[3187:its-tracker]: Info in <TGeoGlobalMagField::Lock>: Global magnetic field <MagneticFieldMap> is now locked
+[3187:its-tracker]: [18:41:45][INFO] Loading geometry FAIRGeom from o2sim_geometry.root
+[3187:its-tracker]: Info in <TGeoManager::CloseGeometry>: Geometry loaded from file...
+[3187:its-tracker]: Info in <TGeoManager::SetTopVolume>: Top volume is cave. Master volume is cave
+[3187:its-tracker]: Info in <TGeoNavigator::BuildCache>: --- Maximum geometry depth set to 100
+[3187:its-tracker]: Info in <TGeoManager::CloseGeometry>: Voxelization retrieved from file
+[3187:its-tracker]: Info in <TGeoManager::CountLevels>: max level = 9, max placements = 126
+[3187:its-tracker]: Info in <TGeoManager::CloseGeometry>: 179840 nodes/ 399 volume UID's in FAIR geometry
+[3187:its-tracker]: Info in <TGeoManager::CloseGeometry>: ----------------modeler ready----------------
+[3187:its-tracker]: [18:41:46][INFO] Loading ITS T2L matrices from TGeo
+[3184:its-digit-reader]: [18:41:46][INFO] ITSDigitReader pushed 1135205 digits, in 15 RO frames
+[3185:its-clusterer]: [18:41:46][INFO] ITSClusterer pulled 1135205 digits, in 15 RO frames
+[3185:its-clusterer]: [18:41:46][INFO] ITSClusterer pulled 1142186 labels 
+[3187:its-tracker]: [18:41:46][WARN] It is faster to use 2D rotation for T2G instead of full Transform3D matrices
+[3187:its-tracker]: [18:41:46][INFO] Loading ITS T2G matrices from TGeo
+[3185:its-clusterer]: [18:41:46][INFO] ITSClusterer pushed 184549 clusters, in 15 RO frames
+[3186:its-cluster-writer]: [18:41:46][INFO] ITSClusterWriter pulled 184549 clusters, in 15 RO frames
+[3187:its-tracker]: [18:41:46][INFO] Loading ITS T2G rotation 2D matrices
+[3187:its-tracker]: [18:41:46][INFO] Initializing tracker in sync. phase reconstruction with 1 passes
+[3187:its-tracker]: [18:41:46][INFO] Not using lookup table for material budget approximation
+[3187:its-tracker]: [18:41:46][INFO] Dictionary ITSdictionary.bin is absent, Tracker expects cluster patterns
+[3187:its-tracker]: [18:41:46][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[3187:its-tracker]: [18:41:46][STATE] INITIALIZED ---> BINDING
+[3187:its-tracker]: [18:41:46][STATE] BINDING ---> BOUND
+[3187:its-tracker]: [18:41:46][STATE] BOUND ---> CONNECTING
+[3187:its-tracker]: [18:41:46][STATE] CONNECTING ---> DEVICE READY
+[3187:its-tracker]: [18:41:46][STATE] DEVICE READY ---> INITIALIZING TASK
+[3187:its-tracker]: [18:41:46][STATE] INITIALIZING TASK ---> READY
+[3187:its-tracker]: [18:41:46][STATE] READY ---> RUNNING
+[3187:its-tracker]: [18:41:46][INFO] DEVICE: Running...
+[3187:its-tracker]: [18:41:46][INFO] ITSTracker pulled 184549 clusters, 15 RO frames
+[3187:its-tracker]: [18:41:46][INFO] 184549 MC label objects , in 10 MC events
+[3187:its-tracker]: [18:41:46][INFO] ITSTracker RO: continuous=1
+[3187:its-tracker]: [18:41:46][INFO] Loading ITS L2G matrices from TGeo
+[3187:its-tracker]: [18:41:46][INFO] ROframe: 0, clusters loaded : 1283
+[3187:its-tracker]:  - Vertexer initialisation completed in: 0.282578 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 0.009355 ms
+[3187:its-tracker]:  - Adjacent tracklets validation completed in: 0.003836 ms
+[3187:its-tracker]:  - Vertex finding completed in: 0.008177 ms
+[3187:its-tracker]: [18:41:46][INFO] Found tracks: 0
+[3187:its-tracker]: [18:41:46][INFO] ROframe: 1, clusters loaded : 1267
+[3187:its-tracker]:  - Vertexer initialisation completed in: 0.271588 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 0.037056 ms
+[3187:its-tracker]:  - Adjacent tracklets validation completed in: 0.000554 ms
+[3187:its-tracker]:  - Vertex finding completed in: 0.000602 ms
+[3187:its-tracker]: [18:41:46][INFO] Found tracks: 0
+[3187:its-tracker]: [18:41:46][INFO] ROframe: 2, clusters loaded : 1323
+[3187:its-tracker]:  - Vertexer initialisation completed in: 0.219551 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 0.001536 ms
+[3187:its-tracker]:  - Adjacent tracklets validation completed in: 0.000344 ms
+[3187:its-tracker]:  - Vertex finding completed in: 0.00069 ms
+[3187:its-tracker]: [18:41:46][INFO] Found tracks: 0
+[3187:its-tracker]: [18:41:46][INFO] ROframe: 3, clusters loaded : 1229
+[3187:its-tracker]:  - Vertexer initialisation completed in: 0.216171 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 0.001356 ms
+[3187:its-tracker]:  - Adjacent tracklets validation completed in: 0.000336 ms
+[3187:its-tracker]:  - Vertex finding completed in: 0.00046 ms
+[3187:its-tracker]: [18:41:46][INFO] Found tracks: 0
+[3187:its-tracker]: [18:41:46][INFO] ROframe: 4, clusters loaded : 1245
+[3187:its-tracker]:  - Vertexer initialisation completed in: 0.213176 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 0.001806 ms
+[3187:its-tracker]:  - Adjacent tracklets validation completed in: 0.000353 ms
+[3187:its-tracker]:  - Vertex finding completed in: 0.000466 ms
+[3187:its-tracker]: [18:41:46][INFO] Found tracks: 0
+[3187:its-tracker]: [18:41:46][INFO] ROframe: 5, clusters loaded : 1248
+[3187:its-tracker]:  - Vertexer initialisation completed in: 0.191128 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 0.001549 ms
+[3187:its-tracker]:  - Adjacent tracklets validation completed in: 0.000362 ms
+[3187:its-tracker]:  - Vertex finding completed in: 0.000479 ms
+[3187:its-tracker]: [18:41:46][INFO] Found tracks: 0
+[3187:its-tracker]: [18:41:46][INFO] ROframe: 6, clusters loaded : 1259
+[3187:its-tracker]:  - Vertexer initialisation completed in: 0.237945 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 0.001716 ms
+[3187:its-tracker]:  - Adjacent tracklets validation completed in: 0.000404 ms
+[3187:its-tracker]:  - Vertex finding completed in: 0.000447 ms
+[3187:its-tracker]: [18:41:46][INFO] Found tracks: 0
+[3187:its-tracker]: [18:41:46][INFO] ROframe: 7, clusters loaded : 1258
+[3187:its-tracker]:  - Vertexer initialisation completed in: 0.177135 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 0.001637 ms
+[3187:its-tracker]:  - Adjacent tracklets validation completed in: 0.000665 ms
+[3187:its-tracker]:  - Vertex finding completed in: 0.000533 ms
+[3187:its-tracker]: [18:41:46][INFO] Found tracks: 0
+[3187:its-tracker]: [18:41:46][INFO] ROframe: 8, clusters loaded : 1247
+[3187:its-tracker]:  - Vertexer initialisation completed in: 0.189625 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 0.004213 ms
+[3187:its-tracker]:  - Adjacent tracklets validation completed in: 0.00039 ms
+[3187:its-tracker]:  - Vertex finding completed in: 0.000474 ms
+[3187:its-tracker]: [18:41:46][INFO] Found tracks: 0
+[3187:its-tracker]: [18:41:46][INFO] ROframe: 9, clusters loaded : 1249
+[3187:its-tracker]:  - Vertexer initialisation completed in: 0.19001 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 0.002065 ms
+[3187:its-tracker]:  - Adjacent tracklets validation completed in: 0.000393 ms
+[3187:its-tracker]:  - Vertex finding completed in: 0.000504 ms
+[3187:its-tracker]: [18:41:46][INFO] Found tracks: 0
+[3187:its-tracker]: [18:41:46][INFO] ROframe: 10, clusters loaded : 46443
+[3187:its-tracker]:  - Vertexer initialisation completed in: 2.53317 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 9.72812 ms
+[3187:its-tracker]:  - Adjacent tracklets validation completed in: 2.25065 ms
+[3187:its-tracker]:  - Vertex finding completed in: 0.25722 ms
+[3187:its-tracker]: 		Found vertex with:    776 contributors
+[3187:its-tracker]: 		Found vertex with:    259 contributors
+[3187:its-tracker]:  - Context initialisation completed in: 5.32767 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 26.3281 ms
+[3187:its-tracker]:  - Cell finding completed in: 12.6412 ms
+[3187:its-tracker]:  - Neighbour finding completed in: 0.761572 ms
+[3187:its-tracker]:  - Road finding completed in: 0.278632 ms
+[3187:its-tracker]:  - Track finding completed in: 10.7455 ms
+[3187:its-tracker]:  - Vertex processing completed in: 56.0826ms
+[3187:its-tracker]:  - Context initialisation completed in: 0.402663 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 20.7157 ms
+[3187:its-tracker]:  - Cell finding completed in: 5.82933 ms
+[3187:its-tracker]:  - Neighbour finding completed in: 0.414941 ms
+[3187:its-tracker]:  - Road finding completed in: 0.039416 ms
+[3187:its-tracker]:  - Track finding completed in: 1.13155 ms
+[3187:its-tracker]:  - Vertex processing completed in: 28.5336ms
+[3187:its-tracker]:  - Context initialisation completed in: 0.21672 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 18.1183 ms
+[3187:its-tracker]:  - Cell finding completed in: 7.58181 ms
+[3187:its-tracker]:  - Neighbour finding completed in: 0.293645 ms
+[3187:its-tracker]:  - Road finding completed in: 0.003568 ms
+[3187:its-tracker]:  - Track finding completed in: 0.000844 ms
+[3187:its-tracker]:  - Vertex processing completed in: 26.2149ms
+[3187:its-tracker]:  - Context initialisation completed in: 0.267491 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 21.7153 ms
+[3187:its-tracker]:  - Cell finding completed in: 7.86063 ms
+[3187:its-tracker]:  - Neighbour finding completed in: 0.365265 ms
+[3187:its-tracker]:  - Road finding completed in: 0.007672 ms
+[3187:its-tracker]:  - Track finding completed in: 0.000487 ms
+[3187:its-tracker]:  - Vertex processing completed in: 30.2168ms
+[3187:its-tracker]: [18:41:47][INFO] Found tracks: 782
+[3187:its-tracker]: [18:41:47][INFO] ROframe: 11, clusters loaded : 49219
+[3187:its-tracker]:  - Vertexer initialisation completed in: 3.11326 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 17.6389 ms
+[3187:its-tracker]:  - Adjacent tracklets validation completed in: 5.27205 ms
+[3187:its-tracker]:  - Vertex finding completed in: 0.423868 ms
+[3187:its-tracker]: 		Found vertex with:   1658 contributors
+[3187:its-tracker]: 		Found vertex with:    878 contributors
+[3187:its-tracker]:  - Context initialisation completed in: 2.64786 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 22.3299 ms
+[3187:its-tracker]:  - Cell finding completed in: 12.6732 ms
+[3187:its-tracker]:  - Neighbour finding completed in: 1.30563 ms
+[3187:its-tracker]:  - Road finding completed in: 0.513392 ms
+[3187:its-tracker]:  - Track finding completed in: 14.7549 ms
+[3187:its-tracker]:  - Vertex processing completed in: 54.2249ms
+[3187:its-tracker]:  - Context initialisation completed in: 0.486875 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 16.7123 ms
+[3187:its-tracker]:  - Cell finding completed in: 6.72529 ms
+[3187:its-tracker]:  - Neighbour finding completed in: 0.672409 ms
+[3187:its-tracker]:  - Road finding completed in: 0.22877 ms
+[3187:its-tracker]:  - Track finding completed in: 8.5027 ms
+[3187:its-tracker]:  - Vertex processing completed in: 33.3284ms
+[3187:its-tracker]:  - Context initialisation completed in: 0.403013 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 14.2705 ms
+[3187:its-tracker]:  - Cell finding completed in: 4.25622 ms
+[3187:its-tracker]:  - Neighbour finding completed in: 0.294258 ms
+[3187:its-tracker]:  - Road finding completed in: 0.001745 ms
+[3187:its-tracker]:  - Track finding completed in: 0.000446 ms
+[3187:its-tracker]:  - Vertex processing completed in: 19.2262ms
+[3187:its-tracker]:  - Context initialisation completed in: 0.218578 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 14.0459 ms
+[3187:its-tracker]:  - Cell finding completed in: 3.69998 ms
+[3187:its-tracker]:  - Neighbour finding completed in: 0.181825 ms
+[3187:its-tracker]:  - Road finding completed in: 0.000927 ms
+[3187:its-tracker]:  - Track finding completed in: 0.000303 ms
+[3187:its-tracker]:  - Vertex processing completed in: 18.1475ms
+[3187:its-tracker]: [18:41:47][INFO] Found tracks: 2096
+[3187:its-tracker]: [18:41:47][INFO] ROframe: 12, clusters loaded : 19399
+[3187:its-tracker]:  - Vertexer initialisation completed in: 0.92746 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 1.73244 ms
+[3187:its-tracker]:  - Adjacent tracklets validation completed in: 0.324854 ms
+[3187:its-tracker]:  - Vertex finding completed in: 0.173046 ms
+[3187:its-tracker]: 		Found vertex with:    450 contributors
+[3187:its-tracker]: 		Found vertex with:    420 contributors
+[3187:its-tracker]: 		Found vertex with:     17 contributors
+[3187:its-tracker]:  - Context initialisation completed in: 1.56771 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 5.19876 ms
+[3187:its-tracker]:  - Cell finding completed in: 1.61297 ms
+[3187:its-tracker]:  - Neighbour finding completed in: 0.254351 ms
+[3187:its-tracker]:  - Road finding completed in: 0.067648 ms
+[3187:its-tracker]:  - Track finding completed in: 3.77787 ms
+[3187:its-tracker]:  - Vertex processing completed in: 12.4793ms
+[3187:its-tracker]:  - Context initialisation completed in: 0.145527 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 4.75195 ms
+[3187:its-tracker]:  - Cell finding completed in: 1.26574 ms
+[3187:its-tracker]:  - Neighbour finding completed in: 0.241304 ms
+[3187:its-tracker]:  - Road finding completed in: 0.054384 ms
+[3187:its-tracker]:  - Track finding completed in: 3.48133 ms
+[3187:its-tracker]:  - Vertex processing completed in: 9.94024ms
+[3187:its-tracker]:  - Context initialisation completed in: 0.121485 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 3.62802 ms
+[3187:its-tracker]:  - Cell finding completed in: 0.309833 ms
+[3187:its-tracker]:  - Neighbour finding completed in: 0.01286 ms
+[3187:its-tracker]:  - Road finding completed in: 0.00596 ms
+[3187:its-tracker]:  - Track finding completed in: 0.451781 ms
+[3187:its-tracker]:  - Vertex processing completed in: 4.52993ms
+[3187:its-tracker]:  - Context initialisation completed in: 0.03655 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 3.94602 ms
+[3187:its-tracker]:  - Cell finding completed in: 0.668494 ms
+[3187:its-tracker]:  - Neighbour finding completed in: 0.130246 ms
+[3187:its-tracker]:  - Road finding completed in: 0.000869 ms
+[3187:its-tracker]:  - Track finding completed in: 0.000346 ms
+[3187:its-tracker]:  - Vertex processing completed in: 4.78253ms
+[3187:its-tracker]:  - Context initialisation completed in: 0.071524 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 4.47087 ms
+[3187:its-tracker]:  - Cell finding completed in: 0.775756 ms
+[3187:its-tracker]:  - Neighbour finding completed in: 0.081485 ms
+[3187:its-tracker]:  - Road finding completed in: 0.000666 ms
+[3187:its-tracker]:  - Track finding completed in: 0.000491 ms
+[3187:its-tracker]:  - Vertex processing completed in: 5.40079ms
+[3187:its-tracker]:  - Context initialisation completed in: 0.066689 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 4.60565 ms
+[3187:its-tracker]:  - Cell finding completed in: 0.350846 ms
+[3187:its-tracker]:  - Neighbour finding completed in: 0.009993 ms
+[3187:its-tracker]:  - Road finding completed in: 0.000283 ms
+[3187:its-tracker]:  - Track finding completed in: 0.000602 ms
+[3187:its-tracker]:  - Vertex processing completed in: 5.03406ms
+[3187:its-tracker]: [18:41:47][INFO] Found tracks: 724
+[3187:its-tracker]: [18:41:47][INFO] ROframe: 13, clusters loaded : 55609
+[3187:its-tracker]:  - Vertexer initialisation completed in: 3.41208 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 19.6538 ms
+[3187:its-tracker]:  - Adjacent tracklets validation completed in: 6.97344 ms
+[3187:its-tracker]:  - Vertex finding completed in: 0.654352 ms
+[3187:its-tracker]: 		Found vertex with:   2455 contributors
+[3187:its-tracker]: 		Found vertex with:    429 contributors
+[3187:its-tracker]:  - Context initialisation completed in: 3.78811 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 36.2587 ms
+[3187:its-tracker]:  - Cell finding completed in: 24.8467 ms
+[3187:its-tracker]:  - Neighbour finding completed in: 2.37506 ms
+[3187:its-tracker]:  - Road finding completed in: 1.08471 ms
+[3187:its-tracker]:  - Track finding completed in: 32.9084 ms
+[3187:its-tracker]:  - Vertex processing completed in: 101.262ms
+[3187:its-tracker]:  - Context initialisation completed in: 0.903597 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 22.1181 ms
+[3187:its-tracker]:  - Cell finding completed in: 6.6686 ms
+[3187:its-tracker]:  - Neighbour finding completed in: 0.257526 ms
+[3187:its-tracker]:  - Road finding completed in: 0.042012 ms
+[3187:its-tracker]:  - Track finding completed in: 4.13624 ms
+[3187:its-tracker]:  - Vertex processing completed in: 34.1261ms
+[3187:its-tracker]:  - Context initialisation completed in: 0.300935 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 17.3316 ms
+[3187:its-tracker]:  - Cell finding completed in: 6.27388 ms
+[3187:its-tracker]:  - Neighbour finding completed in: 0.725915 ms
+[3187:its-tracker]:  - Road finding completed in: 0.00437 ms
+[3187:its-tracker]:  - Track finding completed in: 0.000499 ms
+[3187:its-tracker]:  - Vertex processing completed in: 24.6372ms
+[3187:its-tracker]:  - Context initialisation completed in: 0.423816 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 20.0571 ms
+[3187:its-tracker]:  - Cell finding completed in: 5.48371 ms
+[3187:its-tracker]:  - Neighbour finding completed in: 0.200558 ms
+[3187:its-tracker]:  - Road finding completed in: 0.001267 ms
+[3187:its-tracker]:  - Track finding completed in: 0.000772 ms
+[3187:its-tracker]:  - Vertex processing completed in: 26.1672ms
+[3187:its-tracker]: [18:41:47][INFO] Found tracks: 2562
+[3187:its-tracker]: [18:41:47][INFO] ROframe: 14, clusters loaded : 1271
+[3187:its-tracker]:  - Vertexer initialisation completed in: 0.235826 ms
+[3187:its-tracker]:  - Tracklet finding completed in: 0.002629 ms
+[3187:its-tracker]:  - Adjacent tracklets validation completed in: 0.000662 ms
+[3187:its-tracker]:  - Vertex finding completed in: 0.001138 ms
+[3187:its-tracker]: [18:41:47][INFO] Found tracks: 0
+[3187:its-tracker]: [18:41:47][INFO] ITSTracker pushed 6164 tracks
+[3187:its-tracker]: [18:41:47][INFO] could not set used size: boost::interprocess::bad_alloc
+[3187:its-tracker]: [18:41:47][INFO] ITS CA-Tracker total timing: Cpu: 7.400e-01 Real: 7.433e-01 s in 1 slots
+[3188:its-track-writer]: [18:41:47][INFO] ITSTrackWriter pulled 6164 tracks, in 15 RO frames
+[INFO] Quitting
+[INFO] QUIT_REQUESTED
+[3184:its-digit-reader]: [18:41:47][INFO] Received device shutdown request (signal 15).
+[3184:its-digit-reader]: [18:41:47][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[3185:its-clusterer]: [18:41:47][INFO] Received device shutdown request (signal 15).
+[3185:its-clusterer]: [18:41:47][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[3187:its-tracker]: [18:41:47][INFO] Received device shutdown request (signal 15).
+[3187:its-tracker]: [18:41:47][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[3184:its-digit-reader]: [18:41:47][STATE] RUNNING ---> READY
+[3184:its-digit-reader]: [18:41:47][STATE] READY ---> RESETTING TASK
+[3184:its-digit-reader]: [18:41:47][STATE] RESETTING TASK ---> DEVICE READY
+[3184:its-digit-reader]: [18:41:47][STATE] DEVICE READY ---> RESETTING DEVICE
+[3184:its-digit-reader]: [18:41:47][STATE] RESETTING DEVICE ---> IDLE
+[3184:its-digit-reader]: [18:41:47][STATE] IDLE ---> EXITING
+[3184:its-digit-reader]: [18:41:47][STATE] Exiting FairMQ state machine
+[3183:internal-dpl-clock]: [18:41:47][INFO] Received device shutdown request (signal 15).
+[3183:internal-dpl-clock]: [18:41:47][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[3186:its-cluster-writer]: [18:41:47][INFO] Received device shutdown request (signal 15).
+[3186:its-cluster-writer]: [18:41:47][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[3188:its-track-writer]: [18:41:47][INFO] Received device shutdown request (signal 15).
+[3188:its-track-writer]: [18:41:47][INFO] Waiting for graceful device shutdown. Hit Ctrl-C again to abort immediately.
+[3183:internal-dpl-clock]: [18:41:47][STATE] RUNNING ---> READY
+[3185:its-clusterer]: [18:41:47][STATE] RUNNING ---> READY
+[3183:internal-dpl-clock]: [18:41:47][STATE] READY ---> RESETTING TASK
+[3185:its-clusterer]: [18:41:47][STATE] READY ---> RESETTING TASK
+[3185:its-clusterer]: [18:41:47][STATE] RESETTING TASK ---> DEVICE READY
+[3185:its-clusterer]: [18:41:47][STATE] DEVICE READY ---> RESETTING DEVICE
+[3187:its-tracker]: [18:41:47][STATE] RUNNING ---> READY
+[3187:its-tracker]: [18:41:47][STATE] READY ---> RESETTING TASK
+[3187:its-tracker]: [18:41:47][STATE] RESETTING TASK ---> DEVICE READY
+[3187:its-tracker]: [18:41:47][STATE] DEVICE READY ---> RESETTING DEVICE
+[3183:internal-dpl-clock]: [18:41:47][STATE] RESETTING TASK ---> DEVICE READY
+[3183:internal-dpl-clock]: [18:41:47][STATE] DEVICE READY ---> RESETTING DEVICE
+[3187:its-tracker]: [18:41:47][STATE] RESETTING DEVICE ---> IDLE
+[3187:its-tracker]: [18:41:47][STATE] IDLE ---> EXITING
+[3183:internal-dpl-clock]: [18:41:47][STATE] RESETTING DEVICE ---> IDLE
+[3183:internal-dpl-clock]: [18:41:47][STATE] IDLE ---> EXITING
+[3185:its-clusterer]: [18:41:47][STATE] RESETTING DEVICE ---> IDLE
+[3187:its-tracker]: [18:41:47][STATE] Exiting FairMQ state machine
+[3183:internal-dpl-clock]: [18:41:47][STATE] Exiting FairMQ state machine
+[3185:its-clusterer]: [18:41:47][STATE] IDLE ---> EXITING
+[3185:its-clusterer]: [18:41:47][STATE] Exiting FairMQ state machine
+[3188:its-track-writer]: [18:41:48][STATE] RUNNING ---> READY
+[3188:its-track-writer]: [18:41:48][STATE] READY ---> RESETTING TASK
+[3188:its-track-writer]: [18:41:48][STATE] RESETTING TASK ---> DEVICE READY
+[3188:its-track-writer]: [18:41:48][STATE] DEVICE READY ---> RESETTING DEVICE
+[3188:its-track-writer]: [18:41:48][STATE] RESETTING DEVICE ---> IDLE
+[3188:its-track-writer]: [18:41:48][STATE] IDLE ---> EXITING
+[3188:its-track-writer]: [18:41:48][STATE] Exiting FairMQ state machine
+[3186:its-cluster-writer]: [18:41:48][STATE] RUNNING ---> READY
+[3186:its-cluster-writer]: [18:41:48][STATE] READY ---> RESETTING TASK
+[3186:its-cluster-writer]: [18:41:48][STATE] RESETTING TASK ---> DEVICE READY
+[3186:its-cluster-writer]: [18:41:48][STATE] DEVICE READY ---> RESETTING DEVICE
+[3186:its-cluster-writer]: Cleaning up for shared memory id '614b662f'...
+[3186:its-cluster-writer]: No region counter found. No regions to cleanup.
+[3186:its-cluster-writer]: Successfully removed 'fmq_614b662f_m_0'.
+[3186:its-cluster-writer]: Successfully removed 'fmq_614b662f_mng'.
+[3186:its-cluster-writer]: Successfully removed 'fmq_614b662f_mtx'.
+[3186:its-cluster-writer]: Successfully removed 'fmq_614b662f_cv'.
+[3186:its-cluster-writer]: [18:41:48][STATE] RESETTING DEVICE ---> IDLE
+[3186:its-cluster-writer]: [18:41:48][STATE] IDLE ---> EXITING
+[3186:its-cluster-writer]: [18:41:48][STATE] Exiting FairMQ state machine
+[INFO] Dumping used configuration in dpl-config.json
