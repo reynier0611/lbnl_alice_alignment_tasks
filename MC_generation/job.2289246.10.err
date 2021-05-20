@@ -1,7 +1,0 @@
-Info in <TGeoManager::CloseGeometry>: Geometry loaded from file...
-Info in <TGeoManager::SetTopVolume>: Top volume is cave. Master volume is cave
-Info in <TGeoNavigator::BuildCache>: --- Maximum geometry depth set to 100
-Info in <TGeoManager::CloseGeometry>: Voxelization retrieved from file
-Info in <TGeoManager::CountLevels>: max level = 9, max placements = 126
-Info in <TGeoManager::CloseGeometry>: 179840 nodes/ 399 volume UID's in FAIR geometry
-Info in <TGeoManager::CloseGeometry>: ----------------modeler ready----------------
