@@ -19,7 +19,7 @@ const double pi = TMath::Pi();
 using namespace std;
 
 //Forward-declaring functions
-void prettyTH1( TH1F * h1 , int color );
+void prettyTH1( TH1F * h1 , int color , bool log=false );
 void prettyTH2( TH2F * h2 );
 // ===============================================================================================================================
 int main(int argc, char ** argv) {
@@ -60,21 +60,22 @@ int main(int argc, char ** argv) {
 	// ------------------------------------------------------------------------------
 	// Creating histograms
 	// Nominal histograms from branches in root file
-	TH1F * h1_mcZOut     = new TH1F("h1_mcZOut"     ,";mcZOut (hardcoded as -1)"           ,70,-  2,  0);  prettyTH1(h1_mcZOut     ,2);
-	TH1F * h1_recZOut    = new TH1F("h1_recZOut"    ,";recZOut"                            ,70,-100,100);  prettyTH1(h1_recZOut    ,2);
-	TH1F * h1_mcPhiOut   = new TH1F("h1_mcPhiOut"   ,";mcPhiOut (hardcoded as -1)"         ,70,-  2,  0);  prettyTH1(h1_mcPhiOut   ,2);
-	TH1F * h1_recPhiOut  = new TH1F("h1_recPhiOut"  ,";recPhiOut"                          ,70,-  1,  8);  prettyTH1(h1_recPhiOut  ,2);
-	TH1F * h1_mcThetaOut = new TH1F("h1_mcThetaOut" ,";mcThetaOut (hardcoded as -1)"       ,70,-  2,  0);  prettyTH1(h1_mcThetaOut ,2);
-	TH1F * h1_recThetaOut= new TH1F("h1_recThetaOut",";recThetaOut"                        ,70,   0,  4);  prettyTH1(h1_recThetaOut,2);
-	TH1F * h1_mcPhi      = new TH1F("h1_mcPhi"      ,";mcPhi (#phi_{gen})"                 ,70,- pi, pi);  prettyTH1(h1_mcPhi      ,2);
-	TH1F * h1_recPhi     = new TH1F("h1_recPhi"     ,";recPhi (#phi_{reco})"               ,70,- pi, pi);  prettyTH1(h1_recPhi     ,2);
-	TH1F * h1_mcLam      = new TH1F("h1_mcLam"      ,";mcLam (#theta_{gen})"               ,70,-1.3,1.3);  prettyTH1(h1_mcLam      ,2);
-	TH1F * h1_recLam     = new TH1F("h1_recLam"     ,";recLam (#theta_{reco})"             ,70,-1.3,1.3);  prettyTH1(h1_recLam     ,2);
-	TH1F * h1_mcPt       = new TH1F("h1_mcPt"       ,";mcPt (p_{T, gen} [GeV/#it{c}])"     ,70,-  0,  8);  prettyTH1(h1_mcPt       ,2);
-	TH1F * h1_recPt      = new TH1F("h1_recPt"      ,";recPt (p_{T, reco} [GeV/#it{c}])"   ,70,-  0,  8);  prettyTH1(h1_recPt      ,2);
-	TH1F * h1_ipD        = new TH1F("h1_ipD"        ,";ipD (transverse impact parameter)"  ,70,- .1, .1);  prettyTH1(h1_ipD        ,2);
-	TH1F * h1_ipZ        = new TH1F("h1_ipZ"        ,";ipZ (longitudinal impact parameter)",50,- 20, 20);  prettyTH1(h1_ipZ        ,2);
-	TH1F * h1_label      = new TH1F("h1_label"      ,";label"                              ,70,- 10,2e5);  prettyTH1(h1_label      ,2);
+	TH1F * h1_mcZOut     = new TH1F("h1_mcZOut"     ,";mcZOut (hardcoded as -1)"           ,70,-  2,  0 );  prettyTH1(h1_mcZOut     ,2);
+	TH1F * h1_recZOut    = new TH1F("h1_recZOut"    ,";recZOut"                            ,70,-100,100 );  prettyTH1(h1_recZOut    ,2);
+	TH1F * h1_mcPhiOut   = new TH1F("h1_mcPhiOut"   ,";mcPhiOut (hardcoded as -1)"         ,70,-  2,  0 );  prettyTH1(h1_mcPhiOut   ,2);
+	TH1F * h1_recPhiOut  = new TH1F("h1_recPhiOut"  ,";recPhiOut"                          ,70,-  1,  8 );  prettyTH1(h1_recPhiOut  ,2);
+	TH1F * h1_mcThetaOut = new TH1F("h1_mcThetaOut" ,";mcThetaOut (hardcoded as -1)"       ,70,-  2,  0 );  prettyTH1(h1_mcThetaOut ,2);
+	TH1F * h1_recThetaOut= new TH1F("h1_recThetaOut",";recThetaOut"                        ,70,   0,  4 );  prettyTH1(h1_recThetaOut,2);
+	TH1F * h1_mcPhi      = new TH1F("h1_mcPhi"      ,";mcPhi (#phi_{gen})"                 ,70,- pi, pi );  prettyTH1(h1_mcPhi      ,2);
+	TH1F * h1_recPhi     = new TH1F("h1_recPhi"     ,";recPhi (#phi_{reco})"               ,70,- pi, pi );  prettyTH1(h1_recPhi     ,2);
+	TH1F * h1_mcLam      = new TH1F("h1_mcLam"      ,";mcLam (#pi/2-#theta_{gen})"         ,70,-1.3,1.3 );  prettyTH1(h1_mcLam      ,2);
+	TH1F * h1_recLam     = new TH1F("h1_recLam"     ,";recLam (#pi/2-#theta_{reco})"       ,70,-1.3,1.3 );  prettyTH1(h1_recLam     ,2);
+	TH1F * h1_mcPt       = new TH1F("h1_mcPt"       ,";mcPt (p_{T, gen} [GeV/#it{c}])"     ,70,-  0,  8 );  prettyTH1(h1_mcPt       ,2);
+	TH1F * h1_recPt      = new TH1F("h1_recPt"      ,";recPt (p_{T, reco} [GeV/#it{c}])"   ,70,-  0,  8 );  prettyTH1(h1_recPt      ,2);
+	TH1F * h1_ipD        = new TH1F("h1_ipD"        ,";ipD (transverse impact parameter)"  ,70,- .1, .1 );  prettyTH1(h1_ipD        ,2);
+	TH1F * h1_ipZ        = new TH1F("h1_ipZ"        ,";ipZ (longitudinal impact parameter)",50,- 20, 20 );  prettyTH1(h1_ipZ        ,2);
+	TH1F * h1_label      = new TH1F("h1_label"      ,";label (Multiplicity?)"              ,99,- 10, 5e3);  prettyTH1(h1_label      ,2,true);
+	TH1F * h1_label_copy = new TH1F("h1_label_copy" ,";label (Multiplicity?)"              ,99,- 10,12e4);	prettyTH1(h1_label_copy ,2,true);
 	// ---------------
 	// Additional histograms
 	double pTbins[] = {0,0.5,1,2,5};
@@ -94,18 +95,18 @@ int main(int argc, char ** argv) {
 	for(int pT = 0 ; pT < size_pTbins-1 ; pT++){
 		TString title = Form("%.1f < p^{gen}_{T} < %.1f GeV/#it{c}",pTbins[pT],pTbins[pT+1]);
 
-		h1_mcPhi_pTbins               [pT] = new TH1F(Form("h1_mcPhi_pTbins_%i"               ,pT),title+";#phi [rad]"                                          ,50,-pi,pi);
-        	h1_recPhi_pTbins              [pT] = new TH1F(Form("h1_recPhi_pTbins_%i"              ,pT),title+";#phi [rad]"                                          ,50,-pi,pi);
-        	h1_mcTheta_pTbins             [pT] = new TH1F(Form("h1_mcTheta_pTbins_%i"             ,pT),title+";#theta [rad]"                                        ,50,-1.3,1.3);
-        	h1_recTheta_pTbins            [pT] = new TH1F(Form("h1_recTheta_pTbins_%i"            ,pT),title+";#theta [rad]"                                        ,50,-1.3,1.3);
-        	h2_mcThetaPhi_pTbins          [pT] = new TH2F(Form("h2_mcThetaPhi_pTbins_%i"          ,pT),title+";#phi_{gen} [rad];#theta_{gen} [rad]"                 ,50,-pi,pi,50,-1.3,1.3);
-        	h2_recThetaPhi_pTbins         [pT] = new TH2F(Form("h2_recThetaPhi_pTbins_%i"         ,pT),title+";#phi_{reco} [rad];#theta_{reco} [rad]"               ,50,-pi,pi,50,-1.3,1.3);
-		h1_mc_min_rec_Phi             [pT] = new TH1F(Form("h1_mc_min_rec_Phi_%i"             ,pT),title+";#phi_{gen} - #phi_{rec} [rad]"                       ,80,-.02,.02);
-		h1_mc_min_rec_Theta           [pT] = new TH1F(Form("h1_mc_min_rec_Theta_%i"           ,pT),title+";#theta_{gen} - #theta_{rec} [rad]"                   ,80,-.01,.01);
-		h2_mc_v_rec_Phi               [pT] = new TH2F(Form("h2_mc_v_rec_Phi_%i"               ,pT),title+";#phi_{rec} [rad];#phi_{gen} [rad]"                   ,50,- pi, pi,50,- pi, pi);
-		h2_mc_v_rec_Theta             [pT] = new TH2F(Form("h2_mc_v_rec_Theta_%i"             ,pT),title+";#theta_{rec} [rad];#theta_{gen} [rad]"               ,50,-1.3,1.3,50,-1.3,1.3);
-		h2_mc_min_rec_Phi_v_mc_Phi    [pT] = new TH2F(Form("h2_mc_min_rec_Phi_v_mc_Phi_%i"    ,pT),title+";#phi_{gen} - #phi_{rec} [rad];#phi_{gen} [rad]"      ,50,- pi, pi,80,-.02,.02);
-		h2_mc_min_rec_Theta_v_mc_Theta[pT] = new TH2F(Form("h2_mc_min_rec_Theta_v_mc_Theta_%i",pT),title+";#theta_{gen} - #theta_{rec} [rad];#theta_{gen} [rad]",50,-1.3,1.3,80,-.01,.01);
+		h1_mcPhi_pTbins               [pT] = new TH1F(Form("h1_mcPhi_pTbins_%i"               ,pT),title+";#phi [rad]"                                          ,90,-pi,pi);
+        	h1_recPhi_pTbins              [pT] = new TH1F(Form("h1_recPhi_pTbins_%i"              ,pT),title+";#phi [rad]"                                          ,90,-pi,pi);
+        	h1_mcTheta_pTbins             [pT] = new TH1F(Form("h1_mcTheta_pTbins_%i"             ,pT),title+";#theta [rad]"                                        ,90, 0 ,pi);
+        	h1_recTheta_pTbins            [pT] = new TH1F(Form("h1_recTheta_pTbins_%i"            ,pT),title+";#theta [rad]"                                        ,90, 0 ,pi);
+        	h2_mcThetaPhi_pTbins          [pT] = new TH2F(Form("h2_mcThetaPhi_pTbins_%i"          ,pT),title+";#phi_{gen} [rad];#theta_{gen} [rad]"                 ,90,-pi,pi,90, 0 , pi);
+        	h2_recThetaPhi_pTbins         [pT] = new TH2F(Form("h2_recThetaPhi_pTbins_%i"         ,pT),title+";#phi_{reco} [rad];#theta_{reco} [rad]"               ,90,-pi,pi,90, 0 , pi);
+		h1_mc_min_rec_Phi             [pT] = new TH1F(Form("h1_mc_min_rec_Phi_%i"             ,pT),title+";#phi_{gen} - #phi_{rec} [rad]"                       ,90,-.02,.02);
+		h1_mc_min_rec_Theta           [pT] = new TH1F(Form("h1_mc_min_rec_Theta_%i"           ,pT),title+";#theta_{gen} - #theta_{rec} [rad]"                   ,90,-.01,.01);
+		h2_mc_v_rec_Phi               [pT] = new TH2F(Form("h2_mc_v_rec_Phi_%i"               ,pT),title+";#phi_{rec} [rad];#phi_{gen} [rad]"                   ,90,- pi, pi,90,- pi, pi);
+		h2_mc_v_rec_Theta             [pT] = new TH2F(Form("h2_mc_v_rec_Theta_%i"             ,pT),title+";#theta_{rec} [rad];#theta_{gen} [rad]"               ,90,   0, pi,90,   0, pi);
+		h2_mc_min_rec_Phi_v_mc_Phi    [pT] = new TH2F(Form("h2_mc_min_rec_Phi_v_mc_Phi_%i"    ,pT),title+";#phi_{gen} [rad];#phi_{gen} - #phi_{rec} [rad]"      ,90,- pi, pi,90,-.02,.02);
+		h2_mc_min_rec_Theta_v_mc_Theta[pT] = new TH2F(Form("h2_mc_min_rec_Theta_v_mc_Theta_%i",pT),title+";#theta_{gen} [rad];#theta_{gen} - #theta_{rec} [rad]",50,   0, pi,90,-.01,.01);
 	
 		prettyTH1(h1_mcPhi_pTbins    [pT],1);	h1_mcPhi_pTbins    [pT] -> SetMinimum(0);
 		prettyTH1(h1_recPhi_pTbins   [pT],2);	h1_recPhi_pTbins   [pT] -> SetMinimum(0);
@@ -127,6 +128,9 @@ int main(int argc, char ** argv) {
 	for(int ev = 0 ; ev < nEntries ; ev++){
 		T -> GetEntry(ev);
 
+		double mcTheta = pi/2. - mcLam;
+		double recTheta = pi/2. - recLam;
+
 		h1_mcZOut     -> Fill(mcZOut     );
 		h1_recZOut    -> Fill(recZOut    );
 		h1_mcPhiOut   -> Fill(mcPhiOut   );
@@ -142,21 +146,22 @@ int main(int argc, char ** argv) {
 		h1_ipD        -> Fill(ipD        );
 		h1_ipZ        -> Fill(ipZ        );
 		h1_label      -> Fill(label      );
+		h1_label_copy -> Fill(label      );
 
 		for(int pT = 0 ; pT < size_pTbins-1 ; pT++){
 			if(mcPt>pTbins[pT]&&mcPt<pTbins[pT+1]){
 				h1_mcPhi_pTbins               [pT] -> Fill( mcPhi  );
                 		h1_recPhi_pTbins              [pT] -> Fill( recPhi );
-                		h1_mcTheta_pTbins             [pT] -> Fill( mcLam  );
-                		h1_recTheta_pTbins            [pT] -> Fill( recLam );
-                		h2_mcThetaPhi_pTbins          [pT] -> Fill( mcPhi  , mcLam  );
-        	        	h2_recThetaPhi_pTbins         [pT] -> Fill( recPhi , recLam );
+                		h1_mcTheta_pTbins             [pT] -> Fill( mcTheta  );
+                		h1_recTheta_pTbins            [pT] -> Fill( recTheta );
+                		h2_mcThetaPhi_pTbins          [pT] -> Fill( mcPhi  , mcTheta  );
+        	        	h2_recThetaPhi_pTbins         [pT] -> Fill( recPhi , recTheta );
 				h1_mc_min_rec_Phi             [pT] -> Fill( mcPhi - recPhi );
-                		h1_mc_min_rec_Theta           [pT] -> Fill( mcLam - recLam );
+                		h1_mc_min_rec_Theta           [pT] -> Fill( mcTheta - recTheta );
                 		h2_mc_v_rec_Phi               [pT] -> Fill( recPhi , mcPhi );
-                		h2_mc_v_rec_Theta             [pT] -> Fill( recLam , mcLam );
+                		h2_mc_v_rec_Theta             [pT] -> Fill( recTheta , mcTheta );
 				h2_mc_min_rec_Phi_v_mc_Phi    [pT] -> Fill( mcPhi , mcPhi - recPhi );
-                		h2_mc_min_rec_Theta_v_mc_Theta[pT] -> Fill( mcLam , mcLam - recLam );
+                		h2_mc_min_rec_Theta_v_mc_Theta[pT] -> Fill( mcTheta , mcTheta - recTheta );
 				break;
 			}
 		}
@@ -165,21 +170,22 @@ int main(int argc, char ** argv) {
 	// Plotting results
 	TCanvas * c1 = new TCanvas("c1","c1",1300,900);
 	c1 -> Divide(4,4);
-	c1 -> cd( 1); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_mcZOut     -> Draw(); h1_mcZOut     -> Draw("samehist");
-	c1 -> cd( 2); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_recZOut    -> Draw(); h1_recZOut    -> Draw("samehist");
-	c1 -> cd( 3); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_mcPhiOut   -> Draw(); h1_mcPhiOut   -> Draw("samehist");
-	c1 -> cd( 4); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_recPhiOut  -> Draw(); h1_recPhiOut  -> Draw("samehist");
-	c1 -> cd( 5); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_mcThetaOut -> Draw(); h1_mcThetaOut -> Draw("samehist");
-	c1 -> cd( 6); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_recThetaOut-> Draw(); h1_recThetaOut-> Draw("samehist");
-	c1 -> cd( 7); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_mcPhi      -> Draw(); h1_mcPhi      -> Draw("samehist");
-	c1 -> cd( 8); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_recPhi     -> Draw(); h1_recPhi     -> Draw("samehist");
-	c1 -> cd( 9); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_mcLam      -> Draw(); h1_mcLam      -> Draw("samehist");
-	c1 -> cd(10); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_recLam     -> Draw(); h1_recLam     -> Draw("samehist");
-	c1 -> cd(11); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_mcPt       -> Draw(); h1_mcPt       -> Draw("samehist");
-	c1 -> cd(12); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_recPt      -> Draw(); h1_recPt      -> Draw("samehist");
-	c1 -> cd(13); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_ipD        -> Draw(); h1_ipD        -> Draw("samehist");
-	c1 -> cd(14); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_ipZ        -> Draw(); h1_ipZ        -> Draw("samehist");
-	c1 -> cd(15); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_label      -> Draw(); h1_label      -> Draw("samehist");
+	c1 -> cd( 1); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16); h1_mcZOut     -> Draw(); h1_mcZOut     -> Draw("samehist");
+	c1 -> cd( 2); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16); h1_recZOut    -> Draw(); h1_recZOut    -> Draw("samehist");
+	c1 -> cd( 3); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16); h1_mcPhiOut   -> Draw(); h1_mcPhiOut   -> Draw("samehist");
+	c1 -> cd( 4); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16); h1_recPhiOut  -> Draw(); h1_recPhiOut  -> Draw("samehist");
+	c1 -> cd( 5); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16); h1_mcThetaOut -> Draw(); h1_mcThetaOut -> Draw("samehist");
+	c1 -> cd( 6); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16); h1_recThetaOut-> Draw(); h1_recThetaOut-> Draw("samehist");
+	c1 -> cd( 7); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16); h1_mcPhi      -> Draw(); h1_mcPhi      -> Draw("samehist");
+	c1 -> cd( 8); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16); h1_recPhi     -> Draw(); h1_recPhi     -> Draw("samehist");
+	c1 -> cd( 9); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16); h1_mcLam      -> Draw(); h1_mcLam      -> Draw("samehist");
+	c1 -> cd(10); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16); h1_recLam     -> Draw(); h1_recLam     -> Draw("samehist");
+	c1 -> cd(11); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16); h1_mcPt       -> Draw(); h1_mcPt       -> Draw("samehist");
+	c1 -> cd(12); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16); h1_recPt      -> Draw(); h1_recPt      -> Draw("samehist");
+	c1 -> cd(13); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16); h1_ipD        -> Draw(); h1_ipD        -> Draw("samehist");
+	c1 -> cd(14); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16); h1_ipZ        -> Draw(); h1_ipZ        -> Draw("samehist");
+	c1 -> cd(15); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16); gPad->SetLogy(); h1_label      -> Draw(); h1_label      -> Draw("samehist");
+	c1 -> cd(16); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16); gPad->SetLogy(); h1_label_copy -> Draw(); h1_label_copy -> Draw("samehist");
 	c1 -> Modified();
 	c1 -> Update();
 	// -------------------------------------------
@@ -218,7 +224,7 @@ int main(int argc, char ** argv) {
 	return 0;
 } // End of main function
 // ===============================================================================================================================
-void prettyTH1( TH1F * h1 , int color ){
+void prettyTH1( TH1F * h1 , int color , bool log ){
 	h1 -> GetXaxis() -> CenterTitle();
 	h1 -> GetXaxis() -> SetTitleSize(0.06);
 	h1 -> GetXaxis() -> SetLabelSize(0.06);
@@ -232,7 +238,8 @@ void prettyTH1( TH1F * h1 , int color ){
 	h1 -> SetLineColor(color);
 	h1 -> SetMarkerColor(color);
 
-	h1 -> SetMinimum(0);
+	if (!log)
+		h1 -> SetMinimum(0);
 }
 // ===============================================================================================================================
 void prettyTH2( TH2F * h2 ){
