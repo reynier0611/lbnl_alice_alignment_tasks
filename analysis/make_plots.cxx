@@ -6,6 +6,7 @@
 #include "TCanvas.h"
 #include "TMath.h"
 #include "TStyle.h"
+#include "TLegend.h"
 
 #include <fstream>
 #include <cstdlib>
@@ -93,10 +94,10 @@ int main(int argc, char ** argv) {
 	for(int pT = 0 ; pT < size_pTbins-1 ; pT++){
 		TString title = Form("%.1f < p^{gen}_{T} < %.1f GeV/#it{c}",pTbins[pT],pTbins[pT+1]);
 
-		h1_mcPhi_pTbins               [pT] = new TH1F(Form("h1_mcPhi_pTbins_%i"               ,pT),title+";#phi_{gen} [rad]"                                    ,50,-pi,pi);
-        	h1_recPhi_pTbins              [pT] = new TH1F(Form("h1_recPhi_pTbins_%i"              ,pT),title+";#phi_{reco} [rad]"                                   ,50,-pi,pi);
-        	h1_mcTheta_pTbins             [pT] = new TH1F(Form("h1_mcTheta_pTbins_%i"             ,pT),title+";#theta_{gen} [rad]"                                  ,50,-1.3,1.3);
-        	h1_recTheta_pTbins            [pT] = new TH1F(Form("h1_recTheta_pTbins_%i"            ,pT),title+";#theta_{reco} [rad]"                                 ,50,-1.3,1.3);
+		h1_mcPhi_pTbins               [pT] = new TH1F(Form("h1_mcPhi_pTbins_%i"               ,pT),title+";#phi [rad]"                                          ,50,-pi,pi);
+        	h1_recPhi_pTbins              [pT] = new TH1F(Form("h1_recPhi_pTbins_%i"              ,pT),title+";#phi [rad]"                                          ,50,-pi,pi);
+        	h1_mcTheta_pTbins             [pT] = new TH1F(Form("h1_mcTheta_pTbins_%i"             ,pT),title+";#theta [rad]"                                        ,50,-1.3,1.3);
+        	h1_recTheta_pTbins            [pT] = new TH1F(Form("h1_recTheta_pTbins_%i"            ,pT),title+";#theta [rad]"                                        ,50,-1.3,1.3);
         	h2_mcThetaPhi_pTbins          [pT] = new TH2F(Form("h2_mcThetaPhi_pTbins_%i"          ,pT),title+";#phi_{gen} [rad];#theta_{gen} [rad]"                 ,50,-pi,pi,50,-1.3,1.3);
         	h2_recThetaPhi_pTbins         [pT] = new TH2F(Form("h2_recThetaPhi_pTbins_%i"         ,pT),title+";#phi_{reco} [rad];#theta_{reco} [rad]"               ,50,-pi,pi,50,-1.3,1.3);
 		h1_mc_min_rec_Phi             [pT] = new TH1F(Form("h1_mc_min_rec_Phi_%i"             ,pT),title+";#phi_{gen} - #phi_{rec} [rad]"                       ,80,-.02,.02);
@@ -182,25 +183,25 @@ int main(int argc, char ** argv) {
 	c1 -> Modified();
 	c1 -> Update();
 	// -------------------------------------------
+	TLegend * leg1 = new TLegend(0.3,0.3,0.7,0.6);
+	leg1 -> SetLineColor(0);
+	leg1 -> AddEntry( h1_mcPhi_pTbins [0],"gen" );
+	leg1 -> AddEntry( h1_recPhi_pTbins[0],"reco");
+	// -------------------------------------------
 	TCanvas ** c2 = new TCanvas * [size_pTbins-1];
 	for(int pT = 0 ; pT < size_pTbins-1 ; pT++){
 		c2[pT] = new TCanvas(Form("c2_%i",pT),Form("c2_%i",pT),1300,900);
 		c2[pT] -> Divide(5,2);
-		c2[pT] -> cd(1); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);
-		h1_mcPhi_pTbins   [pT] -> Draw();
-		h1_recPhi_pTbins  [pT] -> Draw("same");
-		c2[pT] -> cd(2); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);
-		h1_mcTheta_pTbins [pT] -> Draw();
-		h1_recTheta_pTbins[pT] -> Draw("same");
-		c2[pT] -> cd( 3); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);	h2_mcThetaPhi_pTbins          [pT] -> Draw("COLZ");
-		c2[pT] -> cd( 4); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);	h2_recThetaPhi_pTbins         [pT] -> Draw("COLZ");
-		c2[pT] -> cd( 5); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);	h1_mc_min_rec_Phi             [pT] -> Draw();
-		c2[pT] -> cd( 6); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);	h1_mc_min_rec_Theta           [pT] -> Draw();
-		c2[pT] -> cd( 7); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);	h2_mc_v_rec_Phi               [pT] -> Draw("COLZ");
-		c2[pT] -> cd( 8); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);	h2_mc_v_rec_Theta             [pT] -> Draw("COLZ");
-		c2[pT] -> cd( 9); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16); 	h2_mc_min_rec_Phi_v_mc_Phi    [pT] -> Draw("COLZ");
-		c2[pT] -> cd(10); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);	h2_mc_min_rec_Theta_v_mc_Theta[pT] -> Draw("COLZ");
-		
+		c2[pT] -> cd( 1); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.22);	h1_mcPhi_pTbins               [pT] -> Draw(      );	h1_recPhi_pTbins   [pT] -> Draw("same"    );	leg1 -> Draw("same");
+		c2[pT] -> cd( 2); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.22);       h2_mcThetaPhi_pTbins          [pT] -> Draw("COLZ");
+		c2[pT] -> cd( 3); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.22);       h1_mc_min_rec_Phi             [pT] -> Draw(      );	h1_mc_min_rec_Phi  [pT] -> Draw("samehist");
+		c2[pT] -> cd( 4); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.22);       h2_mc_v_rec_Phi               [pT] -> Draw("COLZ");
+		c2[pT] -> cd( 5); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.24);       h2_mc_min_rec_Phi_v_mc_Phi    [pT] -> Draw("COLZ");
+		c2[pT] -> cd( 6); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.22);	h1_mcTheta_pTbins             [pT] -> Draw(      );	h1_recTheta_pTbins [pT] -> Draw("same"    );
+		c2[pT] -> cd( 7); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.22);	h2_recThetaPhi_pTbins         [pT] -> Draw("COLZ");
+		c2[pT] -> cd( 8); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.22);	h1_mc_min_rec_Theta           [pT] -> Draw(      );	h1_mc_min_rec_Theta[pT] -> Draw("samehist");
+		c2[pT] -> cd( 9); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.22);	h2_mc_v_rec_Theta             [pT] -> Draw("COLZ");
+		c2[pT] -> cd(10); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.24);	h2_mc_min_rec_Theta_v_mc_Theta[pT] -> Draw("COLZ");
 		c2[pT] -> Modified();
 		c2[pT] -> Update();
 	}
