@@ -32,7 +32,6 @@ int main(int argc, char ** argv) {
 	TH1::SetDefaultSumw2();
 	TH2::SetDefaultSumw2();
 	gStyle -> SetOptStat(0);
-
 	// ------------------------------------------------------------------------------
 	// Loading data
 	//TFile * Fin = new TFile("CheckTracks.root"); -> Now called CheckTracks_1.root
@@ -59,40 +58,24 @@ int main(int argc, char ** argv) {
 	int nEntries = T -> GetEntries();
 	// ------------------------------------------------------------------------------
 	// Creating histograms
-	
-	TH1F * h1_mcZOut     = new TH1F("h1_mcZOut"     ,";h1_mcZOut"     ,70,-  2,  0);
-	TH1F * h1_recZOut    = new TH1F("h1_recZOut"    ,";h1_recZOut"    ,70,-100,100);
-	TH1F * h1_mcPhiOut   = new TH1F("h1_mcPhiOut"   ,";h1_mcPhiOut"   ,70,-  2,  0);
-	TH1F * h1_recPhiOut  = new TH1F("h1_recPhiOut"  ,";h1_recPhiOut"  ,70,-  1,  8);
-	TH1F * h1_mcThetaOut = new TH1F("h1_mcThetaOut" ,";h1_mcThetaOut" ,70,-  2,  0);
-	TH1F * h1_recThetaOut= new TH1F("h1_recThetaOut",";h1_recThetaOut",70,   0,  4);
-	TH1F * h1_mcPhi      = new TH1F("h1_mcPhi"      ,";h1_mcPhi"      ,70,- pi, pi); // generated phi
-	TH1F * h1_recPhi     = new TH1F("h1_recPhi"     ,";h1_recPhi"     ,70,- pi, pi); // reconstructed phi
-	TH1F * h1_mcLam      = new TH1F("h1_mcLam"      ,";h1_mcLam"      ,70,-1.3,1.3); // generated theta
-	TH1F * h1_recLam     = new TH1F("h1_recLam"     ,";h1_recLam"     ,70,-1.3,1.3); // reconstructed theta
-	TH1F * h1_mcPt       = new TH1F("h1_mcPt"       ,";h1_mcPt"       ,70,-  0,  8); // generated pT
-	TH1F * h1_recPt      = new TH1F("h1_recPt"      ,";h1_recPt"      ,70,-  0,  8); // reconstructed pT
-	TH1F * h1_ipD        = new TH1F("h1_ipD"        ,";h1_ipD"        ,70,-  2,  2);
-	TH1F * h1_ipZ        = new TH1F("h1_ipZ"        ,";h1_ipZ"        ,50,- 20, 20);
-	TH1F * h1_label      = new TH1F("h1_label"      ,";h1_label"      ,70,- 10,2e5);
-
-	prettyTH1(h1_mcZOut     ,2);
-        prettyTH1(h1_recZOut    ,2);
-        prettyTH1(h1_mcPhiOut   ,2);
-        prettyTH1(h1_recPhiOut  ,2);
-        prettyTH1(h1_mcThetaOut ,2);
-        prettyTH1(h1_recThetaOut,2);
-        prettyTH1(h1_mcPhi      ,2);
-        prettyTH1(h1_recPhi     ,2);
-        prettyTH1(h1_mcLam      ,2);
-        prettyTH1(h1_recLam     ,2);
-        prettyTH1(h1_mcPt       ,2);
-        prettyTH1(h1_recPt      ,2);
-        prettyTH1(h1_ipD        ,2);
-        prettyTH1(h1_ipZ        ,2);
-        prettyTH1(h1_label      ,2);
-
+	// Nominal histograms from branches in root file
+	TH1F * h1_mcZOut     = new TH1F("h1_mcZOut"     ,";mcZOut (hardcoded as -1)"           ,70,-  2,  0);  prettyTH1(h1_mcZOut     ,2);
+	TH1F * h1_recZOut    = new TH1F("h1_recZOut"    ,";recZOut"                            ,70,-100,100);  prettyTH1(h1_recZOut    ,2);
+	TH1F * h1_mcPhiOut   = new TH1F("h1_mcPhiOut"   ,";mcPhiOut (hardcoded as -1)"         ,70,-  2,  0);  prettyTH1(h1_mcPhiOut   ,2);
+	TH1F * h1_recPhiOut  = new TH1F("h1_recPhiOut"  ,";recPhiOut"                          ,70,-  1,  8);  prettyTH1(h1_recPhiOut  ,2);
+	TH1F * h1_mcThetaOut = new TH1F("h1_mcThetaOut" ,";mcThetaOut (hardcoded as -1)"       ,70,-  2,  0);  prettyTH1(h1_mcThetaOut ,2);
+	TH1F * h1_recThetaOut= new TH1F("h1_recThetaOut",";recThetaOut"                        ,70,   0,  4);  prettyTH1(h1_recThetaOut,2);
+	TH1F * h1_mcPhi      = new TH1F("h1_mcPhi"      ,";mcPhi (#phi_{gen})"                 ,70,- pi, pi);  prettyTH1(h1_mcPhi      ,2);
+	TH1F * h1_recPhi     = new TH1F("h1_recPhi"     ,";recPhi (#phi_{reco})"               ,70,- pi, pi);  prettyTH1(h1_recPhi     ,2);
+	TH1F * h1_mcLam      = new TH1F("h1_mcLam"      ,";mcLam (#theta_{gen})"               ,70,-1.3,1.3);  prettyTH1(h1_mcLam      ,2);
+	TH1F * h1_recLam     = new TH1F("h1_recLam"     ,";recLam (#theta_{reco})"             ,70,-1.3,1.3);  prettyTH1(h1_recLam     ,2);
+	TH1F * h1_mcPt       = new TH1F("h1_mcPt"       ,";mcPt (p_{T, gen} [GeV/#it{c}])"     ,70,-  0,  8);  prettyTH1(h1_mcPt       ,2);
+	TH1F * h1_recPt      = new TH1F("h1_recPt"      ,";recPt (p_{T, reco} [GeV/#it{c}])"   ,70,-  0,  8);  prettyTH1(h1_recPt      ,2);
+	TH1F * h1_ipD        = new TH1F("h1_ipD"        ,";ipD (transverse impact parameter)"  ,70,- .1, .1);  prettyTH1(h1_ipD        ,2);
+	TH1F * h1_ipZ        = new TH1F("h1_ipZ"        ,";ipZ (longitudinal impact parameter)",50,- 20, 20);  prettyTH1(h1_ipZ        ,2);
+	TH1F * h1_label      = new TH1F("h1_label"      ,";label"                              ,70,- 10,2e5);  prettyTH1(h1_label      ,2);
 	// ---------------
+	// Additional histograms
 	double pTbins[] = {0,0.5,1,2,5};
 	int size_pTbins = sizeof(pTbins)/sizeof(*pTbins);
 	TH1F ** h1_mcPhi_pTbins       = new TH1F * [size_pTbins];
@@ -129,7 +112,6 @@ int main(int argc, char ** argv) {
 		prettyTH2(h2_mc_v_rec_Phi      [pT]);
 		prettyTH2(h2_mc_v_rec_Theta    [pT]);
 	}
-
 	// ------------------------------------------------------------------------------
 	// Looping over data
 	for(int ev = 0 ; ev < nEntries ; ev++){
@@ -170,7 +152,7 @@ int main(int argc, char ** argv) {
 	// ------------------------------------------------------------------------------
 	// Plotting results
 	TCanvas * c1 = new TCanvas("c1","c1",1300,900);
-	c1 -> Divide(5,3);
+	c1 -> Divide(4,4);
 	c1 -> cd( 1); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_mcZOut     -> Draw(); h1_mcZOut     -> Draw("samehist");
 	c1 -> cd( 2); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_recZOut    -> Draw(); h1_recZOut    -> Draw("samehist");
 	c1 -> cd( 3); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_mcPhiOut   -> Draw(); h1_mcPhiOut   -> Draw("samehist");
