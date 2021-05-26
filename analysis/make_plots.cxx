@@ -19,6 +19,7 @@ using namespace std;
 
 //Forward-declaring functions
 void prettyTH1( TH1F * h1 , int color );
+void prettyTH2( TH2F * h2 );
 // ===============================================================================================================================
 int main(int argc, char ** argv) {
 
@@ -34,7 +35,10 @@ int main(int argc, char ** argv) {
 
 	// ------------------------------------------------------------------------------
 	// Loading data
-	TFile * Fin = new TFile("CheckTracks.root");
+	//TFile * Fin = new TFile("CheckTracks.root"); -> Now called CheckTracks_1.root
+	//TFile * Fin = new TFile("pp_Check_Tracks.root"); -> Now deleted
+	//TFile * Fin = new TFile("229739x_Tracks.root"); -> Now called CheckTracks_2.root
+	TFile * Fin = new TFile("CheckTracks_combined.root");
 	TTree * T = (TTree*) Fin -> Get("ntt");
 	float mcZOut,recZOut,mcPhiOut,recPhiOut,mcThetaOut,recThetaOut,mcPhi,recPhi,mcLam,recLam,mcPt,recPt,ipD,ipZ,label;
 	T -> SetBranchAddress("mcZOut"     ,&mcZOut     );
@@ -71,6 +75,23 @@ int main(int argc, char ** argv) {
 	TH1F * h1_ipD        = new TH1F("h1_ipD"        ,";h1_ipD"        ,70,-  2,  2);
 	TH1F * h1_ipZ        = new TH1F("h1_ipZ"        ,";h1_ipZ"        ,50,- 20, 20);
 	TH1F * h1_label      = new TH1F("h1_label"      ,";h1_label"      ,70,- 10,2e5);
+
+	prettyTH1(h1_mcZOut     ,2);
+        prettyTH1(h1_recZOut    ,2);
+        prettyTH1(h1_mcPhiOut   ,2);
+        prettyTH1(h1_recPhiOut  ,2);
+        prettyTH1(h1_mcThetaOut ,2);
+        prettyTH1(h1_recThetaOut,2);
+        prettyTH1(h1_mcPhi      ,2);
+        prettyTH1(h1_recPhi     ,2);
+        prettyTH1(h1_mcLam      ,2);
+        prettyTH1(h1_recLam     ,2);
+        prettyTH1(h1_mcPt       ,2);
+        prettyTH1(h1_recPt      ,2);
+        prettyTH1(h1_ipD        ,2);
+        prettyTH1(h1_ipZ        ,2);
+        prettyTH1(h1_label      ,2);
+
 	// ---------------
 	double pTbins[] = {0,0.5,1,2,5};
 	int size_pTbins = sizeof(pTbins)/sizeof(*pTbins);
@@ -102,6 +123,11 @@ int main(int argc, char ** argv) {
 		prettyTH1(h1_recTheta_pTbins [pT],2);	h1_recTheta_pTbins [pT] -> SetMinimum(0);
 		prettyTH1(h1_mc_min_rec_Phi  [pT],1);	h1_mc_min_rec_Phi  [pT] -> SetMinimum(0);
 		prettyTH1(h1_mc_min_rec_Theta[pT],1);	h1_mc_min_rec_Theta[pT] -> SetMinimum(0);
+	
+		prettyTH2(h2_mcThetaPhi_pTbins [pT]);
+		prettyTH2(h2_recThetaPhi_pTbins[pT]);
+		prettyTH2(h2_mc_v_rec_Phi      [pT]);
+		prettyTH2(h2_mc_v_rec_Theta    [pT]);
 	}
 
 	// ------------------------------------------------------------------------------
@@ -145,21 +171,21 @@ int main(int argc, char ** argv) {
 	// Plotting results
 	TCanvas * c1 = new TCanvas("c1","c1",1300,900);
 	c1 -> Divide(5,3);
-	c1 -> cd( 1);	h1_mcZOut     -> Draw();
-	c1 -> cd( 2);   h1_recZOut    -> Draw();
-	c1 -> cd( 3);   h1_mcPhiOut   -> Draw();
-	c1 -> cd( 4);   h1_recPhiOut  -> Draw();
-	c1 -> cd( 5);   h1_mcThetaOut -> Draw();
-	c1 -> cd( 6);   h1_recThetaOut-> Draw();
-	c1 -> cd( 7);   h1_mcPhi      -> Draw();
-	c1 -> cd( 8);   h1_recPhi     -> Draw();
-	c1 -> cd( 9);   h1_mcLam      -> Draw();
-	c1 -> cd(10);   h1_recLam     -> Draw();
-	c1 -> cd(11);   h1_mcPt       -> Draw();
-	c1 -> cd(12);   h1_recPt      -> Draw();
-	c1 -> cd(13);   h1_ipD        -> Draw();
-	c1 -> cd(14);   h1_ipZ        -> Draw();
-	c1 -> cd(15);   h1_label      -> Draw();
+	c1 -> cd( 1); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_mcZOut     -> Draw(); h1_mcZOut     -> Draw("samehist");
+	c1 -> cd( 2); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_recZOut    -> Draw(); h1_recZOut    -> Draw("samehist");
+	c1 -> cd( 3); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_mcPhiOut   -> Draw(); h1_mcPhiOut   -> Draw("samehist");
+	c1 -> cd( 4); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_recPhiOut  -> Draw(); h1_recPhiOut  -> Draw("samehist");
+	c1 -> cd( 5); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_mcThetaOut -> Draw(); h1_mcThetaOut -> Draw("samehist");
+	c1 -> cd( 6); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_recThetaOut-> Draw(); h1_recThetaOut-> Draw("samehist");
+	c1 -> cd( 7); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_mcPhi      -> Draw(); h1_mcPhi      -> Draw("samehist");
+	c1 -> cd( 8); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_recPhi     -> Draw(); h1_recPhi     -> Draw("samehist");
+	c1 -> cd( 9); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_mcLam      -> Draw(); h1_mcLam      -> Draw("samehist");
+	c1 -> cd(10); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_recLam     -> Draw(); h1_recLam     -> Draw("samehist");
+	c1 -> cd(11); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_mcPt       -> Draw(); h1_mcPt       -> Draw("samehist");
+	c1 -> cd(12); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_recPt      -> Draw(); h1_recPt      -> Draw("samehist");
+	c1 -> cd(13); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_ipD        -> Draw(); h1_ipD        -> Draw("samehist");
+	c1 -> cd(14); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_ipZ        -> Draw(); h1_ipZ        -> Draw("samehist");
+	c1 -> cd(15); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);  h1_label      -> Draw(); h1_label      -> Draw("samehist");
 	c1 -> Modified();
 	c1 -> Update();
 	// -------------------------------------------
@@ -167,18 +193,18 @@ int main(int argc, char ** argv) {
 	for(int pT = 0 ; pT < size_pTbins-1 ; pT++){
 		c2[pT] = new TCanvas(Form("c2_%i",pT),Form("c2_%i",pT),1300,900);
 		c2[pT] -> Divide(4,2);
-		c2[pT] -> cd(1);
+		c2[pT] -> cd(1); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);
 		h1_mcPhi_pTbins   [pT] -> Draw();
 		h1_recPhi_pTbins  [pT] -> Draw("same");
-		c2[pT] -> cd(2);
+		c2[pT] -> cd(2); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);
 		h1_mcTheta_pTbins [pT] -> Draw();
 		h1_recTheta_pTbins[pT] -> Draw("same");
-		c2[pT] -> cd(3);	h2_mcThetaPhi_pTbins [pT] -> Draw("COLZ");
-		c2[pT] -> cd(4);	h2_recThetaPhi_pTbins[pT] -> Draw("COLZ");
-		c2[pT] -> cd(5);	h1_mc_min_rec_Phi    [pT] -> Draw();
-		c2[pT] -> cd(6);	h1_mc_min_rec_Theta  [pT] -> Draw();
-		c2[pT] -> cd(7);	h2_mc_v_rec_Phi      [pT] -> Draw("COLZ");
-		c2[pT] -> cd(8);	h2_mc_v_rec_Theta    [pT] -> Draw("COLZ");
+		c2[pT] -> cd(3); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);	h2_mcThetaPhi_pTbins [pT] -> Draw("COLZ");
+		c2[pT] -> cd(4); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);	h2_recThetaPhi_pTbins[pT] -> Draw("COLZ");
+		c2[pT] -> cd(5); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);	h1_mc_min_rec_Phi    [pT] -> Draw();
+		c2[pT] -> cd(6); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);	h1_mc_min_rec_Theta  [pT] -> Draw();
+		c2[pT] -> cd(7); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);	h2_mc_v_rec_Phi      [pT] -> Draw("COLZ");
+		c2[pT] -> cd(8); gPad->SetBottomMargin(0.14); gPad->SetLeftMargin(0.16);	h2_mc_v_rec_Theta    [pT] -> Draw("COLZ");
 		c2[pT] -> Modified();
 		c2[pT] -> Update();
 	}
@@ -197,7 +223,29 @@ int main(int argc, char ** argv) {
 // ===============================================================================================================================
 void prettyTH1( TH1F * h1 , int color ){
 	h1 -> GetXaxis() -> CenterTitle();
+	h1 -> GetXaxis() -> SetTitleSize(0.06);
+	h1 -> GetXaxis() -> SetLabelSize(0.06);
+	h1 -> GetXaxis() -> SetNdivisions(107);
+
 	h1 -> GetYaxis() -> CenterTitle();
+	h1 -> GetYaxis() -> SetTitleSize(0.06);
+	h1 -> GetYaxis() -> SetLabelSize(0.06);
+	h1 -> GetYaxis() -> SetNdivisions(107);
+
 	h1 -> SetLineColor(color);
 	h1 -> SetMarkerColor(color);
+
+	h1 -> SetMinimum(0);
+}
+// ===============================================================================================================================
+void prettyTH2( TH2F * h2 ){
+        h2 -> GetXaxis() -> CenterTitle();
+        h2 -> GetXaxis() -> SetTitleSize(0.06);
+        h2 -> GetXaxis() -> SetLabelSize(0.06);
+        h2 -> GetXaxis() -> SetNdivisions(107);
+
+        h2 -> GetYaxis() -> CenterTitle();
+        h2 -> GetYaxis() -> SetTitleSize(0.06);
+        h2 -> GetYaxis() -> SetLabelSize(0.06);
+        h2 -> GetYaxis() -> SetNdivisions(107);
 }
