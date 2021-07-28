@@ -11,7 +11,7 @@ request_disk = 8192000
 
 
 executable              = eos_generate_its.sh
-arguments               = 1 1 80 $(ClusterId) $(ProcId) 
+arguments               = 1 1 50 $(ClusterId) $(ProcId) 
 #ClusterID = Job ID. ProcID: Subprocess ID, useful for scripting
 
 output                  = job.$(ClusterId).$(ProcId).out
@@ -19,4 +19,4 @@ error                   = job.$(ClusterId).$(ProcId).err
 log                     = job.$(ClusterId).log
 
 #number of subjobs to submit
-queue 20
+queue 2000

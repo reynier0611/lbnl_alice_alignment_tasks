@@ -1,3 +1,13 @@
 analysis/CheckTracks.root
 analysis/make_plots
 analysis/results.pdf
+
+#Ignore o2 environment stuff
+*.dat
+*.json
+*.root
+
+#Ignore output of CONDOR jobs
+*.err
+*.out
+*.log
