@@ -28,9 +28,14 @@ o2-its-reco-workflow --trackerCA --tracking-mode async --shm-segment-size 160000
 This will produce two root files named ```o2clus_its.root``` and ```o2trac_its.root```.
 All the scripts above can be run from anywhere inside the O2 environment.
 
-4. Copy the macro CheckTracks.C (which can be found [here](https://github.com/AliceO2Group/AliceO2/blob/dev/Detectors/ITSMFT/ITS/macros/test/CheckTracks.C)) to the same directory where the previous steps were run. This macro can be used to understand how to access tracks and clusters. Do:
+4. Copy the macro ```CheckTracks.C``` (which can be found [here](https://github.com/AliceO2Group/AliceO2/blob/dev/Detectors/ITSMFT/ITS/macros/test/CheckTracks.C)) to the same directory where the previous steps were run. This macro can be used to understand how to access tracks and clusters. Do:
 ```root -l CheckTracks.C```
 This will produce a root file with track information.
 
 ## Using this repository:
-This repository basically automatizes the previous steps. To run nominal simulations, check out: ```MC_generation```. Tu run simulations with misalignment effects, check out: ```MC_generation_misalignment```.
+This repository basically automatizes the previous steps. To run nominal simulations, check out: ```MC_generation```. Tu run simulations with misalignment effects, check out: ```MC_generation_misalignment```. These simulations can be run locally on the login node (see ```local_generate_its.sh```) or on Condor (```eos_generate_its.sh```).
+
+The output file produced by ```CheckTracks.C``` can be analyzed with the code ```analysis/make_plots.cxx```
+
+## Misalignment Effects:
+In the generation step: ```o2-sim -n 10 -m PIPE ITS ...```, add ```"align-geom.mCCDB=http://localhost:8080;align-geom.mDetectors=ITS"``` to the ```--configKeyValues```.
