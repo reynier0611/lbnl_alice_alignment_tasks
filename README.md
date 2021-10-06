@@ -9,6 +9,10 @@ Once there, enter the O2 environment:
 ```
 /cvmfs/alice.cern.ch/bin/alienv enter O2/nightly-20210129-1
 ```
+or a newer O2 version:
+```
+/cvmfs/alice.cern.ch/bin/alienv enter O2/nightly-20210813-2
+```
 The last argument is the O2 version. For a list of all available versions run:
 ```
 /cvmfs/alice-nightlies.cern.ch/bin/alienv q
